@@ -1,0 +1,1736 @@
+[
+  {
+    "id": "386",
+    "name": "Purina PetCare",
+    "file": "logos/386.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Nestl%C3%A9_Purina_logo.svg"
+  },
+  {
+    "id": "387",
+    "name": "Purina Pro Plan",
+    "file": "logos/387.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.co.th/our-brands"
+  },
+  {
+    "id": "407",
+    "name": "Purina ONE",
+    "file": "logos/407.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Purina_ONE_logo.png"
+  },
+  {
+    "id": "413",
+    "name": "Purina Dog Chow",
+    "file": "logos/413.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:DogChow_logo.png"
+  },
+  {
+    "id": "418",
+    "name": "Purina Puppy Chow",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo on Wikipedia/Wikidata/Commons; purina.com blocks scripts (403)"
+  },
+  {
+    "id": "419",
+    "name": "Purina Cat Chow",
+    "file": "logos/419.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.eu/brands/cat-chow"
+  },
+  {
+    "id": "425",
+    "name": "Beneful",
+    "file": "logos/425.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Beneful_logo.png"
+  },
+  {
+    "id": "431",
+    "name": "Fancy Feast",
+    "file": "logos/431.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://purina.cl/fancy-feast"
+  },
+  {
+    "id": "442",
+    "name": "Friskies",
+    "file": "logos/442.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Logo_friskies_site.png"
+  },
+  {
+    "id": "452",
+    "name": "Kit & Kaboodle",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo on Wikipedia/Wikidata/Commons; purina.com blocks scripts (403)"
+  },
+  {
+    "id": "453",
+    "name": "Whisker Lickin's",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo on Wikipedia/Wikidata/Commons; purina.com blocks scripts (403)"
+  },
+  {
+    "id": "454",
+    "name": "Tidy Cats",
+    "file": "logos/454.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://purina.cl/tidycats"
+  },
+  {
+    "id": "458",
+    "name": "ALPO",
+    "file": "logos/458.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:ALPO_Logo.png"
+  },
+  {
+    "id": "461",
+    "name": "Moist & Meaty",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo on Wikipedia/Wikidata/Commons; purina.com blocks scripts (403)"
+  },
+  {
+    "id": "462",
+    "name": "Busy Bone",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo on Wikipedia/Wikidata/Commons; purina.com blocks scripts (403)"
+  },
+  {
+    "id": "463",
+    "name": "Beggin'",
+    "file": "logos/463.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Beggin%27_Strips_Logo.png"
+  },
+  {
+    "id": "464",
+    "name": "DentaLife",
+    "file": "logos/464.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.co.uk/brands/dentalife/dog"
+  },
+  {
+    "id": "465",
+    "name": "Petivity (smart litter-box monitor)",
+    "file": "logos/465.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.petivity.com/"
+  },
+  {
+    "id": "466",
+    "name": "Merrick Pet Care",
+    "file": "logos/466.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.merrickpetcare.com/"
+  },
+  {
+    "id": "475",
+    "name": "Zuke's",
+    "file": "logos/475.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.zukes.com/"
+  },
+  {
+    "id": "484",
+    "name": "Lily's Kitchen (UK)",
+    "file": "logos/484.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.lilyskitchen.co.uk/"
+  },
+  {
+    "id": "487",
+    "name": "Tails.com (UK)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; tails.com blocks scripts (403)"
+  },
+  {
+    "id": "488",
+    "name": "Petfinder",
+    "file": "logos/488.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Petfinder_logo.png"
+  },
+  {
+    "id": "489",
+    "name": "Purina Institute",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; purinainstitute.com blocks scripts (403)"
+  },
+  {
+    "id": "491",
+    "name": "Waggin' Train",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "legacy brand; no logo on Wikimedia and no live official site"
+  },
+  {
+    "id": "492",
+    "name": "Canyon Creek Ranch",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "legacy brand; no logo on Wikimedia and no live official site"
+  },
+  {
+    "id": "493",
+    "name": "Mighty Dog",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "legacy brand; no logo on Wikimedia and no live official site"
+  },
+  {
+    "id": "494",
+    "name": "Muse",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "legacy brand; no logo on Wikimedia and no live official site"
+  },
+  {
+    "id": "495",
+    "name": "Tender Vittles",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "legacy brand; Wikidata item has no logo; no live official site"
+  },
+  {
+    "id": "497",
+    "name": "Felix",
+    "file": "logos/497.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.eu/brands/felix"
+  },
+  {
+    "id": "503",
+    "name": "Gourmet",
+    "file": "logos/503.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.eu/brands/gourmet"
+  },
+  {
+    "id": "510",
+    "name": "Go-Cat (UK)",
+    "file": "logos/510.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.co.uk/brands/go-cat"
+  },
+  {
+    "id": "511",
+    "name": "Beyond (EU)",
+    "file": "logos/511.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.eu/brands/beyond/cat"
+  },
+  {
+    "id": "512",
+    "name": "Bakers",
+    "file": "logos/512.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.co.uk/brands/bakers"
+  },
+  {
+    "id": "513",
+    "name": "Beta",
+    "file": "logos/513.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.co.uk/brands/beta"
+  },
+  {
+    "id": "514",
+    "name": "Winalot",
+    "file": "logos/514.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.co.uk/brands/winalot"
+  },
+  {
+    "id": "515",
+    "name": "Bonio",
+    "file": "logos/515.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.co.uk/brands/bonio"
+  },
+  {
+    "id": "516",
+    "name": "Adventuros",
+    "file": "logos/516.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.co.uk/brands/adventuros"
+  },
+  {
+    "id": "518",
+    "name": "Supercoat",
+    "file": "logos/518.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com.au/supercoat.html"
+  },
+  {
+    "id": "519",
+    "name": "Lucky Dog",
+    "file": "logos/519.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com.au/lucky-dog.html"
+  },
+  {
+    "id": "520",
+    "name": "Total Care",
+    "file": "logos/520.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.purina.com.au/total-care.html"
+  },
+  {
+    "id": "521",
+    "name": "Bonnie",
+    "file": "logos/521.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com.au/bonnie.html"
+  },
+  {
+    "id": "523",
+    "name": "Excellent",
+    "file": "logos/523.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com.ar/excellent"
+  },
+  {
+    "id": "524",
+    "name": "Dogui",
+    "file": "logos/524.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com.ar/dogui"
+  },
+  {
+    "id": "525",
+    "name": "Gati",
+    "file": "logos/525.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com.ar/gati"
+  },
+  {
+    "id": "526",
+    "name": "Bonelo (treats)",
+    "file": "logos/526.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com.ar/bonelo"
+  },
+  {
+    "id": "528",
+    "name": "Purina Bonzo",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; not on purina.com.br and nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "529",
+    "name": "Doguitos",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; not on purina.com.br and nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "530",
+    "name": "Gatsy",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; not on purina.com.br and nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "531",
+    "name": "Kanina",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; not on purina.com.br and nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "532",
+    "name": "Purina Snacks (Brazil)",
+    "file": "logos/532.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://purina.com.br/snacks"
+  },
+  {
+    "id": "533",
+    "name": "Nutrition (infant and child)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "generic division category; no logo of its own"
+  },
+  {
+    "id": "534",
+    "name": "Gerber",
+    "file": "logos/534.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Gerber_company_logo.png"
+  },
+  {
+    "id": "540",
+    "name": "NAN",
+    "file": "logos/540.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlefamilynes.info/brand/nan-3"
+  },
+  {
+    "id": "550",
+    "name": "Nancare",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo found; Italian page redirects to the Nidina brand"
+  },
+  {
+    "id": "552",
+    "name": "BEBA",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; official site blocks scripts (403)"
+  },
+  {
+    "id": "553",
+    "name": "Guigoz (France)",
+    "file": "logos/553.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.guigoz.fr/"
+  },
+  {
+    "id": "554",
+    "name": "SMA (UK)",
+    "file": "logos/554.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.smababy.co.uk/"
+  },
+  {
+    "id": "555",
+    "name": "Lactogen",
+    "file": "logos/555.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlefamilynes.info/brand/lactogen-3"
+  },
+  {
+    "id": "556",
+    "name": "Nestogen",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; Nestlé country sites block scripts (403)"
+  },
+  {
+    "id": "557",
+    "name": "Neslac",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; Nestlé country sites block scripts (403)"
+  },
+  {
+    "id": "558",
+    "name": "NaturNes",
+    "file": "logos/558.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://naturnes.fr/"
+  },
+  {
+    "id": "559",
+    "name": "Cerelac",
+    "file": "logos/559.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Cerelac_brand_logo.png"
+  },
+  {
+    "id": "561",
+    "name": "Nestum",
+    "file": "logos/561.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlefamilynes.info/brand/nestum"
+  },
+  {
+    "id": "562",
+    "name": "Mucilon (Brazil)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "563",
+    "name": "Nestonutri (Brazil)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "564",
+    "name": "Farinha Láctea (Brazil)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Wikipedia only has a 1912 ad photo; nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "565",
+    "name": "Bona (Finland)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo found on Wikimedia or official sites"
+  },
+  {
+    "id": "566",
+    "name": "Piltti (Finland)",
+    "file": "logos/566.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.piltti.fi/"
+  },
+  {
+    "id": "567",
+    "name": "Lactogrow / Ceregrow / Nangrow (India)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.in blocks scripts (403)"
+  },
+  {
+    "id": "568",
+    "name": "Materna (Mexico)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.mx blocks scripts (403)"
+  },
+  {
+    "id": "569",
+    "name": "Wyeth Nutrition",
+    "file": "logos/569.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.wyethnutrition.com/"
+  },
+  {
+    "id": "578",
+    "name": "Alfaré HMO",
+    "file": "logos/578.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.fr/nos-marques"
+  },
+  {
+    "id": "579",
+    "name": "Althéra HMO",
+    "file": "logos/579.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "580",
+    "name": "Alfamino HMO",
+    "file": "logos/580.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.fr/nos-marques"
+  },
+  {
+    "id": "581",
+    "name": "Nido",
+    "file": "logos/581.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Nestle_Nido_logo.svg"
+  },
+  {
+    "id": "589",
+    "name": "Bear Brand",
+    "file": "logos/589.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Nestl%C3%A9_Bear_Brand_logo.png"
+  },
+  {
+    "id": "590",
+    "name": "Sustagen",
+    "file": "logos/590.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.sustagen.com.au/"
+  },
+  {
+    "id": "591",
+    "name": "Nestlé Health Science",
+    "file": "logos/591.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "593",
+    "name": "Peptamen",
+    "file": "logos/593.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "594",
+    "name": "Compleat",
+    "file": "logos/594.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "595",
+    "name": "Isosource",
+    "file": "logos/595.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "596",
+    "name": "Resource",
+    "file": "logos/596.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "598",
+    "name": "Nutren",
+    "file": "logos/598.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlemedicalhub.com/"
+  },
+  {
+    "id": "599",
+    "name": "Novasource (incl. Novasource Renal)",
+    "file": "logos/599.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlemedicalhub.com/"
+  },
+  {
+    "id": "600",
+    "name": "Impact (surgical immunonutrition)",
+    "file": "logos/600.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlemedicalhub.com/"
+  },
+  {
+    "id": "601",
+    "name": "Vivonex",
+    "file": "logos/601.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlemedicalhub.com/"
+  },
+  {
+    "id": "602",
+    "name": "Tolerex",
+    "file": "logos/602.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlemedicalhub.com/"
+  },
+  {
+    "id": "603",
+    "name": "Beneprotein",
+    "file": "logos/603.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlemedicalhub.com/"
+  },
+  {
+    "id": "604",
+    "name": "Vitaflo (inborn errors of metabolism)",
+    "file": "logos/604.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "605",
+    "name": "Modulen",
+    "file": "logos/605.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.co.uk/every-health"
+  },
+  {
+    "id": "606",
+    "name": "Diabetisource",
+    "file": "logos/606.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlemedicalhub.com/"
+  },
+  {
+    "id": "607",
+    "name": "Fibersource",
+    "file": "logos/607.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlemedicalhub.com/"
+  },
+  {
+    "id": "608",
+    "name": "Glytrol",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo found on Nestlé Health Science sites or Wikimedia"
+  },
+  {
+    "id": "609",
+    "name": "Crucial",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo found on Nestlé Health Science sites or Wikimedia"
+  },
+  {
+    "id": "610",
+    "name": "Optifibre",
+    "file": "logos/610.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.fr/nos-marques"
+  },
+  {
+    "id": "611",
+    "name": "Trophic",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo found on Nestlé Health Science sites or Wikimedia"
+  },
+  {
+    "id": "612",
+    "name": "Meritene",
+    "file": "logos/612.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.meritene.it/"
+  },
+  {
+    "id": "613",
+    "name": "Optifast",
+    "file": "logos/613.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.optifast.de/"
+  },
+  {
+    "id": "614",
+    "name": "VOWST (oral microbiome therapy)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; vowst.com blocks scripts (403)"
+  },
+  {
+    "id": "616",
+    "name": "BOOST",
+    "file": "logos/616.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "617",
+    "name": "Carnation Breakfast Essentials",
+    "file": "logos/617.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlemedicalhub.com/"
+  },
+  {
+    "id": "618",
+    "name": "Vital Proteins",
+    "file": "logos/618.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "619",
+    "name": "Orgain",
+    "file": "logos/619.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "620",
+    "name": "Puravida (Brazil)",
+    "file": "logos/620.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "621",
+    "name": "Mindful Chef (UK recipe boxes)",
+    "file": "logos/621.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Mindful_chef_horizontal_aubergine.jpg"
+  },
+  {
+    "id": "623",
+    "name": "Solgar",
+    "file": "logos/623.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "624",
+    "name": "Pure Encapsulations",
+    "file": "logos/624.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "625",
+    "name": "Garden of Life",
+    "file": "logos/625.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands"
+  },
+  {
+    "id": "626",
+    "name": "Douglas Laboratories",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; official site blocks scripts (403)"
+  },
+  {
+    "id": "627",
+    "name": "Genestra",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; official site unreachable"
+  },
+  {
+    "id": "628",
+    "name": "Wobenzym",
+    "file": "logos/628.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://wobenzym.de/"
+  },
+  {
+    "id": "629",
+    "name": "Sundown",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; official site unreachable"
+  },
+  {
+    "id": "630",
+    "name": "Persona Nutrition",
+    "file": "logos/630.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.personanutrition.com/"
+  },
+  {
+    "id": "631",
+    "name": "Mainstream VMS (sale to Yellow Wood Partners)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "business group being sold (Nature's Bounty, Puritan's Pride, etc.); no single logo"
+  },
+  {
+    "id": "640",
+    "name": "Nestlé Professional",
+    "file": "logos/640.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestleprofessional.co.uk/"
+  },
+  {
+    "id": "641",
+    "name": "Minor's (bases)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestleprofessional.us blocks scripts (403)"
+  },
+  {
+    "id": "642",
+    "name": "Chef-mate",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestleprofessional.us blocks scripts (403)"
+  },
+  {
+    "id": "643",
+    "name": "Trio",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestleprofessional.us blocks scripts (403)"
+  },
+  {
+    "id": "644",
+    "name": "Nestlé Vitality (dispensed beverages)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestleprofessional.us blocks scripts (403)"
+  },
+  {
+    "id": "645",
+    "name": "Sunkist (foodservice)",
+    "file": "logos/645.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Sunkist_Growers_logo.svg"
+  },
+  {
+    "id": "646",
+    "name": "Grown Respectfully",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestleprofessional.us blocks scripts (403)"
+  },
+  {
+    "id": "647",
+    "name": "Custom Innovation Group",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestleprofessional.us blocks scripts (403)"
+  },
+  {
+    "id": "648",
+    "name": "Plant-based dairy alternatives (oat, pea, coconut)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "generic product group, not a brand"
+  },
+  {
+    "id": "649",
+    "name": "Charge (Brazil)",
+    "file": "logos/649.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://pt.wikipedia.org/wiki/Ficheiro:Charge.PNG"
+  },
+  {
+    "id": "650",
+    "name": "Chef (Mexico)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo found; nestle.com.mx blocks scripts (403)"
+  },
+  {
+    "id": "651",
+    "name": "Regional and country brands",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "generic category; no logo of its own"
+  },
+  {
+    "id": "653",
+    "name": "Alpino",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "654",
+    "name": "ChocoTrio",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "655",
+    "name": "Dois Frades",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "656",
+    "name": "Prestígio",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "657",
+    "name": "Sensação",
+    "file": "logos/657.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://pt.wikipedia.org/wiki/Ficheiro:Sensacao.png"
+  },
+  {
+    "id": "658",
+    "name": "Suflair",
+    "file": "logos/658.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://pt.wikipedia.org/wiki/Ficheiro:Suflair.png"
+  },
+  {
+    "id": "659",
+    "name": "Bono (biscuits)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "660",
+    "name": "Calipso (biscuits)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "661",
+    "name": "Negresco (biscuits)",
+    "file": "logos/661.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://pt.wikipedia.org/wiki/Ficheiro:Negresco_2023_Logo.svg"
+  },
+  {
+    "id": "662",
+    "name": "Passatempo (biscuits)",
+    "file": "logos/662.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Passatempo_logo.png"
+  },
+  {
+    "id": "663",
+    "name": "Tostines (biscuits)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.br blocks scripts (403)"
+  },
+  {
+    "id": "665",
+    "name": "Super 8",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "only a dim wrapper photo on Commons; nestle.cl blocks scripts (403)"
+  },
+  {
+    "id": "666",
+    "name": "Trencito",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.cl blocks scripts (403)"
+  },
+  {
+    "id": "667",
+    "name": "Sahne Nuss",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.cl blocks scripts (403)"
+  },
+  {
+    "id": "668",
+    "name": "Chokita",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.cl blocks scripts (403)"
+  },
+  {
+    "id": "669",
+    "name": "Capri",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.cl blocks scripts (403)"
+  },
+  {
+    "id": "671",
+    "name": "D'Onofrio",
+    "file": "logos/671.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:D%27Onofrio_logo.svg"
+  },
+  {
+    "id": "676",
+    "name": "Amor",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.ec blocks scripts (403)"
+  },
+  {
+    "id": "677",
+    "name": "Tango",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.ec blocks scripts (403)"
+  },
+  {
+    "id": "679",
+    "name": "Frigor (Argentina)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo found (unverified Argentine brand)"
+  },
+  {
+    "id": "681",
+    "name": "Mabel's",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.bo blocks scripts (403)"
+  },
+  {
+    "id": "683",
+    "name": "Savoy",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.com.ve blocks scripts (403)"
+  },
+  {
+    "id": "684",
+    "name": "Israel: Osem",
+    "file": "logos/684.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Osem_Logo.svg"
+  },
+  {
+    "id": "696",
+    "name": "Golden Morn (cereal)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle-cwa.com blocks scripts (403)"
+  },
+  {
+    "id": "698",
+    "name": "Klim (milk powder)",
+    "file": "logos/698.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlefamilynes.info/brand/klim"
+  },
+  {
+    "id": "699",
+    "name": "Nespray (milk powder)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle-esar.com blocks scripts (403)"
+  },
+  {
+    "id": "700",
+    "name": "Cerevita (cereal)",
+    "file": "logos/700.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Nestle_Cerevita_Logo.png"
+  },
+  {
+    "id": "701",
+    "name": "Tex (chocolate)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Commons only has an unbranded split-bar photo; nestle-esar.com blocks scripts (403)"
+  },
+  {
+    "id": "702",
+    "name": "RWL",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle-esar.com blocks scripts (403)"
+  },
+  {
+    "id": "704",
+    "name": "Hirz (Switzerland)",
+    "file": "logos/704.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://hirz.ch/"
+  },
+  {
+    "id": "705",
+    "name": "Choco Crossies (Germany)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Commons only has a poor open-box photo; official site blocks scripts (403)"
+  },
+  {
+    "id": "706",
+    "name": "Bon Pari (Poland)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.pl blocks scripts (403)"
+  },
+  {
+    "id": "707",
+    "name": "Princessa (Poland)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.pl blocks scripts (403)"
+  },
+  {
+    "id": "708",
+    "name": "Orion (Czech Republic/Slovakia)",
+    "file": "logos/708.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Orion_%C4%8Dokol%C3%A1da.svg"
+  },
+  {
+    "id": "709",
+    "name": "JOJO (Czech Republic/Slovakia)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.cz blocks scripts (403)"
+  },
+  {
+    "id": "710",
+    "name": "Szerencsi (Hungary)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.hu blocks scripts (403)"
+  },
+  {
+    "id": "711",
+    "name": "Boci (Hungary)",
+    "file": "logos/711.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://boci.hu/"
+  },
+  {
+    "id": "712",
+    "name": "Svitoch (Ukraine)",
+    "file": "logos/712.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Svitoch.svg"
+  },
+  {
+    "id": "713",
+    "name": "Zvečevo (Croatia)",
+    "file": "logos/713.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Zve%C4%8Devo_chocolate_logo.png"
+  },
+  {
+    "id": "714",
+    "name": "Estrelitas (Portugal)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no Wikimedia logo; nestle.pt blocks scripts (403)"
+  },
+  {
+    "id": "716",
+    "name": "Uncle Tobys (oats and snacks)",
+    "file": "logos/716.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Uncle_tobys_logo.png"
+  },
+  {
+    "id": "720",
+    "name": "Plaistowe (baking)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no standalone logo found (recipes.com.au has none)"
+  },
+  {
+    "id": "721",
+    "name": "Bakers Choice",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no standalone logo found (recipes.com.au has none)"
+  },
+  {
+    "id": "722",
+    "name": "Quick-Eze (antacid)",
+    "file": "logos/722.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.quick-eze.com.au/"
+  },
+  {
+    "id": "723",
+    "name": "Joint ventures and minority stakes",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "generic category; no logo of its own"
+  },
+  {
+    "id": "724",
+    "name": "Lactalis Nestlé Produits Frais (Europe chilled dairy)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "joint-venture company; no logo found"
+  },
+  {
+    "id": "727",
+    "name": "L'Oréal",
+    "file": "logos/727.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:L%27Or%C3%A9al_logo.svg"
+  },
+  {
+    "id": "728",
+    "name": "IVC Evidensia (European vet clinics)",
+    "file": "logos/728.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://ivcevidensia.com/"
+  },
+  {
+    "id": "729",
+    "name": "Drools (India pet food)",
+    "file": "logos/729.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://drools.com/"
+  },
+  {
+    "id": "730",
+    "name": "Divested",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "generic category; no logo of its own"
+  },
+  {
+    "id": "731",
+    "name": "Blue Bottle Coffee",
+    "file": "logos/731.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Blue_Bottle_Coffee_logo.svg"
+  },
+  {
+    "id": "732",
+    "name": "Herta",
+    "file": "logos/732.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://fr.wikipedia.org/wiki/Fichier:Logo_Herta.svg"
+  },
+  {
+    "id": "733",
+    "name": "US confectionery business",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "business unit of 20+ brands; no single logo"
+  },
+  {
+    "id": "741",
+    "name": "Violet Crumble",
+    "file": "logos/741.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Violetcrumble_brand_logo.png"
+  },
+  {
+    "id": "742",
+    "name": "US and Canada waters",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "business unit of several water brands; no single logo"
+  },
+  {
+    "id": "756",
+    "name": "Acqua Vera / Nestlé Vera",
+    "file": "logos/756.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.acquavera.eu/"
+  },
+  {
+    "id": "757",
+    "name": "Recoaro",
+    "file": "logos/757.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://recoaro.it/"
+  },
+  {
+    "id": "758",
+    "name": "San Bernardo",
+    "file": "logos/758.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.sanbernardo.it/"
+  },
+  {
+    "id": "759",
+    "name": "Plancoët, Quézac, Saint-Lambert, Sainte-Alix (France waters)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "group of four water brands; no single logo"
+  },
+  {
+    "id": "760",
+    "name": "Chameleon Organic Coffee",
+    "file": "logos/760.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Chameleon_Cold-Brew_logo.png"
+  },
+  {
+    "id": "761",
+    "name": "Juicy Juice",
+    "file": "logos/761.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Juicy_Juice_logo.png"
+  },
+  {
+    "id": "762",
+    "name": "Nestea Philippines RTD",
+    "file": "logos/762.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://it.wikipedia.org/wiki/File:Nestea_2020.png"
+  },
+  {
+    "id": "763",
+    "name": "Yinlu (peanut milk, rice porridge)",
+    "file": "logos/763.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Yinlu_Foods_logo.png"
+  },
+  {
+    "id": "764",
+    "name": "Dairy Partners Americas Brazil (chilled dairy)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "divested joint venture; no logo found"
+  },
+  {
+    "id": "769",
+    "name": "Mousline",
+    "file": "logos/769.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://fr.wikipedia.org/wiki/Fichier:Mousline_logo.svg"
+  },
+  {
+    "id": "770",
+    "name": "La Cocinera (Spain frozen)",
+    "file": "logos/770.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.lacocinera.es/"
+  },
+  {
+    "id": "771",
+    "name": "Hemglass",
+    "file": "logos/771.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Hemglass.png"
+  },
+  {
+    "id": "772",
+    "name": "Branston and Sarson's",
+    "file": "logos/772.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/File:Branston_Logo.jpg"
+  },
+  {
+    "id": "773",
+    "name": "Philippine dairy (Goya/Kean's; Magnolia; Alpine, Krem Top, Liberty)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "several divested dairy brands; no single logo"
+  },
+  {
+    "id": "774",
+    "name": "Gerber Life Insurance",
+    "file": "logos/774.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.gerberlife.com/"
+  },
+  {
+    "id": "775",
+    "name": "Nestlé Skin Health (Galderma, Cetaphil, Proactiv, Restylane)",
+    "file": "logos/775.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Galderma_newer_logo.svg"
+  },
+  {
+    "id": "776",
+    "name": "Palforzia (Aimmune peanut-allergy drug)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "no logo found; palforzia.com redirects to a REMS page"
+  },
+  {
+    "id": "777",
+    "name": "Alcon",
+    "file": "logos/777.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Alcon_Logo_2019.svg"
+  },
+  {
+    "id": "778",
+    "name": "Meow Mix and Alley Cat",
+    "file": "logos/778.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Meow_mix_brand_logo.png"
+  },
+  {
+    "id": "779",
+    "name": "PurinaCare pet insurance",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "defunct business; no logo found"
+  },
+  {
+    "id": "780",
+    "name": "European small-pet food business",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "unnamed divested business; no logo"
+  },
+  {
+    "id": "781",
+    "name": "Nestlé South Africa pet food",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "divested business unit; no logo of its own"
+  },
+  {
+    "id": "783",
+    "name": "Beyond (US)",
+    "file": "logos/783.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.eu/brands/beyond/cat"
+  },
+  {
+    "id": "784",
+    "name": "Fantales (Allen's)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "discontinued; only the parent Allen's logo exists (not used)"
+  }
+]

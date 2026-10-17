@@ -8,7 +8,7 @@ const fold = (s: string) =>
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "");
 
-const MAX_RESULTS = 8;
+const MAX_RESULTS = 10;
 
 export interface SearchOptions {
   isVisible(n: GraphNode): boolean;
@@ -19,10 +19,12 @@ export interface SearchOptions {
 export function attachSearch(input: HTMLInputElement, list: HTMLUListElement, nodes: GraphNode[], opts: SearchOptions): void {
   const index = nodes.map((n) => ({
     n,
-    name: fold(n.name),
-    desc: fold(n.description),
+    name: fold(n.fullName),
+    desc: fold(`${n.description} ${n.qualifier}`),
     cat: n.kind === "brand" ? fold(n.category?.name ?? "") : "",
   }));
+  /** On equal matches, show the bigger thing first. */
+  const KIND_ORDER = { root: 0, category: 1, group: 2, brand: 3, product: 4 };
   let results: GraphNode[] = [];
   let active = 0;
 
@@ -33,16 +35,29 @@ export function attachSearch(input: HTMLInputElement, list: HTMLUListElement, no
     for (const e of index) {
       if (!opts.isVisible(e.n)) continue;
       const score = e.name.startsWith(q) ? 0 : e.name.includes(q) ? 1 : e.desc.includes(q) ? 2 : e.cat.includes(q) ? 3 : -1;
-      if (score >= 0) scored.push([score, e.n]);
+      // Products rank one step lower, so "pro plan" finds the brand before its 19 products.
+      if (score >= 0) scored.push([score + (e.n.kind === "product" ? 1 : 0), e.n]);
     }
     return scored
-      .sort((a, b) => a[0] - b[0] || a[1].name.localeCompare(b[1].name))
+      .sort((a, b) => a[0] - b[0] || KIND_ORDER[a[1].kind] - KIND_ORDER[b[1].kind] || a[1].name.localeCompare(b[1].name))
       .slice(0, MAX_RESULTS)
       .map(([, n]) => n);
   };
 
-  const meta = (n: GraphNode) =>
-    n.kind === "root" ? "Parent company" : n.kind === "category" ? "Category" : (n.category?.name ?? "");
+  const meta = (n: GraphNode) => {
+    switch (n.kind) {
+      case "root":
+        return "Parent company";
+      case "category":
+        return "Category";
+      case "group":
+        return `Group · ${n.category?.name ?? ""}`;
+      case "brand":
+        return n.category?.name ?? "";
+      case "product":
+        return n.brand ? `in ${n.brand.name}` : "Product";
+    }
+  };
 
   const render = () => {
     const open = input.value.trim() !== "" && document.activeElement === input;
@@ -71,7 +86,10 @@ export function attachSearch(input: HTMLInputElement, list: HTMLUListElement, no
         const small = document.createElement("span");
         small.className = "meta";
         small.textContent = meta(n);
-        li.append(dot, n.name, small);
+        const name = document.createElement("span");
+        name.className = "name";
+        name.textContent = n.kind === "root" ? n.label : n.name;
+        li.append(dot, name, small);
         li.addEventListener("pointerdown", (e) => {
           e.preventDefault(); // keep focus in the input until we're done
           pick(n);

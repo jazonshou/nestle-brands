@@ -4,7 +4,8 @@ export interface InputHandlers<N> {
   /** The node under a pointer, if any. */
   nodeAt(target: EventTarget | null): N | null;
   onNodeClick(node: N): void;
-  onNodeDragStart(node: N): void;
+  /** (gx, gy): where the pointer grabbed, in graph coordinates. */
+  onNodeDragStart(node: N, gx: number, gy: number): void;
   onNodeDrag(node: N, gx: number, gy: number): void;
   onNodeDragEnd(node: N): void;
   onBackgroundClick(): void;
@@ -41,6 +42,15 @@ export function attachInput<N>(svg: SVGSVGElement, camera: Camera, h: InputHandl
   const touches = new Map<number, { x: number; y: number }>();
   let pinch: { dist0: number; k0: number; mid: { x: number; y: number } } | null = null;
   let safariPinch: { k0: number } | null = null;
+
+  /** Keep receiving moves outside the SVG. Can throw if the pointer is already gone; that's harmless. */
+  const capture = (id: number) => {
+    try {
+      svg.setPointerCapture(id);
+    } catch {
+      /* pointer already released */
+    }
+  };
 
   const local = (e: { clientX: number; clientY: number }) => {
     const r = svg.getBoundingClientRect();
@@ -115,7 +125,7 @@ export function attachInput<N>(svg: SVGSVGElement, camera: Camera, h: InputHandl
         gesture = null;
         const s = pinchState();
         pinch = { dist0: s.dist, k0: camera.t.k, mid: s.mid };
-        svg.setPointerCapture(e.pointerId);
+        capture(e.pointerId);
         return;
       }
       if (touches.size > 2) return;
@@ -126,7 +136,7 @@ export function attachInput<N>(svg: SVGSVGElement, camera: Camera, h: InputHandl
     const node = e.button === 0 ? h.nodeAt(e.target) : null;
     if (node) gesture = { kind: "node", id: e.pointerId, startX: p.x, startY: p.y, moved: false, node };
     else startPan(e.pointerId, e.button, p.x, p.y);
-    svg.setPointerCapture(e.pointerId);
+    capture(e.pointerId);
     if (e.button === 1) e.preventDefault(); // no autoscroll widget
   });
 
@@ -148,8 +158,10 @@ export function attachInput<N>(svg: SVGSVGElement, camera: Camera, h: InputHandl
     if (!gesture.moved) {
       if (Math.hypot(p.x - gesture.startX, p.y - gesture.startY) < DRAG_THRESHOLD) return;
       gesture.moved = true;
-      if (gesture.kind === "node") h.onNodeDragStart(gesture.node);
-      else svg.classList.add("is-panning");
+      if (gesture.kind === "node") {
+        const start = camera.toGraph(gesture.startX, gesture.startY);
+        h.onNodeDragStart(gesture.node, start.x, start.y);
+      } else svg.classList.add("is-panning");
     }
 
     if (gesture.kind === "pan") {

@@ -1,0 +1,785 @@
+id,parent_id,name,level,category,ownership,status_note,url,url_verified
+1,,Nestlé S.A.,0,,Parent,,https://www.nestle.com/brands,yes
+2,1,Coffee & Beverages,1,Coffee & Beverages,Category,"Nestlé's corporate coffee list has four headline brands: Nescafé, Dolce Gusto, Nespresso, Starbucks Coffee At Home",https://www.nestle.com/brands/coffee,yes
+3,2,Nescafé,2,Coffee & Beverages,Owned,,https://www.nestle.com/brands/coffee/nescafe,yes
+4,3,Nescafé Classic,3,Coffee & Beverages,Owned,Listed range; no dedicated URL,https://www.nestle.com/brands/coffee/nescafe,no
+5,3,"Nescafé Gold (incl. Gold Mixes: Cappuccino, Choco Mocha, Caramel Latte; US Gold Espresso)",3,Coffee & Beverages,Owned,,https://www.nescafe.com/us/products/gold/,yes
+6,3,Nescafé Azera,3,Coffee & Beverages,Owned,Listed range; no dedicated URL,https://www.nestle.com/brands/coffee/nescafe,no
+7,3,Nescafé 3 in 1,3,Coffee & Beverages,Owned,Listed range; no dedicated URL,https://www.nestle.com/brands/coffee/nescafe,no
+8,3,Nescafé Espresso Concentrate,3,Coffee & Beverages,Owned,,https://www.nescafe.com/us/espresso-concentrate/,yes
+9,3,"Nescafé ready-to-drink (Smoovlatté, Shakissimo)",3,Coffee & Beverages,Owned,Listed range; no dedicated URL,https://www.nestle.com/brands/coffee/nescafe,no
+10,3,Nescafé Taster's Choice (US/Canada),3,Coffee & Beverages,Owned,,https://www.nescafe.com/us/products/tasters-choice/,yes
+11,3,Nescafé Clásico (US),3,Coffee & Beverages,Owned,,https://www.nescafe.com/us/products/clasico/,yes
+12,3,Nescafé Ice Roast (US),3,Coffee & Beverages,Owned,"Appears to replace Ice Java, which is no longer listed",https://www.nescafe.com/us/products/ice-roast/,yes
+13,3,Nescafé single-serve packets (US),3,Coffee & Beverages,Owned,,https://www.nescafe.com/us/products/single-serve-coffee-packets/,yes
+14,3,Nescafé flavored instant (US),3,Coffee & Beverages,Owned,,https://www.nescafe.com/us/products/flavored-instant-coffee/,yes
+15,3,Nescafé Gold Blend and Blend 37 (UK),3,Coffee & Beverages,Owned,Regional variant,https://en.wikipedia.org/wiki/Nescaf%C3%A9,no
+16,3,Nescafé Blend 43 (Australia/NZ),3,Coffee & Beverages,Owned,Regional variant,https://en.wikipedia.org/wiki/Nescaf%C3%A9,no
+17,3,Nescafé Japan (incl. Gold Blend),3,Coffee & Beverages,Owned,,https://www.nestle.co.jp/brands/coffee/nescafe,yes
+18,3,Nescafé Malaysia,3,Coffee & Beverages,Owned,,https://www.nescafe.com/my/,yes
+19,3,"Nescafé Sunrise (India, coffee-chicory)",3,Coffee & Beverages,Owned,,https://www.nestle.in/brands/coffee/nescafe-sunrise,yes
+20,3,Nescafé Ricoffy (South Africa),3,Coffee & Beverages,Owned,,https://www.nestle-esar.com/brands/allbrands/nescafe-ricoffy-logo,yes
+21,3,Dolca (Chile/Argentina),3,Coffee & Beverages,Owned,Regional Nescafé variant,https://en.wikipedia.org/wiki/Nescaf%C3%A9,no
+22,3,"Roastelier by Nescafé (foodservice, on-site roasting)",3,Coffee & Beverages,Owned,Nestlé Professional line,https://www.nestleprofessional.com/brands/roastelier,yes
+23,2,Nescafé Dolce Gusto,2,Coffee & Beverages,Owned,,https://www.nestle.com/brands/coffee/nescafe-dolce-gusto,yes
+24,23,"Dolce Gusto ranges (Black, White, Plant-based, Absolute Origin, Decaf)",3,Coffee & Beverages,Owned,No dedicated URLs,https://www.nestle.com/brands/coffee/nescafe-dolce-gusto,no
+25,23,Dolce Gusto NEO,3,Coffee & Beverages,Owned,Next-generation system launching in Japan/Korea,https://www.nestle.com/media/news/nescafe-dolce-gusto-neo-asia-launch,yes
+26,2,Nespresso,2,Coffee & Beverages,Owned,,https://www.nestle.com/brands/coffee/nespresso,yes
+27,26,Nespresso Original (incl. Lattissima machines),3,Coffee & Beverages,Owned,No dedicated URL,https://www.nestle.com/brands/coffee/nespresso,no
+28,26,Nespresso Vertuo,3,Coffee & Beverages,Owned,No dedicated URL,https://www.nestle.com/brands/coffee/nespresso,no
+29,26,Nespresso Professional,3,Coffee & Beverages,Owned,No dedicated URL,https://www.nestle.com/brands/coffee/nespresso,no
+30,26,Blue Bottle capsules (Nespresso channel),3,Coffee & Beverages,Uncertain,Nestlé says it keeps this business after the 2026 Blue Bottle sale; trademark/licence terms not public,https://www.just-drinks.com/newsletters/nestle-confirms-blue-bottle-buyer-as-coffee-stands-out-as-star-performer,no
+31,2,Starbucks Coffee At Home,2,Coffee & Beverages,Licensed,Perpetual licence from the 2018 Global Coffee Alliance (US$7.15bn); Starbucks owns the trademark,https://www.nestle.com/brands/coffee/starbucks-coffee-at-home,yes
+32,31,Starbucks Whole Bean,3,Coffee & Beverages,Licensed,,https://athome.starbucks.com/product-category/whole-bean,yes
+33,31,Starbucks Ground (Roast & Ground),3,Coffee & Beverages,Licensed,,https://athome.starbucks.com/product-category/ground,yes
+34,31,Starbucks K-Cup Pods,3,Coffee & Beverages,Licensed,,https://athome.starbucks.com/product-category/k-cup-pods,yes
+35,31,Starbucks Instant / Premium Instant,3,Coffee & Beverages,Licensed,,https://athome.starbucks.com/product-category/starbucks-instant,yes
+36,35,Crema Collection Premium Instant,4,Coffee & Beverages,Licensed,,https://athome.starbucks.com/crema-collection,yes
+37,31,Starbucks Origami (pour-over),3,Coffee & Beverages,Licensed,No dedicated URL,https://www.nestle.com/brands/coffee/starbucks-coffee-at-home,no
+38,31,Starbucks Cold Brew Concentrates,3,Coffee & Beverages,Licensed,,https://athome.starbucks.com/product-category/cold-brew-concentrates,yes
+39,31,Starbucks Coffee Craft concentrate,3,Coffee & Beverages,Licensed,,https://www.nestle.com/media/news/cold-coffee-concentrate-craft-starbucks,yes
+40,31,Starbucks Refreshers Concentrate,3,Coffee & Beverages,Licensed,,https://athome.starbucks.com/refreshers-concentrate,yes
+41,31,Starbucks Creamers,3,Coffee & Beverages,Licensed,,https://athome.starbucks.com/other-products/all-creamers,yes
+42,31,Starbucks Hot Cocoa,3,Coffee & Beverages,Licensed,,https://athome.starbucks.com/other-products/drinks/hot-cocoa,yes
+43,31,Starbucks by Nespresso (Original and Vertuo),3,Coffee & Beverages,Licensed,Original line: athome.starbucks.com/product-category/starbucksr-nespressor-original-line,https://athome.starbucks.com/product-category/starbucksr-nespressor-vertuo,yes
+44,31,Starbucks by Nescafé Dolce Gusto,3,Coffee & Beverages,Licensed,No dedicated URL,https://www.nestle.com/brands/coffee/starbucks-coffee-at-home,no
+45,31,"Starbucks ready-to-drink (Doubleshot, Frappuccino)",3,Coffee & Beverages,Uncertain,"Listed by Nestlé, but North American RTD runs through Starbucks' PepsiCo partnership; partner by region not checked",https://www.nestle.com/brands/coffee/starbucks-coffee-at-home,no
+46,31,We Proudly Serve Starbucks (foodservice),3,Coffee & Beverages,Licensed,Nestlé Professional line,https://www.nestleprofessional.com/brands/we-proudly-serve-starbucks,yes
+47,2,Seattle's Best Coffee,2,Coffee & Beverages,Owned,"Bought from Starbucks in 2022, so outside the Starbucks licence",https://www.goodnes.com/seattlesbest/,yes
+48,47,Seattle's Best Coffee foodservice,3,Coffee & Beverages,Owned,"Nestlé Professional US page; one note read it as Starbucks-owned, which conflicts with the sourced 2022 purchase",https://www.nestleprofessional.us/brands/seattles-best-coffee,yes
+49,2,Coffee mate,2,Coffee & Beverages,Owned,,https://www.goodnes.com/coffeemate/,yes
+50,49,Coffee mate Liquid,3,Coffee & Beverages,Owned,,https://www.goodnes.com/coffeemate/products/liquid/,yes
+51,49,Coffee mate Zero Sugar,3,Coffee & Beverages,Owned,,https://www.goodnes.com/coffeemate/products/zero-sugar/,yes
+52,49,Coffee mate Fat Free,3,Coffee & Beverages,Owned,,https://www.goodnes.com/coffeemate/products/fat-free/,yes
+53,49,Coffee mate Powder,3,Coffee & Beverages,Owned,,https://www.goodnes.com/coffeemate/products/powder/,yes
+54,49,Coffee mate Iced Coffee,3,Coffee & Beverages,Owned,,https://www.goodnes.com/coffeemate/products/iced-coffees/,yes
+55,49,Coffee mate Cold Foam,3,Coffee & Beverages,Owned,,https://www.goodnes.com/coffeemate/products/cold-foam/,yes
+56,49,Coffee mate Half & Half Singles,3,Coffee & Beverages,Owned,,https://www.goodnes.com/coffeemate/products/half-and-half-tubs/,yes
+57,49,natural bliss,3,Coffee & Beverages,Owned,Listed separately by Nestlé USA,https://www.goodnes.com/natural-bliss/,yes
+58,49,"Coffee mate foodservice (liquid, powder, concentrate, sugar-free, plant-based)",3,Coffee & Beverages,Owned,Nestlé Professional line,https://www.nestleprofessional.com/brands/coffee-mate,yes
+59,2,Brite (Japan creamer),2,Coffee & Beverages,Owned,,https://www.nestle.co.jp/brands/brite,yes
+60,2,Nesquik,2,Coffee & Beverages,Owned,,https://www.goodnes.com/nesquik/,yes
+61,2,Milo,2,Coffee & Beverages,Owned,,https://www.goodnes.com/milo/,yes
+62,61,Milo Malaysia,3,Coffee & Beverages,Owned,,https://www.milo.com.my/,yes
+63,61,Milo Australia,3,Coffee & Beverages,Owned,,https://www.milo.com.au/,yes
+64,61,Milo Japan,3,Coffee & Beverages,Owned,,https://www.nestle.co.jp/brands/milo,yes
+65,61,Milo Central & West Africa,3,Coffee & Beverages,Owned,,https://www.nestle-cwa.com/en/milo,yes
+66,61,Milo foodservice,3,Coffee & Beverages,Owned,Nestlé Professional line,https://www.nestleprofessional.com/brands/milo,yes
+67,2,Nestea,2,Coffee & Beverages,Owned,Nestlé-owned; out-licensed in several markets since the Coca-Cola BPW JV wound down (licences expired end 2024); Maspex distributes in Central/Eastern Europe; US partner unconfirmed,https://en.wikipedia.org/wiki/Nestea,no
+68,67,Nestea Spain/Andorra/Gibraltar (made by Damm),3,Coffee & Beverages,Owned,Out-licensed to Damm from 1 Jan 2025,https://www.dammcorporate.com/en/nestle-and-damm-sign-agreement-produce-market-and-distribute-nestea-spain,yes
+69,67,Nestea Canada (KDP),3,Coffee & Beverages,Owned,Out-licensed to Keurig Dr Pepper from 2025; Coca-Cola now sells the old recipe as Fuze,https://www.readthepeak.com/p/01-25-will-the-real-nestea-please-stand-up,no
+70,67,Nestea Iced Tea (India),3,Coffee & Beverages,Owned,,https://www.nestle.in/brands/coffee/nestea-iced-tea,yes
+71,67,Nestea foodservice,3,Coffee & Beverages,Owned,Nestlé Professional line,https://www.nestleprofessional.com/brands/nestea,yes
+72,2,Abuelita (Mexican-style chocolate),2,Coffee & Beverages,Owned,,https://www.goodnes.com/abuelita/,yes
+73,2,Carlos V (chocolate),2,Coffee & Beverages,Owned,,https://www.goodnes.com/carlos-v/,yes
+74,2,GoodHost (Canada iced tea),2,Coffee & Beverages,Owned,,https://www.madewithnestle.ca/goodhost.html,yes
+75,2,Nesfruta (Canada),2,Coffee & Beverages,Owned,,https://www.madewithnestle.ca/nesfruta.html,yes
+76,2,yfood (meal-replacement drinks),2,Coffee & Beverages,Owned,Remaining stake bought; reported in H1 2026 results,https://script.finanzen.ch/nachrichten/aktien/press-release-nestle-half-year-results-2026-execution-driving-rig-1036355491,no
+77,2,Special.T (tea capsules),2,Coffee & Beverages,Transitioning,"Discontinuation announced 25 Sep 2026; machines withdrawn, capsules sold until about end Feb 2027",https://www.bluewin.ch/en/news/nestle-discontinues-special.t-tea-capsule-system-li.3612760,no
+78,2,Ovaltine (US only),2,Coffee & Beverages,Licensed,Licensed in from Associated British Foods for the US,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+79,2,Regional coffee brands,2,Coffee & Beverages,Group,Owned per Wikipedia list; official sites unverified,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+80,79,"Ricoré (France, chicory-coffee)",3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/Ricor%C3%A9,no
+81,79,Sical (Portugal),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/SICAL,no
+82,79,Zoégas (Sweden),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+83,79,Bonka (Spain),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+84,79,Santa Cristina (Spain),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+85,79,Buondi (Portugal),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+86,79,Christina (Portugal),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+87,79,Loumidis (Greece),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+88,79,Ecco (Chile/Peru),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+89,79,Kirma (Peru),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+90,79,Aguila (Uruguay),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+91,79,El Chaná (Uruguay),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+92,79,International Roast,3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+93,79,Mountain Blend,3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+94,79,Partner's Blend,3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+95,79,Ristretto,3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+96,79,Tofa,3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+97,2,"Regional malt, chocolate and dairy drinks",2,Coffee & Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+98,97,Nescau (Brazil),3,Coffee & Beverages,Owned,,https://www.nestle.com.br/marcas/bebidas/nescau-bebidas,yes
+99,97,Ricacao (Ecuador),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+100,97,Dancow (Indonesia),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+101,97,Chuckie (Philippines),3,Coffee & Beverages,Owned,,https://www.nestle.com.ph/brands,no
+102,97,Nesvita (Pakistan/Thailand),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+103,97,Supligen (Jamaica),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+104,97,Romanette (Switzerland),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+105,97,Caro / Pero (cereal coffee),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+106,1,Waters & Premium Beverages,1,Waters & Premium Beverages,Transitioning,"Nestlé Waters & Premium Beverages (Paris) is 100% Nestlé today; signed 23 Jul 2026 to become Peranel, a 50/50 JV with Platinum Equity (EV EUR 4.9bn, about EUR 3bn cash); closing expected H1 2027. All brands below move from Owned to 50% JV on closing",https://www.platinumequity.com/news/platinum-equity-and-nestle-to-create-peranel-a-5-6-billion-leader-in-water-and-premium-beverages/,yes
+107,106,Perrier (Source Perrier S.A.),2,Waters & Premium Beverages,Transitioning,Named in Peranel scope,https://www.perrier.com,no
+108,107,Perrier Original sparkling mineral water,3,Waters & Premium Beverages,Transitioning,,https://www.perrier.com,no
+109,107,Perrier flavored sparkling waters,3,Waters & Premium Beverages,Transitioning,Flavor list not confirmed from primary pages,https://www.perrier.com,no
+110,107,"Perrier Energize (caffeinated, yerba mate)",3,Waters & Premium Beverages,Transitioning,US launch 2021,https://www.nestleusa.com/media/pressreleases/perrier-energize-yerba-mate-organic-caffeine,yes
+111,107,Perrier Fines Bulles (France),3,Waters & Premium Beverages,Transitioning,Retail listing only,https://www.promocatalogues.fr/magasins/metro/offres/perrier-eau-de-fines-bulles-offre-64175749/,no
+112,107,Maison Perrier,3,Waters & Premium Beverages,Uncertain,Listed by Nestlé USA as a drink; Peranel inclusion not confirmed,https://www.nestleusa.com/brands,no
+113,106,S.Pellegrino (Sanpellegrino S.p.A.),2,Waters & Premium Beverages,Transitioning,Named in Peranel scope; the Italian subsidiary also holds Acqua Panna and Levissima,https://www.sanpellegrino.com,no
+114,113,S.Pellegrino Sparkling Natural Mineral Water,3,Waters & Premium Beverages,Transitioning,,https://www.sanpellegrino.com,no
+115,113,S.Pellegrino Essenza,3,Waters & Premium Beverages,Transitioning,No Essenza-specific URL,https://www.sanpellegrino.com,no
+116,113,"Sanpellegrino Italian Sparkling Drinks (Aranciata, Limonata, Pompelmo, etc.)",3,Waters & Premium Beverages,Transitioning,Linked page is Pomegranate Blackcurrant,https://sanpellegrino.com/beverages/pomegranate-blackcurrant,yes
+117,116,Sanpellegrino Lemon Raspberry,4,Waters & Premium Beverages,Transitioning,,https://www.sanpellegrino.com/ca/en-ca/beverages/lemon-raspberry,yes
+118,116,Sanpellegrino Clementine Peach,4,Waters & Premium Beverages,Transitioning,,https://sanpellegrino.com/ca/en-ca/beverages/clementine-peach,yes
+119,116,Sanpellegrino Momenti,4,Waters & Premium Beverages,Transitioning,,https://sanpellegrino.com/ca/en-ca/beverages/momenti-blood-orange-orange-blossom,yes
+120,113,Acqua Panna,3,Waters & Premium Beverages,Transitioning,Named in Peranel scope,https://www.acquapanna.com,no
+121,113,Levissima,3,Waters & Premium Beverages,Transitioning,,https://www.levissima.it,no
+122,106,Vittel,2,Waters & Premium Beverages,Transitioning,,https://www.vittel.fr,no
+123,122,Contrex,3,Waters & Premium Beverages,Transitioning,Part of the Vittel company since 1992,https://en.wikipedia.org/wiki/Contrex,no
+124,122,Hépar,3,Waters & Premium Beverages,Transitioning,,https://www.hepar.fr,no
+125,106,Nestlé Pure Life (outside US/Canada),2,Waters & Premium Beverages,Transitioning,Named in Peranel scope; US/Canada Pure Life was sold in 2021,https://www.wikipedia.com/wiki/Nestle_Pure_Life,no
+126,125,Nestlé Pure Life Pakistan (Nestlé Pakistan Ltd),3,Waters & Premium Beverages,Majority,Listed subsidiary; Pakistan ops in Peranel scope,https://profit.pakistantoday.com.pk/2026/07/23/nestle-platinum-equity-plan-5050-water-and-premium-beverages-joint-venture-pakistan-operations-included,no
+127,106,Essentia (US alkaline water),2,Waters & Premium Beverages,Transitioning,Bought from First Bev in Mar 2021; Peranel inclusion unconfirmed,https://www.essentiawater.com,no
+128,106,Middle East (JV with Al Muhaidib),2,Waters & Premium Beverages,JV (stake undisclosed),Regional JV; Nestlé stake not disclosed,https://muhaidib.com/en/article/nestle-waters,yes
+129,128,Al Manhal (Saudi Arabia),3,Waters & Premium Beverages,JV (stake undisclosed),,https://muhaidib.com/en/article/nestle-waters,no
+130,128,Springs,3,Waters & Premium Beverages,JV (stake undisclosed),,https://muhaidib.com/en/article/nestle-waters,no
+131,128,Ghadeer (Jordan),3,Waters & Premium Beverages,JV (stake undisclosed),,https://muhaidib.com/en/article/nestle-waters,no
+132,128,Baraka (Egypt),3,Waters & Premium Beverages,JV (stake undisclosed),,https://muhaidib.com/en/article/nestle-waters,no
+133,128,Sohat (Lebanon),3,Waters & Premium Beverages,JV (stake undisclosed),,https://muhaidib.com/en/article/nestle-waters,no
+134,106,UK waters,2,Waters & Premium Beverages,Group,,https://www.foodmanufacture.co.uk/Article/2026/08/27/nestle-waters-premium-beverages-uk-appoints-new-md-as-partial-break-off-looms/,no
+135,134,Buxton,3,Waters & Premium Beverages,Transitioning,,https://www.buxtonwater.co.uk,no
+136,134,Princes Gate,3,Waters & Premium Beverages,Transitioning,,https://www.foodmanufacture.co.uk/Article/2026/08/27/nestle-waters-premium-beverages-uk-appoints-new-md-as-partial-break-off-looms/,no
+137,106,Switzerland waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+138,137,Henniez,3,Waters & Premium Beverages,Transitioning,Acquired 2007,https://www.henniez.ch,no
+139,137,Cristalp,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+140,106,Turkey waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+141,140,Erikli,3,Waters & Premium Beverages,Majority,Majority stake since 2006; current % undocumented,https://www.erikli.com.tr,no
+142,140,Alaçam,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+143,106,Poland waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+144,143,Nałęczowianka,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+145,143,Aqua Mineral,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+146,143,Arctic,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+147,143,Dar Natury,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+148,106,Germany waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+149,148,Neuselters,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+150,148,Frische Brise,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+151,148,Blaue Quellen,3,Waters & Premium Beverages,Uncertain,Acquired 1974; current status unclear,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+152,106,Belgium waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+153,152,Valvert,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+154,152,Charmoise,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+155,106,Spain waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+156,155,Aquarel,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+157,155,Viladrau,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+158,106,Portugal waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+159,158,Nestlé Selda,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+160,106,Greece waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+161,160,Korpi,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+162,160,Aqua Spring,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+163,106,Italy waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+164,163,Pejo,3,Waters & Premium Beverages,Uncertain,"Still on Wikipedia list; no sale record found, but historically sold alongside Vera",https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+165,106,Brazil waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+166,165,São Lourenço,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+167,165,Petrópolis,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+168,165,Santa Bárbara (Águas de Santa Bárbara),3,Waters & Premium Beverages,Transitioning,Acquired 2009,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+169,165,Vale do Sol,3,Waters & Premium Beverages,Transitioning,Acquired 2013,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+170,106,Argentina waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+171,170,Eco de los Andes,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+172,170,Glaciar,3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+173,106,Mexico waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+174,173,Santa María,3,Waters & Premium Beverages,Transitioning,JV history (2007),https://www.nestle.com.mx/brands/agua-santa-maria,yes
+175,106,Chile waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+176,175,Porvenir,3,Waters & Premium Beverages,Transitioning,JV history (2007); current structure unconfirmed,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+177,106,Cuba waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+178,177,Ciego Montero,3,Waters & Premium Beverages,JV (stake undisclosed),JV; stake not documented,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+179,177,Los Portales,3,Waters & Premium Beverages,JV (stake undisclosed),JV; stake not documented,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+180,106,Asia waters,2,Waters & Premium Beverages,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+181,180,La Vie (Vietnam),3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+182,180,Hidden Spring (Philippines),3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+183,180,Water Line (South Korea),3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+184,180,Dashan Yunnan Spring (China),3,Waters & Premium Beverages,Transitioning,Acquired 2009,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+185,180,Waterman (China),3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+186,180,Minéré (Thailand),3,Waters & Premium Beverages,Transitioning,Owned per Wikipedia list; not confirmed in 2026 sources,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+187,1,Confectionery & Baking,1,Confectionery & Baking,Category,"Owned outright outside the US; US candy went to Ferrero in 2018, Nestlé USA kept baking (Toll House)",https://www.nestle.com/brands,no
+188,187,KitKat,2,Confectionery & Baking,Owned,"Owned globally except the US, where Hershey makes it under a perpetual 1970 licence",https://www.nestle-confectionery.co.uk/brands/kitkat,yes
+189,188,KitKat Japan (regional flavours),3,Confectionery & Baking,Owned,,https://www.nestle.co.jp/brands/confectionery/kitkat,yes
+190,188,KitKat Canada,3,Confectionery & Baking,Owned,,https://www.madewithnestle.ca/kit-kat.html,yes
+191,188,KitKat Switzerland,3,Confectionery & Baking,Owned,,https://www.nestle.ch/de/marken/schokolade-und-susswaren/kitkat,yes
+192,188,KitKat Chocolatory (boutique retail),3,Confectionery & Baking,Owned,Brazil stores closed Jan 2025,https://mercadoeconsumo.com.br/22/01/2025/noticias-varejo/nestle-encerra-operacao-das-lojas-kitkat-chocolatory-no-brasil,no
+193,187,Aero,2,Confectionery & Baking,Owned,Canada: madewithnestle.ca/aero.html,https://www.nestle-confectionery.co.uk/brands/aero,yes
+194,187,After Eight,2,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/after-eight,yes
+195,187,Black Magic (UK),2,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/black-magic,yes
+196,187,Blue Riband (UK),2,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/blue-riband,yes
+197,187,Crunch (outside US),2,Confectionery & Baking,Owned,US rights went to Ferrero in 2018; Canada lists it as a complementary brand,https://www.nestle-confectionery.co.uk/brands/crunch,yes
+198,187,Dairy Box (UK),2,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/dairy-box,yes
+199,187,Lion,2,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/lion,yes
+200,187,Milkybar,2,Confectionery & Baking,Owned,Also sold in India,https://www.nestle-confectionery.co.uk/brands/milkybar,yes
+201,187,"Galak (white chocolate, continental Europe/Latin America)",2,Confectionery & Baking,Owned,Milkybar equivalent,https://www.nestle.com.br/marcas/chocolates/galak,yes
+202,187,Munchies,2,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/munchies,yes
+203,187,Polo,2,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/polo,yes
+204,187,Quality Street,2,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/quality-street,yes
+205,187,Rolo (outside US),2,Confectionery & Baking,Owned,Hershey holds the US licence,https://www.nestle-confectionery.co.uk/brands/rolo,yes
+206,187,Rowntree's,2,Confectionery & Baking,Owned,Rowntree's ice lollies are made by Froneri under licence,https://www.nestle-confectionery.co.uk/brands/rowntrees,yes
+207,206,Rowntree's Fruit Pastilles,3,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/rowntrees,no
+208,206,Rowntree's Randoms,3,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/rowntrees,no
+209,206,Rowntree's Jelly Tots,3,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/rowntrees,no
+210,187,Smarties (outside US),2,Confectionery & Baking,Owned,US Smarties is an unrelated company,https://www.nestle-confectionery.co.uk/brands/smarties,yes
+211,187,Toffee Crisp,2,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/toffee-crisp,yes
+212,187,Walnut Whip,2,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/walnut-whip,yes
+213,187,Yorkie,2,Confectionery & Baking,Owned,,https://www.nestle-confectionery.co.uk/brands/yorkie,yes
+214,187,Coffee Crisp (Canada),2,Confectionery & Baking,Owned,,https://www.madewithnestle.ca/coffee-crisp.html,yes
+215,187,Turtles (Canada),2,Confectionery & Baking,Owned,US Turtles belongs to DeMet's,https://www.madewithnestle.ca/turtles.html,yes
+216,187,Mackintosh Toffee (Canada),2,Confectionery & Baking,Owned,,https://www.madewithnestle.ca/mackintosh-toffee.html,yes
+217,187,Big Turk (Canada),2,Confectionery & Baking,Owned,,https://www.madewithnestle.ca/complementary-brands.html,no
+218,187,Mirage (Canada),2,Confectionery & Baking,Owned,,https://www.madewithnestle.ca/complementary-brands.html,no
+219,187,Nestlé Snack-Size (Canada),2,Confectionery & Baking,Owned,,https://www.madewithnestle.ca/nestle-snack-size.html,yes
+220,187,Drumstick Bites (Canada),2,Confectionery & Baking,Owned,Confectionery format; Drumstick ice cream ownership splits by region,https://www.madewithnestle.ca/drumstick-bites.html,yes
+221,187,"Bar-One (India, South Africa)",2,Confectionery & Baking,Owned,,https://www.nestle.in/brands/chocolate-and-confectionery/bar-one,yes
+222,187,Munch (India),2,Confectionery & Baking,Owned,,https://www.nestle.in/brands/chocolate-and-confectionery/munch,yes
+223,187,"Nestlé Classic (Brazil, Latin America, India)",2,Confectionery & Baking,Owned,India: nestle.in/brands/chocolate-and-confectionery/nestle-milk-chocolate,https://www.nestle.com.br/marcas/chocolates/classic,yes
+224,187,Cailler (Switzerland),2,Confectionery & Baking,Owned,,https://www.nestle.ch/de/marken/schokolade-und-susswaren/cailler,yes
+225,224,Frigor (Cailler range),3,Confectionery & Baking,Owned,,https://www.cailler.ch,no
+226,187,Perugina (Italy),2,Confectionery & Baking,Owned,Nestlé Italy 2025 plan (60M+) to make Baci global,https://www.perugina.com,no
+227,226,Baci Perugina,3,Confectionery & Baking,Owned,,https://www.baciperugina.com,no
+228,187,Garoto (Brazil),2,Confectionery & Baking,Owned,Acquired 2002; CADE cleared with conditions Jun 2023,https://www.nestle.com.br/marcas/chocolates/garoto,yes
+229,228,Serenata de Amor,3,Confectionery & Baking,Owned,,https://www.nestle.com.br/marcas/chocolates/serenata-de-amor,yes
+230,228,Talento,3,Confectionery & Baking,Owned,,https://www.nestle.com.br/marcas/chocolates/talento,yes
+231,228,Baton,3,Confectionery & Baking,Owned,,https://en.wikipedia.org/wiki/Chocolates_Garoto,no
+232,228,Garoto Chocolateria (professional),3,Confectionery & Baking,Owned,Nestlé Professional Brazil line,https://www.nestle.com.br/marcas/nestle-professional/garoto-chocolateria,yes
+233,187,Kopenhagen group (Brazil),2,Confectionery & Baking,Majority,Nestlé-controlled; CADE approved 9 Feb 2024; founder stays shareholder/CEO; exact stake not given,https://www.gazetasp.com.br/anexo/cade-aprova-compra-da-kopenhagen-pela-nestle/1134380,no
+234,233,Kopenhagen,3,Confectionery & Baking,Majority,,https://www.kopenhagen.com.br,no
+235,233,Brasil Cacau,3,Confectionery & Baking,Majority,,https://www.kopenhagen.com.br,no
+236,233,Kop Koffee,3,Confectionery & Baking,Majority,,https://www.kopenhagen.com.br,no
+237,187,Hsu Fu Chi (China),2,Confectionery & Baking,Owned,60% bought 2011; remaining 40% bought 2025 (Feb/Mar),https://www.just-food.com/news/nestle-takes-full-ownership-of-chinese-confectioner-hsu-fu-chi,no
+238,187,Allen's (Australia lollies),2,Confectionery & Baking,Owned,Owned since 1987; not sold; Fantales discontinued Jun 2023,https://www.allenslollies.com.au/,yes
+239,238,Minties,3,Confectionery & Baking,Owned,,https://www.allenslollies.com.au/,no
+240,238,Jaffas,3,Confectionery & Baking,Owned,,https://www.allenslollies.com.au/,no
+241,238,Red Ripperz,3,Confectionery & Baking,Owned,,https://www.allenslollies.com.au/,no
+242,238,Cheekies,3,Confectionery & Baking,Owned,,https://www.allenslollies.com.au/,no
+243,238,Sourz,3,Confectionery & Baking,Owned,,https://www.allenslollies.com.au/,no
+244,238,Party Mix,3,Confectionery & Baking,Owned,,https://www.allenslollies.com.au/,no
+245,187,Soothers (Australia),2,Confectionery & Baking,Owned,,https://www.nestle.com.au/en/brands/soothers,yes
+246,187,Butter Menthol (Australia),2,Confectionery & Baking,Owned,,https://www.nestle.com.au/en/brands/butter-menthol,yes
+247,187,Nestlé Toll House (US baking),2,Confectionery & Baking,Owned,Kept when US candy was sold,https://www.verybestbaking.com/toll-house/,yes
+248,247,"Toll House morsels, refrigerated cookie dough, baking bars",3,Confectionery & Baking,Owned,,https://www.verybestbaking.com/toll-house/,no
+249,247,Nestlé Toll House Café by Chip,3,Confectionery & Baking,Licensed,Trademark licensed out to an independent franchise chain; franchisor not confirmed,https://www.franchising.com/amp/news/20200310_crest_foods_signs_multiple_nestleacutereg_toll_hou.html,no
+250,187,Libby's (100% Pure Pumpkin),2,Confectionery & Baking,Owned,Libby's canned fruit/veg is a different company,https://www.verybestbaking.com/libbys/,yes
+251,250,Libby's foodservice,3,Confectionery & Baking,Owned,Nestlé Professional line,https://www.nestleprofessional.us/brands/libbys,yes
+252,1,Ice Cream (via Froneri),1,Ice Cream (via Froneri),Category,Nestlé holds ice cream through its 50% Froneri stake and is moving its last in-house units to Froneri,https://www.confectionerynews.com/Article/2026/02/20/nestle-to-sell-ice-cream-business-as-froneri-jv-gains-strength/,no
+253,252,Froneri International,2,Ice Cream (via Froneri),JV 50%,50/50 with PAI Partners since 2016; Oct 2025 PAI/ADIA put EUR 1.4bn in at about EUR 15bn valuation; strategic partnership with Grupo Herdez (Apr 2026),https://www.froneri.com,yes
+254,253,Dreyer's / Edy's (US),3,Ice Cream (via Froneri),JV 50%,"From the US deal, closed Q1 2020",https://www.dreyersgrandicecream.com,no
+255,253,Drumstick (US),3,Ice Cream (via Froneri),JV 50%,,https://www.froneri.com,no
+256,253,Outshine,3,Ice Cream (via Froneri),JV 50%,,https://www.froneri.com,no
+257,253,Skinny Cow,3,Ice Cream (via Froneri),Uncertain,Came with 2020 US deal; not verified as active,https://www.froneri.com,no
+258,253,Häagen-Dazs (US licence),3,Ice Cream (via Froneri),Licensed,General Mills owns the brand; Froneri holds the US licence,https://en.wikipedia.org/wiki/H%C3%A4agen-Dazs,no
+259,253,Extrême,3,Ice Cream (via Froneri),JV 50%,,https://www.froneri.com,no
+260,253,Pirulo,3,Ice Cream (via Froneri),JV 50%,,https://www.froneri.com,no
+261,253,Maxibon,3,Ice Cream (via Froneri),JV 50%,,https://www.froneri.com,no
+262,253,Nuii,3,Ice Cream (via Froneri),JV 50%,,https://www.froneri.com,no
+263,253,Mövenpick ice cream (Switzerland),3,Ice Cream (via Froneri),JV 50%,,https://www.froneri.com,no
+264,253,Kaktus (Poland),3,Ice Cream (via Froneri),JV 50%,,https://www.froneri.com,no
+265,253,Peters (Australia),3,Ice Cream (via Froneri),JV 50%,,https://en.wikipedia.org/wiki/Froneri,no
+266,253,Tip Top (New Zealand),3,Ice Cream (via Froneri),JV 50%,,https://en.wikipedia.org/wiki/Froneri,no
+267,253,Kelly's of Cornwall,3,Ice Cream (via Froneri),JV 50%,,https://en.wikipedia.org/wiki/Froneri,no
+268,253,FAB,3,Ice Cream (via Froneri),JV 50%,,https://en.wikipedia.org/wiki/Froneri,no
+269,253,Kāpiti,3,Ice Cream (via Froneri),JV 50%,,https://en.wikipedia.org/wiki/Froneri,no
+270,253,Connoisseur,3,Ice Cream (via Froneri),JV 50%,,https://en.wikipedia.org/wiki/Froneri,no
+271,253,Country Fresh (South Africa),3,Ice Cream (via Froneri),JV 50%,,https://en.wikipedia.org/wiki/Froneri,no
+272,253,Rowntree's ice lollies,3,Ice Cream (via Froneri),Licensed,Nestlé brand licensed to Froneri,https://www.froneri.com,no
+273,253,"Licensed partner brands (Oreo, Lotus Biscoff, Cadbury, Milka)",3,Ice Cream (via Froneri),Licensed,Third-party brands licensed in,https://www.froneri.com,no
+274,253,CRUFI (Uruguay),3,Ice Cream (via Froneri),JV 50%,Froneri deal Dec 2024,https://www.froneri.com,no
+275,253,Food Union ice cream,3,Ice Cream (via Froneri),Uncertain,Froneri acquisition announced Oct 2025; completion not confirmed,https://www.froneri.com,no
+276,252,Nestlé in-house ice cream,2,Ice Cream (via Froneri),Transitioning,"About CHF 1bn sales (Canada, Chile, Peru, China, Malaysia, Thailand); announced 19 Feb 2026, phased transfer to Froneri over 2026 to early 2027; no completion found by Oct 2026",https://www.confectionerynews.com/Article/2026/02/20/nestle-to-sell-ice-cream-business-as-froneri-jv-gains-strength/,no
+277,276,Nestlé Canada ice cream,3,Ice Cream (via Froneri),Transitioning,,https://www.madewithnestle.ca/,no
+278,277,Drumstick (Canada),4,Ice Cream (via Froneri),Transitioning,,https://www.madewithnestle.ca/drumstick.html,yes
+279,277,Parlour,4,Ice Cream (via Froneri),Transitioning,,https://www.madewithnestle.ca/parlour.html,yes
+280,277,Real Dairy,4,Ice Cream (via Froneri),Transitioning,,https://www.madewithnestle.ca/real-dairy.html,yes
+281,277,iÖGO frozen yogurt,4,Ice Cream (via Froneri),Licensed,Third-party name,https://www.madewithnestle.ca/iogo-frozen-yogurt.html,yes
+282,277,Häagen-Dazs (Canada),4,Ice Cream (via Froneri),Licensed,General Mills brand,https://www.madewithnestle.ca/haagen-dazs.html,yes
+283,277,Del Monte (Canada frozen),4,Ice Cream (via Froneri),Licensed,,https://www.madewithnestle.ca/del-monte.html,yes
+284,277,Baskin Robbins at Home,4,Ice Cream (via Froneri),Licensed,,https://www.madewithnestle.ca/baskin-robbins-at-home.html,yes
+285,277,"Confectionery frozen desserts (KitKat, Coffee Crisp, etc.)",4,Ice Cream (via Froneri),Transitioning,,https://www.madewithnestle.ca/confectionery-frozen-desserts.html,yes
+286,276,Savory (Chile),3,Ice Cream (via Froneri),Transitioning,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+287,276,D'Onofrio ice cream (Peru),3,Ice Cream (via Froneri),Uncertain,Nestlé still 'evaluating next steps in Peru',https://www.larepublica.co/globoeconomia/nestle-vende-su-negocio-global-de-helados-y-ahora-evalua-sus-proximos-pasos-en-peru-4333341,no
+288,276,"China, Malaysia and Thailand ice cream units",3,Ice Cream (via Froneri),Transitioning,No brand-level sources,https://www.confectionerynews.com/Article/2026/02/20/nestle-to-sell-ice-cream-business-as-froneri-jv-gains-strength/,no
+289,276,Nestlé Brasil sorvetes,3,Ice Cream (via Froneri),Uncertain,Brazil not named in the Feb 2026 transfer list,https://www.nestle.com.br/marcas,no
+290,289,La Frutta,4,Ice Cream (via Froneri),Uncertain,,https://www.nestle.com.br/marcas/sorvetes/la-frutta,yes
+291,289,"Crocante, Mega, Galak, Tradicional (ice cream)",4,Ice Cream (via Froneri),Uncertain,,https://www.nestle.com.br/marcas,no
+292,1,Frozen & Prepared Foods,1,Frozen & Prepared Foods,Category,"US frozen is wholly owned and, per Feb 2026 management comments, being kept",https://www.nestleusa.com/brands,yes
+293,292,Stouffer's,2,Frozen & Prepared Foods,Owned,,https://www.goodnes.com/stouffers/,yes
+294,293,Stouffer's Professional,3,Frozen & Prepared Foods,Owned,Nestlé Professional line,https://www.nestleprofessional.us/brands/stouffers,yes
+295,292,Lean Cuisine,2,Frozen & Prepared Foods,Owned,,https://www.goodnes.com/lean-cuisine/,yes
+296,292,Hot Pockets,2,Frozen & Prepared Foods,Owned,,https://www.goodnes.com/hot-pockets/,yes
+297,296,Lean Pockets,3,Frozen & Prepared Foods,Uncertain,No longer listed separately,https://www.goodnes.com/hot-pockets/,no
+298,292,Vital Pursuit,2,Frozen & Prepared Foods,Owned,Launched 2024 for GLP-1 users,https://www.goodnes.com/vital-pursuit/,yes
+299,292,DiGiorno,2,Frozen & Prepared Foods,Owned,,https://www.goodnes.com/digiorno/,yes
+300,292,Tombstone,2,Frozen & Prepared Foods,Owned,,https://www.goodnes.com/tombstone/,yes
+301,292,Jack's,2,Frozen & Prepared Foods,Owned,,https://www.goodnes.com/jacks/,yes
+302,292,California Pizza Kitchen frozen,2,Frozen & Prepared Foods,Licensed,Licensed from CPK restaurants,https://www.goodnes.com/cpk-frozen/,yes
+303,292,Sweet Earth,2,Frozen & Prepared Foods,Uncertain,"Plant closed 2022, site redirects; looks inactive, not sold",https://vegnews.com/what-happened-to-sweet-earth-vegan-at-nestle,no
+304,292,European Pizza Group (JV with PAI Partners),2,Frozen & Prepared Foods,Minority,Formed 2023; Nestlé below 50% with equal voting rights; US pizza excluded,https://www.horizont.net/schweiz/nachrichten/tiefkuehlkost-nestl-bringt-pizzageschaeft-in-joint-venture-ein-211400,no
+305,304,Wagner,3,Frozen & Prepared Foods,Minority,,https://www.wagner-pizza.de,no
+306,304,Buitoni frozen pizza (Europe),3,Frozen & Prepared Foods,Minority,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Wagner,no
+307,304,Garden Gourmet frozen pizza,3,Frozen & Prepared Foods,Minority,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Wagner,no
+308,292,Garden Gourmet (plant-based),2,Frozen & Prepared Foods,Owned,,https://www.nestle.ch/de/marken/kulinarische-produkte/garden-gourmet,yes
+309,308,Vuna (vegan tuna),3,Frozen & Prepared Foods,Owned,Launched 2020,https://vegnews.com/2020/8/nestle-launches-vegan-tuna,no
+310,292,"Nature's Heart (plant-based, Brazil/Mexico)",2,Frozen & Prepared Foods,Owned,,https://www.nestle.com.br/origem-vegetal/natures-heart,yes
+311,292,Hälsans Kök (Nordics plant-based),2,Frozen & Prepared Foods,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+312,1,Culinary & Dairy,1,Culinary & Dairy,Category,,https://www.nestle.com/brands,no
+313,312,Maggi,2,Culinary & Dairy,Owned,Global site maggi.com unverified,https://www.goodnes.com/maggi/,yes
+314,313,Maggi UK,3,Culinary & Dairy,Owned,,https://www.maggi.co.uk/,yes
+315,313,Maggi Canada,3,Culinary & Dairy,Owned,,https://www.madewithnestle.ca/maggi.html,yes
+316,313,Maggi Brazil,3,Culinary & Dairy,Owned,,https://www.nestle.com.br/marcas/culinarios/maggi,yes
+317,313,Maggi Malaysia,3,Culinary & Dairy,Owned,,https://www.maggi.my/en/,yes
+318,313,Maggi Central & West Africa,3,Culinary & Dairy,Owned,,https://www.nestle-cwa.com/en/brands/allbrands/maggi-central-west-africa,yes
+319,313,Maggi India,3,Culinary & Dairy,Owned,,https://www.nestle.in/brands,no
+320,319,Maggi Masala Noodles (2-Minute),4,Culinary & Dairy,Owned,,https://www.nestle.in/brands/foods/masala-noodles,yes
+321,319,Maggi Nutrilicious,4,Culinary & Dairy,Owned,,https://www.nestle.in/brands/foods/nutrilicious,yes
+322,319,Maggi Fusian,4,Culinary & Dairy,Owned,,https://www.nestle.in/brands/foods/fusian,yes
+323,319,Maggi Cuppa,4,Culinary & Dairy,Owned,,https://www.nestle.in/brands/foods/cuppa,yes
+324,319,Maggi Pazzta,4,Culinary & Dairy,Owned,,https://www.nestle.in/brands/foods/pazzta,yes
+325,319,Maggi sauces and cooking aids (India),4,Culinary & Dairy,Owned,Cooking aids: nestle.in/brands/foods/cooking-aids,https://www.nestle.in/brands/foods/sauces,yes
+326,313,Maggi Magic Sarap (Philippines),3,Culinary & Dairy,Owned,,https://en.wikipedia.org/wiki/Maggi,no
+327,313,Maggi bouillon cubes,3,Culinary & Dairy,Owned,,https://en.wikipedia.org/wiki/Maggi,no
+328,312,Thomy (Germany/Switzerland),2,Culinary & Dairy,Owned,Neuss plant closed; brand retained,https://www.thomy.de,no
+329,312,Winiary (Poland),2,Culinary & Dairy,Owned,,https://www.winiary.pl,no
+330,312,Buitoni (pasta/sauces outside US and frozen pizza JV),2,Culinary & Dairy,Owned,,https://www.buitoni.it,no
+331,312,Totole (China bouillon),2,Culinary & Dairy,Majority,80% acquired 1999,https://www.nestle.com/media/pressreleases/allpressreleases/bouillonleaderchina-2sep99,yes
+332,312,Haoji (Sichuan seasonings),2,Culinary & Dairy,Majority,60/40 JV formed 2001; later status not verified,https://www.nestle.com/media/pressreleases/allpressreleases/leadershipbouillonchina-8oct01,yes
+333,312,Crosse & Blackwell (Mexico),2,Culinary & Dairy,Owned,,https://elceo.com/negocios/que-marcas-opera-actualmente-nestle/,no
+334,312,Malher (Guatemala),2,Culinary & Dairy,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+335,312,Carnation (evaporated milk),2,Culinary & Dairy,Owned,,https://www.verybestbaking.com/carnation/,yes
+336,335,Carnation UK,3,Culinary & Dairy,Owned,,https://www.carnation.co.uk/,yes
+337,335,Carnation Central & West Africa,3,Culinary & Dairy,Owned,,https://www.nestle-cwa.com/en/carnation,yes
+338,312,La Lechera (sweetened condensed milk),2,Culinary & Dairy,Owned,Same product platform under regional names,https://www.goodnes.com/la-lechera/,yes
+339,338,Moça (Brazil),3,Culinary & Dairy,Owned,,https://www.nestle.com.br/marcas/culinarios/moca,yes
+340,338,Milkmaid (India),3,Culinary & Dairy,Owned,,https://www.nestle.in/brands/dairy/nestle-milkmaid,yes
+341,312,Media Crema (table cream),2,Culinary & Dairy,Owned,,https://www.goodnes.com/media-crema/,yes
+342,312,Creme de Leite Nestlé (Brazil),2,Culinary & Dairy,Owned,,https://www.nestle.com.br/marcas/culinarios/nestle-creme-de-leite,yes
+343,312,Nestlé All Purpose Cream (Philippines),2,Culinary & Dairy,Owned,,https://www.nestle.com.ph/brands,no
+344,312,Molico (Brazil),2,Culinary & Dairy,Owned,Chilled-dairy versions moved to Lactalis with DPA (2023),https://www.nestle.com.br/marcas/lacteos/molico,yes
+345,312,Ideal Milk (Central & West Africa),2,Culinary & Dairy,Owned,,https://www.nestle-cwa.com/en/ideal,yes
+346,312,Gloria (Central & West Africa),2,Culinary & Dairy,Owned,,https://www.nestle-cwa.com/en/gloria,yes
+347,312,Nestlé Everyday (India dairy whitener),2,Culinary & Dairy,Owned,,https://www.nestle.in/brands/dairy/nestle-everyday,yes
+348,312,Nestlé a+ (India dairy),2,Culinary & Dairy,Owned,,https://www.nestle.in/brands/dairy/nestle-a-plus,yes
+349,1,Breakfast Cereals via Cereal Partners Worldwide,1,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,"50/50 with General Mills since 1990; 130+ countries, excluding US/Canada",https://www.nestle-cereals.com/global/our-promises/about-cpw,yes
+350,349,Cheerios,2,Breakfast Cereals via Cereal Partners Worldwide,Licensed,General Mills brand used in CPW,https://www.nestle-cereals.com/uk/brands/cheerios,yes
+351,349,Chocapic,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://www.nestle-cereals.com/fr/cereales/chocapic,yes
+352,349,Cini Minis / Curiously Cinnamon,2,Breakfast Cereals via Cereal Partners Worldwide,Licensed,General Mills brand,https://www.nestle-cereals.com/uk/brands/curiously-cinnamon,yes
+353,352,Curiously Strawberry,3,Breakfast Cereals via Cereal Partners Worldwide,Licensed,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+354,349,Cookie Crisp,2,Breakfast Cereals via Cereal Partners Worldwide,Licensed,General Mills brand,https://www.nestle-cereals.com/uk/brands/cookie-crisp,yes
+355,349,Golden Grahams,2,Breakfast Cereals via Cereal Partners Worldwide,Licensed,General Mills brand,https://www.nestle-cereals.com/uk/golden-grahams,yes
+356,349,Trix,2,Breakfast Cereals via Cereal Partners Worldwide,Licensed,General Mills brand,https://www.nestle-cereals.com/fr/cereales/trix,yes
+357,349,Shreddies,2,Breakfast Cereals via Cereal Partners Worldwide,Licensed,Licensed from Post Consumer Brands (UK/Ireland),https://www.nestle-cereals.com/uk/brands/shreddies,yes
+358,349,Shredded Wheat,2,Breakfast Cereals via Cereal Partners Worldwide,Licensed,Licensed from Post Consumer Brands (UK/Ireland),https://www.nestle-cereals.com/uk/brands/shredded-wheat,yes
+359,349,Nestlé Corn Flakes,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://www.nestle.com.br/marcas/cereais/nestle-corn-flakes,yes
+360,349,Fitness,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://www.nestle-cereals.com/fr/cereales/fitness,yes
+361,349,Golden Nuggets,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://www.nestle-cereals.com/uk/brands/golden-nuggets,yes
+362,349,Go Free (gluten-free),2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://www.nestle-cereals.com/uk/brands/go-free,yes
+363,349,KitKat Cereal,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,Nestlé brand,https://www.nestle-cereals.com/uk/brands/kitkat-cereal,yes
+364,349,Lion Cereal,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,Nestlé brand,https://www.nestle-cereals.com/uk/brands/lion-cereal,yes
+365,349,Nesquik Cereal,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,Nestlé brand,https://www.nestle-cereals.com/uk/brands/nesquik-cereal,yes
+366,349,Crunch cereal,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,Nestlé brand,https://www.nestle-cereals.com/fr/cereales/crunch,yes
+367,349,Chokella,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://www.nestle-cereals.com/fr/cereales/chokella,yes
+368,349,Koko Krunch (Asia),2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://www.nestle.in/brands/breakfast-cereals/koko-krunch,yes
+369,349,Nestlé GOLD Crunchy Corn & Oat Flakes (India),2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://www.nestle.in/brands/breakfast-cereals/gold-crunchy-oats-and-corn-flakes,yes
+370,349,Munch cereal (India),2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://www.nestle.in/brands/breakfast-cereals/munch-crunchilicious-cereal,yes
+371,349,Clusters,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+372,349,Honey Stars,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+373,349,Milo cereals,2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+374,349,Brazil cereals,2,Breakfast Cereals via Cereal Partners Worldwide,Uncertain,Sold by CPW/Nestlé Brasil; split not confirmed,https://www.nestle.com.br/marcas,no
+375,374,Nescau Cereal,3,Breakfast Cereals via Cereal Partners Worldwide,Uncertain,,https://www.nestle.com.br/marcas/cereais/nescau-cereal,yes
+376,374,Neston,3,Breakfast Cereals via Cereal Partners Worldwide,Uncertain,Neston was also a DPA dairy brand,https://www.nestle.com.br/marcas/cereais/neston,yes
+377,374,Moça Flakes,3,Breakfast Cereals via Cereal Partners Worldwide,Uncertain,,https://www.nestle.com.br/marcas/cereais/moca-flakes,yes
+378,374,Negresco Cereal,3,Breakfast Cereals via Cereal Partners Worldwide,Uncertain,,https://www.nestle.com.br/marcas/cereais/negresco-cereal,yes
+379,374,Nesfit,3,Breakfast Cereals via Cereal Partners Worldwide,Uncertain,Also a biscuit line,https://www.nestle.com.br/marcas/cereais/nesfit-cereais,yes
+380,374,Snow Flakes,3,Breakfast Cereals via Cereal Partners Worldwide,Uncertain,,https://www.nestle.com.br/marcas/cereais/snow-flakes,yes
+381,374,Nestlé Aveia,3,Breakfast Cereals via Cereal Partners Worldwide,Uncertain,,https://www.nestle.com.br/marcas/cereais/nestle-aveia,yes
+382,349,Uncle Tobys cereals (Australia/NZ),2,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,CPW bought the Uncle Tobys cereal business,https://www.nestle.com.au/en/brands,no
+383,382,Uncle Tobys Cheerios,3,Breakfast Cereals via Cereal Partners Worldwide,Licensed,,https://www.uncletobys.com.au/products/cereals/uncle-tobys-cheerios/original,yes
+384,382,Uncle Tobys Plus,3,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://www.uncletobys.com.au/products/cereals/uncle-tobys-plus/antioxidants,yes
+385,382,Uncle Tobys Fruity Bites,3,Breakfast Cereals via Cereal Partners Worldwide,JV 50%,,https://www.nestle.com.au/en/brands,no
+386,1,Purina PetCare,1,Purina PetCare,Owned,Wholly owned division (Ralston Purina 2001 + Friskies); trademarks held by Société des Produits Nestlé S.A.,https://www.purina.com,yes
+387,386,Purina Pro Plan,2,Purina PetCare,Owned,,https://www.purina.com/pro-plan/products,yes
+388,387,Pro Plan Dog,3,Purina PetCare,Owned,,https://www.purina.com/pro-plan/products/dog-food,yes
+389,387,Pro Plan Cat,3,Purina PetCare,Owned,,https://www.purina.com/pro-plan/products/cat-food,yes
+390,387,Pro Plan Puppy / Development,3,Purina PetCare,Owned,,https://www.purina.com/pro-plan/products/puppy-food,yes
+391,387,Pro Plan Complete Essentials,3,Purina PetCare,Owned,Example product page,https://www.purina.com/dogs/shop/pro-plan-complete-essentials-shredded-blend-salmon-rice-probiotics-dry-dog-food,yes
+392,387,Pro Plan AdvantEDGE,3,Purina PetCare,Owned,Example product page,https://www.purina.com/dogs/shop/pro-plan-advantedge-digestive-support-salmon-oatmeal-dry-dog-food,yes
+393,387,Pro Plan Sport (Performance 30/20),3,Purina PetCare,Owned,Example product page,https://www.purina.com/dogs/shop/pro-plan-sport-performance-30-20-high-protein-dry-dog-food,yes
+394,387,Pro Plan LiveClear,3,Purina PetCare,Owned,,https://www.purina.com/pro-plan/cats/liveclear-allergen-reducing-cat-food,yes
+395,387,Pro Plan Wet,3,Purina PetCare,Owned,,https://www.purina.com/pro-plan/products/wet,yes
+396,387,Pro Plan Veterinary Diets,3,Purina PetCare,Owned,,https://www.purina.com/pro-plan-vet/diets,yes
+397,396,Pro Plan Vet dog diets,4,Purina PetCare,Owned,,https://www.purina.com/pro-plan-vet/diets/products/dog-food,yes
+398,396,Pro Plan Vet cat diets,4,Purina PetCare,Owned,,https://www.purina.com/pro-plan-vet/diets/products/cat-food,yes
+399,396,Pro Plan Vet Direct (DTC store),4,Purina PetCare,Owned,,https://www.proplanvetdirect.com,yes
+400,387,Pro Plan Veterinary Supplements,3,Purina PetCare,Owned,,https://www.purina.com/pro-plan-vet/supplements,yes
+401,400,FortiFlora,4,Purina PetCare,Owned,,https://www.purina.com/pro-plan-vet/supplements/fortiflora,yes
+402,400,Calming Care,4,Purina PetCare,Owned,,https://www.purina.com/pro-plan-vet/supplements/calming-care,yes
+403,400,Hydra Care,4,Purina PetCare,Owned,,https://www.purina.com/pro-plan-vet/supplements/hydra-care,yes
+404,400,Joint Care,4,Purina PetCare,Owned,,https://www.purina.com/pro-plan-vet/supplements/joint-care,yes
+405,400,Skin Care (dog),4,Purina PetCare,Owned,,https://www.purina.com/pro-plan-vet/supplements/dog-skin-care,yes
+406,400,Multi Care (dog),4,Purina PetCare,Owned,,https://www.purina.com/pro-plan-vet/supplements/multi-care,yes
+407,386,Purina ONE,2,Purina PetCare,Owned,,https://www.purina.com/purina-one/products,yes
+408,407,Purina ONE Dogs,3,Purina PetCare,Owned,,https://www.purina.com/purina-one/dogs,yes
+409,407,Purina ONE Cats,3,Purina PetCare,Owned,,https://www.purina.com/purina-one/cats,yes
+410,407,Purina ONE True Instinct,3,Purina PetCare,Owned,,https://www.purina.com/purina-one/true-instinct-dog-food,yes
+411,407,Purina ONE +Plus,3,Purina PetCare,Owned,Example product page,https://www.purina.com/dogs/shop/purina-one-plus-whole-body-support-chicken-dry-dog-food,yes
+412,407,Purina ONE Dog / Mini (EU),3,Purina PetCare,Owned,,https://www.purina.eu/brands/one-dog,yes
+413,386,Purina Dog Chow,2,Purina PetCare,Owned,EU: purina.eu/brands/dog-chow,https://www.purina.com/dog-chow/products,yes
+414,413,Dog Chow Complete,3,Purina PetCare,Owned,Example product page,https://www.purina.com/dogs/shop/dog-chow-complete-adult-chicken-dry-dog-food,yes
+415,413,Dog Chow High Protein,3,Purina PetCare,Owned,Example product page,https://www.purina.com/dogs/shop/dog-chow-high-protein-real-beef-dry-dog-food,yes
+416,413,Dog Chow Little Bites,3,Purina PetCare,Owned,,https://www.purina.com/dogs/shop/dog-chow-little-bites-small-breed-dry-dog-food,yes
+417,413,Service Dogs for Veterans (program),3,Purina PetCare,Owned,,https://www.purina.com/dog-chow/service-dogs-for-veterans,yes
+418,386,Purina Puppy Chow,2,Purina PetCare,Owned,,https://www.purina.com/puppy-chow/products,yes
+419,386,Purina Cat Chow,2,Purina PetCare,Owned,EU: purina.eu/brands/cat-chow,https://www.purina.com/cat-chow/products,yes
+420,419,Cat Chow Complete,3,Purina PetCare,Owned,,https://www.purina.com/cat-chow/complete-dry-cat-food,yes
+421,419,Cat Chow Indoor,3,Purina PetCare,Owned,,https://www.purina.com/cat-chow/indoor-dry-cat-food,yes
+422,419,Cat Chow Naturals,3,Purina PetCare,Owned,,https://www.purina.com/cat-chow/naturals-dry-cat-food,yes
+423,419,Kitten Chow,3,Purina PetCare,Owned,,https://www.purina.com/cat-chow/kitten-chow,yes
+424,419,Cat Chow Gentle,3,Purina PetCare,Owned,Example product page,https://www.purina.com/cats/shop/cat-chow-gentle-sensitive-stomach-dry-cat-food,yes
+425,386,Beneful,2,Purina PetCare,Owned,,https://www.purina.com/beneful/products,yes
+426,425,Beneful Freshly Prepared,3,Purina PetCare,Owned,,https://www.purina.com/beneful/freshly-prepared-dog-food,yes
+427,425,Beneful IncrediBites,3,Purina PetCare,Owned,,https://www.purina.com/beneful/incredibites-small-dog-food,yes
+428,425,Beneful Dry,3,Purina PetCare,Owned,,https://www.purina.com/beneful/products/dry-dog-food,yes
+429,425,Beneful Wet,3,Purina PetCare,Owned,,https://www.purina.com/beneful/products/wet-dog-food,yes
+430,425,Beneful Treats,3,Purina PetCare,Owned,,https://www.purina.com/beneful/products/dog-treats,yes
+431,386,Fancy Feast,2,Purina PetCare,Owned,,https://www.purina.com/fancy-feast/products,yes
+432,431,Fancy Feast Gems,3,Purina PetCare,Owned,Example product page,https://www.purina.com/cats/shop/fancy-feast-gems-mousse-variety-pack-wet-cat-food,yes
+433,431,Fancy Feast Gravy Lovers,3,Purina PetCare,Owned,Example product page,https://www.purina.com/cats/shop/fancy-feast-gravy-lovers-turkey-gravy-wet-cat-food,yes
+434,431,Fancy Feast Broths,3,Purina PetCare,Owned,Example product page,https://www.purina.com/cats/shop/fancy-feast-broths-silky-chicken-vegetable-whitefish-wet-cat-food,yes
+435,431,Fancy Feast Classic Paté,3,Purina PetCare,Owned,Example product page,https://www.purina.com/cats/shop/fancy-feast-classic-pate-chicken-kitten-food-wet-cat-food,yes
+436,431,Fancy Feast Timeless Favorites,3,Purina PetCare,Owned,Example product page,https://www.purina.com/cats/shop/fancy-feast-timeless-favorites-grilled-seafood-gravy-wet-cat-food,yes
+437,431,Fancy Feast Appetizers & Toppers,3,Purina PetCare,Owned,,https://www.purina.com/fancy-feast/products/cat-food-appetizers,yes
+438,431,Fancy Feast Gourmet Naturals,3,Purina PetCare,Owned,,https://www.purina.com/fancy-feast/products/gourmet-naturals-cat-food,yes
+439,431,Fancy Feast Chef's Cuts (treats),3,Purina PetCare,Owned,,https://www.purina.com/cats/shop/fancy-feast-chefs-cuts-natural-salmon-soft-cat-treats,yes
+440,431,Fancy Feast Kitten,3,Purina PetCare,Owned,,https://www.purina.com/fancy-feast/kitten-food,yes
+441,431,Fancy Feast Medleys,3,Purina PetCare,Uncertain,Not shown on current product page,https://www.purina.com/fancy-feast/products,no
+442,386,Friskies,2,Purina PetCare,Owned,,https://www.purina.com/friskies/products,yes
+443,442,Friskies Party Mix,3,Purina PetCare,Owned,,https://www.purina.com/cats/shop/friskies-party-mix-crunch-beachside-cat-treats,yes
+444,442,Friskies Lil' Soups,3,Purina PetCare,Owned,,https://www.purina.com/cats/shop/friskies-lil-soups-sockeye-salmon-in-chicken-broth-wet-cat-food,yes
+445,442,Friskies Lil' Lickables,3,Purina PetCare,Owned,,https://www.purina.com/cats/shop/friskies-lil-lickables-squeezable-puree-tuna-cat-treats,yes
+446,442,Friskies Paté,3,Purina PetCare,Owned,,https://www.purina.com/cats/shop/friskies-salmon-dinner-pate-wet-cat-food,yes
+447,442,Friskies Shreds,3,Purina PetCare,Owned,,https://www.purina.com/cats/shop/friskies-shreds-chicken-salmon-in-gravy-wet-cat-food,yes
+448,442,Friskies Prime Filets,3,Purina PetCare,Owned,,https://www.purina.com/cats/shop/friskies-prime-filets-chicken-in-gravy-wet-cat-food,yes
+449,442,Friskies Seafood Sensations,3,Purina PetCare,Owned,,https://www.purina.com/cats/shop/friskies-seafood-sensations-dry-cat-food,yes
+450,442,Friskies Surfin' & Turfin',3,Purina PetCare,Owned,,https://www.purina.com/cats/shop/friskies-surfin-turfin-favorites-dry-cat-food,yes
+451,442,Friskies Dog (Europe),3,Purina PetCare,Owned,,https://www.purina.eu/brands/friskies-dog,yes
+452,386,Kit & Kaboodle,2,Purina PetCare,Owned,,https://www.purina.com/kit-kaboodle/products,yes
+453,386,Whisker Lickin's,2,Purina PetCare,Owned,,https://www.purina.com/whisker-lickins/products,yes
+454,386,Tidy Cats,2,Purina PetCare,Owned,,https://www.purina.com/tidy-cats/products,yes
+455,454,Breeze litter box system,3,Purina PetCare,Owned,,https://www.purina.com/tidy-cats/products/breeze-cat-litter-boxes,yes
+456,454,Tidy Cats Lightweight,3,Purina PetCare,Owned,Example product page,https://www.purina.com/cats/shop/tidy-cats-lightweight-glade-clean-blossoms-scented-cat-litter,yes
+457,454,Yesterday's News,3,Purina PetCare,Uncertain,Not shown on current Tidy Cats pages,https://www.purina.com/tidy-cats/products,no
+458,386,ALPO,2,Purina PetCare,Owned,,https://www.purina.com/alpo/products,yes
+459,458,ALPO Prime Cuts,3,Purina PetCare,Owned,,https://www.purina.com/dogs/shop/alpo-prime-cuts-beef-dry-dog-food,yes
+460,458,ALPO Come & Get It!,3,Purina PetCare,Owned,,https://www.purina.com/dogs/shop/alpo-come-and-get-it-cookout-classics-beef-pork-chicken-dry-dog-food,yes
+461,386,Moist & Meaty,2,Purina PetCare,Owned,,https://www.purina.com/moist-meaty/products,yes
+462,386,Busy Bone,2,Purina PetCare,Owned,,https://www.purina.com/busy-bone/products,yes
+463,386,Beggin',2,Purina PetCare,Owned,,https://www.purina.com/beggin/products,yes
+464,386,DentaLife,2,Purina PetCare,Owned,UK: purina.co.uk/brands/dentalife/dog,https://www.purina.com/dentalife/products,yes
+465,386,Petivity (smart litter-box monitor),2,Purina PetCare,Owned,,https://www.purina.com/petivity-smart-litter-box-monitor,yes
+466,386,Merrick Pet Care,2,Purina PetCare,Owned,Acquired 2015; trademarks owned by Société des Produits Nestlé S.A.,https://www.merrickpetcare.com,yes
+467,466,Merrick Dog,3,Purina PetCare,Owned,,https://www.merrickpetcare.com/dog/dog-food,yes
+468,467,"Merrick dry lines (Backcountry, Grain Free, Lil' Plates, Limited Ingredient Diet, Kitchen Comforts, Fresh Selects)",4,Purina PetCare,Owned,,https://www.merrickpetcare.com/dog-food/dry,yes
+469,467,Merrick Fresh-Frozen,4,Purina PetCare,Owned,,https://www.merrickpetcare.com/dog/dog-food/fresh,yes
+470,467,Merrick Toppers,4,Purina PetCare,Owned,,https://www.merrickpetcare.com/dog/dog-food/toppers,yes
+471,467,Merrick Treats,4,Purina PetCare,Owned,,https://www.merrickpetcare.com/dog-food/dog-treats,yes
+472,466,Merrick Purrfect Bistro (cat),3,Purina PetCare,Owned,,https://www.merrickpetcare.com/cat/cat-food,yes
+473,466,"Castor & Pollux (Organix, Pristine)",3,Purina PetCare,Uncertain,"Bought by Merrick 2012; site now redirects to Merrick, possibly folded in",https://truthaboutpetfood.com/castor-pollux-founders-back-in-the-pet-food-biz/,no
+474,466,Whole Earth Farms,3,Purina PetCare,Uncertain,Not on Merrick site; status unclear,https://www.merrickpetcare.com,no
+475,386,Zuke's,2,Purina PetCare,Owned,Acquired 2014,https://www.zukes.com,yes
+476,475,Zuke's Mini Naturals,3,Purina PetCare,Owned,,https://www.zukes.com/dog-treats-and-chews/mini-naturals,yes
+477,475,Zuke's Puppy Naturals,3,Purina PetCare,Owned,,https://www.zukes.com/dog-treats-and-chews/puppy-naturals,yes
+478,475,Zuke's Lil' Links,3,Purina PetCare,Owned,,https://www.zukes.com/dog-treats-and-chews/lil-links,yes
+479,475,Zuke's Hip & Joint,3,Purina PetCare,Owned,,https://www.zukes.com/dog-treats-and-chews/hip-joint,yes
+480,475,Zuke's Training Treats,3,Purina PetCare,Owned,,https://www.zukes.com/dog-treats-and-chews/training,yes
+481,475,Zuke's Adventure Bites,3,Purina PetCare,Owned,,https://www.zukes.com/dog-treats-and-chews/adventure-bites,yes
+482,475,Zuke's Trail Mix,3,Purina PetCare,Owned,,https://www.zukes.com/dog-treats-and-chews/trail-mix,yes
+483,475,Zuke's Adventure Sticks,3,Purina PetCare,Owned,,https://www.zukes.com/dog-treats-and-chews/adventure-sticks,yes
+484,386,Lily's Kitchen (UK),2,Purina PetCare,Owned,Acquired Apr 2020; run at arm's length,https://www.lilyskitchen.co.uk,yes
+485,484,"Lily's Kitchen dog ranges (Fresh, Wet, Dry, Treats, Dental Chews)",3,Purina PetCare,Owned,,https://www.lilyskitchen.co.uk/collections/dry-dog-food,yes
+486,484,"Lily's Kitchen cat ranges (Wet, Dry, Treats)",3,Purina PetCare,Owned,,https://www.lilyskitchen.co.uk/collections/wet-cat-food,yes
+487,386,Tails.com (UK),2,Purina PetCare,Majority,Majority stake May 2018; no later change found,https://tails.com/gb/,yes
+488,386,Petfinder,2,Purina PetCare,Owned,Bought from Discovery 2013,https://www.petfinder.com,yes
+489,386,Purina Institute,2,Purina PetCare,Owned,,https://www.purinainstitute.com,yes
+490,386,Legacy US brands (status unconfirmed),2,Purina PetCare,Group,Not on current purina.com brand pages,https://en.wikipedia.org/wiki/Nestl%C3%A9_Purina_PetCare,no
+491,490,Waggin' Train,3,Purina PetCare,Uncertain,Acquired 2010,https://en.wikipedia.org/wiki/Nestl%C3%A9_Purina_PetCare,no
+492,490,Canyon Creek Ranch,3,Purina PetCare,Uncertain,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Purina_PetCare,no
+493,490,Mighty Dog,3,Purina PetCare,Uncertain,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Purina_PetCare,no
+494,490,Muse,3,Purina PetCare,Uncertain,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Purina_PetCare,no
+495,490,Tender Vittles,3,Purina PetCare,Uncertain,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Purina_PetCare,no
+496,386,Europe / UK regional,2,Purina PetCare,Group,,https://www.purina.eu/brands,yes
+497,496,Felix,3,Purina PetCare,Owned,,https://www.purina.eu/brands/felix,yes
+498,497,Felix As Good As It Looks (Doubly Delicious),4,Purina PetCare,Owned,,https://www.purina.eu/cat/cat-food/felix/as-good-as-it-looks-doubly-delicious,yes
+499,497,Felix Soups,4,Purina PetCare,Owned,,https://www.purina.eu/cat/cat-food/felix/soups,yes
+500,497,Felix Tasty Shreds,4,Purina PetCare,Owned,,https://www.purina.eu/cat/cat-food/felix/tasty-shreds,yes
+501,497,"Felix Snacks (Party Mix, Play Tubes, Crispies)",4,Purina PetCare,Owned,,https://www.purina.eu/brands/felix/snacks,yes
+502,497,Felix Pick 'n' Mix (UK direct),4,Purina PetCare,Owned,,https://direct.purina.co.uk/brands/felix-pick-n-mix.list,yes
+503,496,Gourmet,3,Purina PetCare,Owned,UK page also names Soups and Solitaire,https://www.purina.eu/brands/gourmet,yes
+504,503,Gourmet Gold,4,Purina PetCare,Owned,,https://www.purina.eu/cat/cat-food/gourmet/gold,yes
+505,503,Gourmet Perle,4,Purina PetCare,Owned,,https://www.purina.eu/cat/cat-food/gourmet/perle,yes
+506,503,Gourmet Mon Petit (Intense),4,Purina PetCare,Owned,,https://www.purina.eu/cat/cat-food/gourmet/mon-petit-intense,yes
+507,506,Monpetit (Japan),5,Purina PetCare,Owned,,https://www.nestle.co.jp/brands/petcare/monpetit,yes
+508,503,Gourmet Nature's Creations,4,Purina PetCare,Owned,,https://www.purina.eu/cat/cat-food/gourmet/natures-creations,yes
+509,503,Gourmet Revelations,4,Purina PetCare,Owned,Launched 2025,https://www.purina.eu/cat/cat-food/gourmet/revelations,yes
+510,496,Go-Cat (UK),3,Purina PetCare,Owned,,https://www.purina.co.uk/brands/go-cat,yes
+511,496,Beyond (EU),3,Purina PetCare,Owned,Still live in Europe; discontinued in the US,https://www.purina.eu/brands/beyond/cat,yes
+512,496,Bakers,3,Purina PetCare,Owned,,https://www.purina.co.uk/brands/bakers,yes
+513,496,Beta,3,Purina PetCare,Owned,,https://www.purina.co.uk/brands/beta,yes
+514,496,Winalot,3,Purina PetCare,Owned,,https://www.purina.co.uk/brands/winalot,yes
+515,496,Bonio,3,Purina PetCare,Owned,,https://www.purina.co.uk/brands/bonio,yes
+516,496,Adventuros,3,Purina PetCare,Owned,,https://www.purina.co.uk/brands/adventuros,yes
+517,386,Australia regional,2,Purina PetCare,Group,,https://www.purina.com.au/brands,yes
+518,517,Supercoat,3,Purina PetCare,Owned,,https://www.purina.com.au/supercoat.html,yes
+519,517,Lucky Dog,3,Purina PetCare,Owned,,https://www.purina.com.au/lucky-dog.html,yes
+520,517,Total Care,3,Purina PetCare,Owned,,https://www.purina.com.au/total-care.html,yes
+521,517,Bonnie,3,Purina PetCare,Owned,,https://www.purina.com.au/bonnie.html,yes
+522,386,Argentina / Latin America regional,2,Purina PetCare,Group,,https://www.purina.com.ar/purina,yes
+523,522,Excellent,3,Purina PetCare,Owned,,https://www.purina.com.ar/excellent,yes
+524,522,Dogui,3,Purina PetCare,Owned,,https://www.purina.com.ar/dogui,yes
+525,522,Gati,3,Purina PetCare,Owned,,https://www.purina.com.ar/gati,yes
+526,522,Bonelo (treats),3,Purina PetCare,Owned,,https://www.purina.com.ar/bonelo,yes
+527,386,Brazil regional,2,Purina PetCare,Group,,https://www.purina.com.br/,yes
+528,527,Purina Bonzo,3,Purina PetCare,Owned,,https://www.nestle.com.br/marcas/nutricao-animal/purina-bonzo,yes
+529,527,Doguitos,3,Purina PetCare,Owned,,https://www.nestle.com.br/marcas,no
+530,527,Gatsy,3,Purina PetCare,Owned,,https://www.nestle.com.br/marcas,no
+531,527,Kanina,3,Purina PetCare,Owned,,https://www.nestle.com.br/marcas,no
+532,527,Purina Snacks (Brazil),3,Purina PetCare,Owned,,https://www.purina.com.br/snacks,yes
+533,1,Nutrition (infant and child),1,Nutrition (infant and child),Category,,https://www.nestle.com/brands/nutrition-health/early-childhood,yes
+534,533,Gerber,2,Nutrition (infant and child),Owned,Acquired from Novartis 2007 (date not verified in research),https://www.gerber.com,yes
+535,534,Gerber Good Start (infant formula),3,Nutrition (infant and child),Owned,,https://www.gerber.com/good-start,no
+536,534,Gerber 1st Foods / 2nd Foods (purees),3,Nutrition (infant and child),Owned,,https://www.gerber.com,no
+537,534,Gerber Mindful Parenting Collection,3,Nutrition (infant and child),Owned,,https://www.gerber.com,no
+538,534,"Gerber snack and food lines (Lil' Crunchies, Puffs, Yogurt Melts, Lil' Bits, Organic, Natural)",3,Nutrition (infant and child),Owned,Product pages blocked; not confirmed,https://www.gerber.com,no
+539,534,Gerber Extensive HA (US),3,Nutrition (infant and child),Owned,Sold under Compleat menu in the US store,https://www.nestlenutritionstore.com/shop-by-brands/extensive-ha.html,yes
+540,533,NAN,2,Nutrition (infant and child),Owned,Active in 2026 (Jan 2026 recall of NAN/BEBA/Alfamino batches),https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+541,540,NAN Optipro,3,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+542,540,NAN Infinipro HA,3,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+543,540,NAN AL 110,3,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+544,540,NAN Sensitive,3,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+545,540,NanSoy,3,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+546,540,Nankid,3,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+547,540,PreNan (preterm),3,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+548,540,FM 85 (human milk fortifier),3,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+549,540,Nanlac (Brazil),3,Nutrition (infant and child),Owned,,https://www.nestle.com.br/marcas,no
+550,533,Nancare,2,Nutrition (infant and child),Owned,,https://www.nestlebaby.it/nancare,yes
+551,550,"Nancare Kids (gummies, 3+)",3,Nutrition (infant and child),Owned,,https://www.nestlebaby.it/nancare,no
+552,533,BEBA,2,Nutrition (infant and child),Owned,DACH and other markets,https://www.swissinfo.ch/eng/various/nestl%C3%A9-recall-of-batches-of-beba-and-alfamino-infant-milk-in-switzerland/90736301,no
+553,533,Guigoz (France),2,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+554,533,SMA (UK),2,Nutrition (infant and child),Owned,"Came with Wyeth Nutrition, 2012",https://www.smababy.co.uk,no
+555,533,Lactogen,2,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+556,533,Nestogen,2,Nutrition (infant and child),Owned,Brazil: Nestogeno,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+557,533,Neslac,2,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+558,533,NaturNes,2,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+559,533,Cerelac,2,Nutrition (infant and child),Owned,,https://www.cerelac.co.uk/,yes
+560,559,Cerelac Central & West Africa,3,Nutrition (infant and child),Owned,,https://www.nestle-cwa.com/en/cerelac,yes
+561,533,Nestum,2,Nutrition (infant and child),Owned,US listing alongside Cerelac at goodnes.com/nestle-cereals,https://www.babyandme.nestle.info/brand/nestum,yes
+562,533,Mucilon (Brazil),2,Nutrition (infant and child),Owned,,https://www.nestle.com.br/marcas/alimentos-infantis/mucilon,yes
+563,533,Nestonutri (Brazil),2,Nutrition (infant and child),Owned,,https://www.nestle.com.br/marcas,no
+564,533,Farinha Láctea (Brazil),2,Nutrition (infant and child),Owned,,https://www.nestle.com.br/marcas/cereais/farinha-lactea-nestle,yes
+565,533,Bona (Finland),2,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+566,533,Piltti (Finland),2,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+567,533,Lactogrow / Ceregrow / Nangrow (India),2,Nutrition (infant and child),Owned,,https://www.nestle.in/brands/nutrition/lactogrow,yes
+568,533,Materna (Mexico),2,Nutrition (infant and child),Owned,,https://www.nestle.com.mx/brands/materna,yes
+569,533,Wyeth Nutrition,2,Nutrition (infant and child),Owned,Acquired from Pfizer 2012 (price not verified in research),https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+570,569,Illuma (incl. Illuma HMO),3,Nutrition (infant and child),Owned,Retail page,https://www.binsina.ae/ar/wyeth-illuma-6-12.html,no
+571,569,"S-26 (Gold, Progress lines)",3,Nutrition (infant and child),Owned,Retail wiki,https://brandwiki.lazada.com.ph/s-26/,no
+572,569,Promil / Promil Gold,3,Nutrition (infant and child),Owned,Retail wiki,https://brandwiki.lazada.com.ph/promil/,no
+573,569,Bonna,3,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+574,569,Bonina,3,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+575,569,Ascenda,3,Nutrition (infant and child),Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+576,569,Belsol (China super-premium),3,Nutrition (infant and child),Owned,,https://food.chemlinked.com/news/food-news/wyeth-launches-new-super-high-end-if-brand-belsol-in-china,no
+577,533,Specialty infant formulas (HMO),2,Nutrition (infant and child),Group,Also marketed by Nestlé Health Science in some markets,https://www.nestle.com/brands/nutrition-health/early-childhood,yes
+578,577,Alfaré HMO,3,Nutrition (infant and child),Owned,,https://www.nestle.com/brands/nutrition-health/early-childhood,no
+579,577,Althéra HMO,3,Nutrition (infant and child),Owned,,https://www.nestlehealthscience.com/brands/althera-hmo,yes
+580,577,Alfamino HMO,3,Nutrition (infant and child),Owned,,https://www.nestlenutritionstore.com/shop-by-brands/alfamino.html,yes
+581,533,Nido,2,Nutrition (infant and child),Owned,"Growing-up milk (Nido Kinder 1+, Nido Fortificada)",https://www.goodnes.com/nido/,yes
+582,581,El Mejor Nido,3,Nutrition (infant and child),Owned,,https://www.goodnes.com/el-mejor-nido/,yes
+583,581,Nido Canada,3,Nutrition (infant and child),Owned,,https://www.nestlefamilynes.ca/nestle-nido-whole-milk-powder,yes
+584,581,Nido Mexico,3,Nutrition (infant and child),Owned,,https://www.nestle.com.mx/brands/nido,yes
+585,581,Nido Central & West Africa,3,Nutrition (infant and child),Owned,,https://www.nestle-cwa.com/en/nido,yes
+586,581,Nido Philippines,3,Nutrition (infant and child),Owned,,https://www.nestle.com.ph/brands,no
+587,581,Ninho (Brazil),3,Nutrition (infant and child),Owned,Chilled versions moved to Lactalis with DPA,https://www.nestle.com.br/marcas/lacteos/ninho,yes
+588,587,Ninho NutriAdvance,4,Nutrition (infant and child),Owned,,https://www.nestle.com.br/marcas/alimentos-infantis/suplementos/ninho-nutriadvance,yes
+589,533,Bear Brand,2,Nutrition (infant and child),Owned,,https://www.nestle.com/brands/nutrition-health/growing-up-family,no
+590,533,Sustagen,2,Nutrition (infant and child),Owned,,https://www.sustagen.com.au/,yes
+591,1,Nestlé Health Science,1,Nestlé Health Science,Category,"Medical nutrition, consumer care and VMS; mainstream VMS signed for sale to Yellow Wood Partners",https://www.nestlehealthscience.com/brands,yes
+592,591,Medical nutrition,2,Nestlé Health Science,Group,,https://www.nestlehealthscience.com/brands,yes
+593,592,Peptamen,3,Nestlé Health Science,Owned,,https://www.nestlehealthscience.com/brands/peptamen,yes
+594,592,Compleat,3,Nestlé Health Science,Owned,,https://www.nestlehealthscience.com/brands/compleat,yes
+595,592,Isosource,3,Nestlé Health Science,Owned,,https://www.nestlehealthscience.com/brands/isosource,yes
+596,592,Resource,3,Nestlé Health Science,Owned,,https://www.nestlehealthscience.com/brands/resource,yes
+597,596,ThickenUp / ThickenUp Clear,4,Nestlé Health Science,Owned,,https://www.nestlenutritionstore.com/shop-by-brands/thickenup-clear.html,yes
+598,592,Nutren,3,Nestlé Health Science,Owned,,https://www.nestlenutritionstore.com/shop-by-brands/nutren.html,yes
+599,592,Novasource (incl. Novasource Renal),3,Nestlé Health Science,Owned,,https://www.nestlenutritionstore.com/shop-by-brands/nova-source.html,yes
+600,592,Impact (surgical immunonutrition),3,Nestlé Health Science,Owned,,https://www.nestlenutritionstore.com/shop-by-brands/impact.html,yes
+601,592,Vivonex,3,Nestlé Health Science,Owned,,https://www.nestlenutritionstore.com/shop-by-brands/vivonex.html,yes
+602,592,Tolerex,3,Nestlé Health Science,Owned,,https://www.nestlenutritionstore.com/shop-by-brands/tolerex.html,yes
+603,592,Beneprotein,3,Nestlé Health Science,Owned,,https://www.nestlenutritionstore.com/shop-by-brands/beneprotein.html,yes
+604,592,Vitaflo (inborn errors of metabolism),3,Nestlé Health Science,Owned,,https://www.nestlehealthscience.com/brands/vitaflo,yes
+605,592,Modulen,3,Nestlé Health Science,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+606,592,Diabetisource,3,Nestlé Health Science,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+607,592,Fibersource,3,Nestlé Health Science,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+608,592,Glytrol,3,Nestlé Health Science,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+609,592,Crucial,3,Nestlé Health Science,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+610,592,Optifibre,3,Nestlé Health Science,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+611,592,Trophic,3,Nestlé Health Science,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+612,592,Meritene,3,Nestlé Health Science,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+613,592,Optifast,3,Nestlé Health Science,Owned,,https://www.optifast.com,no
+614,591,VOWST (oral microbiome therapy),2,Nestlé Health Science,Owned,Global rights bought from Seres 2024; Jun 2026 amendment: US$25m to Seres in place of future milestones,https://www.sec.gov/Archives/edgar/data/0001609809/000119312526258366/d156701dex991.htm,no
+615,591,Active nutrition,2,Nestlé Health Science,Group,,https://www.nestlehealthscience.com/brands,yes
+616,615,BOOST,3,Nestlé Health Science,Owned,,https://www.nestlehealthscience.com/brands/boost,yes
+617,615,Carnation Breakfast Essentials,3,Nestlé Health Science,Owned,Formerly Carnation Instant Breakfast,https://www.nestlenutritionstore.com/shop-by-brands/carnation-breakfast-essentials.html,yes
+618,615,Vital Proteins,3,Nestlé Health Science,Majority,Majority 2020; full ownership not verified,https://www.nestlehealthscience.com/brands/vital-proteins,yes
+619,615,Orgain,3,Nestlé Health Science,Majority,Majority since 2022; founder keeps a minority,https://nutraingredients-usa.com/Article/2022/02/03/nestle-expands-nutrition-portfolio-with-majority-stake-in-orgain,no
+620,615,Puravida (Brazil),3,Nestlé Health Science,Uncertain,Listed under Acquisitions & Investments; stake size unknown,https://www.nestlehealthscience.com/brands,no
+621,615,Mindful Chef (UK recipe boxes),3,Nestlé Health Science,Majority,Majority stake 2020,https://www.thegrocer.co.uk/mergers-and-acquisitions/nestle-buys-mindful-chef-to-bulk-up-direct-to-consumer-portfolio/650168.article,no
+622,591,Premium VMS (retained),2,Nestlé Health Science,Group,,https://www.nestlehealthscience.com/brands,yes
+623,622,Solgar,3,Nestlé Health Science,Owned,Explicitly retained,https://www.nestlehealthscience.com/brands/solgar,yes
+624,622,Pure Encapsulations,3,Nestlé Health Science,Owned,Explicitly retained,https://www.nestlehealthscience.com/brands/pure-encapsulations,yes
+625,622,Garden of Life,3,Nestlé Health Science,Owned,"Retained (inferred: on NHS brand page, absent from sale list)",https://www.nestlehealthscience.com/brands/garden-of-life,yes
+626,622,Douglas Laboratories,3,Nestlé Health Science,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+627,622,Genestra,3,Nestlé Health Science,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+628,622,Wobenzym,3,Nestlé Health Science,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+629,622,Sundown,3,Nestlé Health Science,Uncertain,Bountiful brand not named in Yellow Wood sale; only a secondary tracker shows it with Nestlé,https://ledger.worseonpurpose.com/brands/sundown,no
+630,622,Persona Nutrition,3,Nestlé Health Science,Uncertain,Acquired 2019; 2026 status unverified,https://www.nutraingredients.com/Article/2019/08/22/Nestle-Health-Science-acquires-Persona-personalized-nutrition-company,no
+631,591,Mainstream VMS (sale to Yellow Wood Partners),2,Nestlé Health Science,Pending sale,Agreed 1 Sep 2026 for US$1.0bn; 2025 sales US$1.2bn; closing expected H1 2027,https://www.nestlehealthscience.us/stories/nestle-reaches-agreement-divest-its-mainstream-vitamins-minerals-and-supplements-business,yes
+632,631,Nature's Bounty,3,Nestlé Health Science,Pending sale,,https://www.nestlehealthscience.com/brands/natures-bounty,yes
+633,631,Puritan's Pride,3,Nestlé Health Science,Pending sale,,https://www.puritan.com,no
+634,631,Osteo Bi-Flex,3,Nestlé Health Science,Pending sale,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+635,631,Ester-C,3,Nestlé Health Science,Pending sale,,https://www.nestlehealthscience.us/stories/nestle-reaches-agreement-divest-its-mainstream-vitamins-minerals-and-supplements-business,no
+636,631,Gard,3,Nestlé Health Science,Pending sale,,https://www.nestlehealthscience.us/stories/nestle-reaches-agreement-divest-its-mainstream-vitamins-minerals-and-supplements-business,no
+637,631,Sisu (Canada),3,Nestlé Health Science,Pending sale,,https://www.nestlehealthscience.us/stories/nestle-reaches-agreement-divest-its-mainstream-vitamins-minerals-and-supplements-business,no
+638,631,Nuun,3,Nestlé Health Science,Pending sale,Acquired 2021,https://www.nestlehealthscience.com/brands,no
+639,631,US private-label supplements business,3,Nestlé Health Science,Pending sale,,https://www.nestlehealthscience.us/stories/nestle-reaches-agreement-divest-its-mainstream-vitamins-minerals-and-supplements-business,no
+640,1,Nestlé Professional,1,Nestlé Professional,Category,Foodservice; mostly professional versions of retail brands (listed under those brands),https://www.nestleprofessional.us/brands,yes
+641,640,Minor's (bases),2,Nestlé Professional,Owned,Also Caribbean: nestle-caribbean.com/brands/allbrands/minors,https://www.nestleprofessional.us/brands/minors,yes
+642,640,Chef-mate,2,Nestlé Professional,Owned,,https://www.nestleprofessional.us/brands/chef-mate,yes
+643,640,Trio,2,Nestlé Professional,Owned,,https://www.nestleprofessional.us/brands/trio,yes
+644,640,Nestlé Vitality (dispensed beverages),2,Nestlé Professional,Owned,,https://www.nestleprofessional.us/brands/nestle-vitality,yes
+645,640,Sunkist (foodservice),2,Nestlé Professional,Licensed,Licensed name,https://www.nestleprofessional.us/brands/sunkist,yes
+646,640,Grown Respectfully,2,Nestlé Professional,Owned,,https://www.nestleprofessional.us/brands/grown-respectfully,yes
+647,640,Custom Innovation Group,2,Nestlé Professional,Owned,,https://www.nestleprofessional.us/brands/custom-innovation-group,yes
+648,640,"Plant-based dairy alternatives (oat, pea, coconut)",2,Nestlé Professional,Owned,,https://www.nestleprofessional.com/brands/plant-based-dairy-alternatives,yes
+649,640,Charge (Brazil),2,Nestlé Professional,Owned,,https://www.nestle.com.br/marcas/nestle-professional/charge-professional,yes
+650,640,Chef (Mexico),2,Nestlé Professional,Owned,,https://elceo.com/negocios/que-marcas-opera-actualmente-nestle/,no
+651,1,Regional and country brands,1,Regional and country brands,Category,Country-specific brands not placed in a global category,https://www.nestle.com/brands,no
+652,651,Brazil,2,Regional and country brands,Group,,https://www.nestle.com.br/marcas,yes
+653,652,Alpino,3,Regional and country brands,Owned,,https://www.nestle.com.br/marcas/chocolates/alpino,yes
+654,652,ChocoTrio,3,Regional and country brands,Owned,,https://www.nestle.com.br/marcas/chocolates/chocotrio,yes
+655,652,Dois Frades,3,Regional and country brands,Owned,,https://www.nestle.com.br/marcas/chocolates/dois-frades,yes
+656,652,Prestígio,3,Regional and country brands,Owned,,https://www.nestle.com.br/marcas/chocolates/prestigio,yes
+657,652,Sensação,3,Regional and country brands,Owned,,https://www.nestle.com.br/marcas/chocolates/sensacao,yes
+658,652,Suflair,3,Regional and country brands,Owned,,https://www.nestle.com.br/marcas/chocolates/suflair,yes
+659,652,Bono (biscuits),3,Regional and country brands,Owned,,https://www.nestle.com.br/marcas/biscoitos/bono,yes
+660,652,Calipso (biscuits),3,Regional and country brands,Owned,,https://www.nestle.com.br/marcas/biscoitos/calipso,yes
+661,652,Negresco (biscuits),3,Regional and country brands,Owned,,https://www.nestle.com.br/marcas/biscoitos/negresco,yes
+662,652,Passatempo (biscuits),3,Regional and country brands,Owned,,https://www.nestle.com.br/marcas/biscoitos/passatempo,yes
+663,652,Tostines (biscuits),3,Regional and country brands,Owned,,https://www.nestle.com.br/marcas/biscoitos/tostines,yes
+664,651,Chile,2,Regional and country brands,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+665,664,Super 8,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+666,664,Trencito,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+667,664,Sahne Nuss,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+668,664,Chokita,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+669,664,Capri,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+670,651,Peru,2,Regional and country brands,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+671,670,D'Onofrio,3,Regional and country brands,Owned,"Umbrella brand (confectionery, chocolate drink); its ice cream is under Ice Cream",https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+672,671,Sublime,4,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+673,671,Triángulo,4,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+674,671,Besos de Moza,4,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+675,651,Ecuador,2,Regional and country brands,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+676,675,Amor,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+677,675,Tango,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+678,651,Argentina,2,Regional and country brands,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+679,678,Frigor (Argentina),3,Regional and country brands,Uncertain,Listed for Argentina; distinct from Swiss Frigor chocolate; not verified,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+680,651,Bolivia,2,Regional and country brands,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+681,680,Mabel's,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+682,651,Venezuela,2,Regional and country brands,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+683,682,Savoy,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+684,651,Israel: Osem,2,Regional and country brands,Owned,100% since 2016,https://en.wikipedia.org/wiki/Osem_(company),no
+685,684,Bamba,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/Osem_(company),no
+686,684,Bissli,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/Osem_(company),no
+687,684,Tivall (meat substitutes),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/Osem_(company),no
+688,684,Gratify,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/Osem_(company),no
+689,684,Of Tov,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/Osem_(company),no
+690,684,Beit Hashita,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/Osem_(company),no
+691,684,Asamim,3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/Osem_(company),no
+692,684,Tribe Mediterranean Foods,3,Regional and country brands,Owned,Acquired 2008,https://en.wikipedia.org/wiki/Osem_(company),no
+693,684,Materna Ltd (Israeli infant formula),3,Regional and country brands,Majority,Osem holds 51%,https://en.wikipedia.org/wiki/Osem_(company),no
+694,684,Sabra Salads (Israel),3,Regional and country brands,Uncertain,Listed as Osem subsidiary; unrelated to US Sabra hummus (PepsiCo),https://en.wikipedia.org/wiki/Osem_(company),no
+695,651,Central & West Africa,2,Regional and country brands,Group,,https://www.nestle-cwa.com/en/brands,yes
+696,695,Golden Morn (cereal),3,Regional and country brands,Owned,"Nestlé CWA, not CPW",https://www.nestle-cwa.com/en/golden-morn,yes
+697,651,East & Southern Africa,2,Regional and country brands,Group,,https://www.nestle-esar.com/,yes
+698,697,Klim (milk powder),3,Regional and country brands,Owned,,https://www.nestle-esar.com/brands/allbrands/klim-logo,yes
+699,697,Nespray (milk powder),3,Regional and country brands,Owned,,https://www.nestle-esar.com/brands/allbrands/nespray-logo-new,yes
+700,697,Cerevita (cereal),3,Regional and country brands,Owned,,https://www.nestle-esar.com/brands/allbrands/cerevita-logo,yes
+701,697,Tex (chocolate),3,Regional and country brands,Owned,,https://www.nestle-esar.com/brands/allbrands/tex-logo,yes
+702,697,RWL,3,Regional and country brands,Owned,,https://www.nestle-esar.com/brands/allbrands/rwl-logo,yes
+703,651,Europe,2,Regional and country brands,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+704,703,Hirz (Switzerland),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+705,703,Choco Crossies (Germany),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+706,703,Bon Pari (Poland),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+707,703,Princessa (Poland),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+708,703,Orion (Czech Republic/Slovakia),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+709,703,JOJO (Czech Republic/Slovakia),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+710,703,Szerencsi (Hungary),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+711,703,Boci (Hungary),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+712,703,Svitoch (Ukraine),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+713,703,Zvečevo (Croatia),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+714,703,Estrelitas (Portugal),3,Regional and country brands,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+715,651,Australia,2,Regional and country brands,Group,,https://www.nestle.com.au/en/brands,yes
+716,715,Uncle Tobys (oats and snacks),3,Regional and country brands,Owned,Acquired 2006 (A$890m); cereals sit in CPW,https://en.wikipedia.org/wiki/Uncle_Tobys,no
+717,716,Uncle Tobys Chewy,4,Regional and country brands,Owned,,https://www.uncletobys.com.au/products/snacks/muesli-bars/chewy-choc-chip,yes
+718,716,Uncle Tobys Roll-Ups,4,Regional and country brands,Owned,,https://www.nestle.com.au/en/brands,no
+719,716,Uncle Tobys Le Snak,4,Regional and country brands,Owned,,https://www.nestle.com.au/en/brands,no
+720,715,Plaistowe (baking),3,Regional and country brands,Owned,,https://www.recipes.com.au/products?field_product_categories_target_id=45,yes
+721,715,Bakers Choice,3,Regional and country brands,Owned,,https://www.recipes.com.au/products?field_product_categories_target_id=44,yes
+722,715,Quick-Eze (antacid),3,Regional and country brands,Owned,,https://www.quick-eze.com.au/,yes
+723,1,Joint ventures and minority stakes,1,Joint ventures and minority stakes,Category,"Holdings not placed elsewhere; CPW, Froneri, Peranel, European Pizza Group and others appear in their categories",https://www.nestle.com/brands,no
+724,723,Lactalis Nestlé Produits Frais (Europe chilled dairy),2,Joint ventures and minority stakes,Minority,Lactalis-controlled JV; Nestlé % not found,https://en.wikipedia.org/wiki/Lactalis-Nestl%C3%A9_Fresh_Products,no
+725,724,La Laitière,3,Joint ventures and minority stakes,Licensed,Nestlé brand used by the JV (inferred),https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+726,724,Sveltesse,3,Joint ventures and minority stakes,Licensed,Nestlé brand used by the JV (inferred),https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+727,723,L'Oréal,2,Joint ventures and minority stakes,Minority,"20.16% at 31 Dec 2025; financial stake, L'Oréal brands are not Nestlé brands; no sale planned (Jul 2026)",https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/9/,yes
+728,723,IVC Evidensia (European vet clinics),2,Joint ventures and minority stakes,Minority,Since 2019; EQT largest shareholder,https://eqtgroup.com/news/2019/eqt-brings-in-nestle-as-minority-investor-to-ivc-group,yes
+729,723,Drools (India pet food),2,Joint ventures and minority stakes,Minority,Reported May 2025; stake undisclosed,https://www.angelone.in/news/market-updates/drools-becomes-india-s-newest-unicorn-after-nestl-s-minority-investment,no
+730,1,Divested,1,Divested,Divested,Brands Nestlé no longer owns (or never sold but discontinued),https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+731,730,Blue Bottle Coffee,2,Divested,Divested,Year: 2026. Buyer: Centurium Capital. Scope disputed: cafés certainly sold; Nespresso-channel capsules kept; other consumer goods unclear. Reported about US$400m,https://www.bevnet.com/news/2026/nestle-is-selling-blue-bottle-coffee-to-luckin-owner-centurium-capital,no
+732,730,Herta,2,Divested,Divested,"Year: 2019 / 2025. Buyer: Casa Tarradellas. 60% in 2019, final 40% Dec 2025 (some outlets report Jan 2026)",https://www.retaildetail.eu/news/food/nestle-sells-its-remaining-stake-in-herta/,no
+733,730,US confectionery business,2,Divested,Divested,Year: 2018. Buyer: Ferrero. US$2.8bn; 20+ brands; Toll House kept,https://www.ferrero.com/news/ferrero-to-acquire-nestle-s-us-confectionary-business,yes
+734,733,Butterfinger,3,Divested,Divested,,https://www.ferrero.com/news/ferrero-to-acquire-nestle-s-us-confectionary-business,no
+735,733,Baby Ruth,3,Divested,Divested,,https://www.ferrero.com/news/ferrero-to-acquire-nestle-s-us-confectionary-business,no
+736,733,100 Grand,3,Divested,Divested,,https://www.ferrero.com/news/ferrero-to-acquire-nestle-s-us-confectionary-business,no
+737,733,Raisinets,3,Divested,Divested,,https://www.ferrero.com/news/ferrero-to-acquire-nestle-s-us-confectionary-business,no
+738,733,"Wonka candy (Nerds, SweeTarts, Laffy Taffy, Gobstoppers)",3,Divested,Divested,,https://www.ferrero.com/news/ferrero-to-acquire-nestle-s-us-confectionary-business,no
+739,733,Crunch (US rights),3,Divested,Divested,,https://www.ferrero.com/news/ferrero-to-acquire-nestle-s-us-confectionary-business,no
+740,733,Oh Henry! and SnoCaps,3,Divested,Divested,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+741,730,Violet Crumble,2,Divested,Divested,Year: 2018. Buyer: Robern Menz.,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+742,730,US and Canada waters,2,Divested,Divested,"Year: 2021. Buyer: One Rock Capital Partners with Metropoulos & Co.. US$4.3bn; became BlueTriton Brands (merged into Primo Brands Nov 2024, not re-verified); Perrier, S.Pellegrino, Acqua Panna excluded",https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+743,742,Arrowhead,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+744,742,Poland Spring,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+745,742,Deer Park,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+746,742,Ozarka,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+747,742,Zephyrhills,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+748,742,Ice Mountain,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+749,742,Calistoga,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+750,742,"Pure Life US/Canada (incl. Pureza Vital, Vie Pure)",3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+751,742,Montclair,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+752,742,Aberfoyle,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+753,742,Splash / Fruity Water,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+754,742,Deep Spring,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+755,742,ReadyRefresh,3,Divested,Divested,,https://en.wikipedia.org/wiki/Nestl%C3%A9_Waters,no
+756,730,Acqua Vera / Nestlé Vera,2,Divested,Divested,Year: 2020. Buyer: AQua Vera S.p.A. (Quagliuolo family).,https://www.imap.com/en/news/2020/vitale-co-advised-sanpellegrino-group-on-sale-of-the-acqua-vera-business-unit-to-aqua-vera-spa~n,no
+757,730,Recoaro,2,Divested,Divested,Year: 2016. Buyer: Refresco. Sale announced; closing date not confirmed,https://esmmagazine.com/drinks/sanpellegrino-sells-recoaro-mineral-water-refresco-30863,no
+758,730,San Bernardo,2,Divested,Divested,Year: 2015. Buyer: Gruppo Montecristo.,https://www.oaklins.com/case-study.html?did=101126,no
+759,730,"Plancoët, Quézac, Saint-Lambert, Sainte-Alix (France waters)",2,Divested,Divested,Year: n/a. Buyer: Ogeu group.,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+760,730,Chameleon Organic Coffee,2,Divested,Divested,Year: 2022. Buyer: Systm Foods.,https://www.foodprocessing.com/product-development/beverage-products/news/11287879/nestle-sells-organic-cold-coffee-brand,no
+761,730,Juicy Juice,2,Divested,Divested,Year: 2014. Buyer: Brynwood Partners.,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+762,730,Nestea Philippines RTD,2,Divested,Divested,Year: 2013. Buyer: Asia Brewery.,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+763,730,"Yinlu (peanut milk, rice porridge)",2,Divested,Divested,Year: 2020. Buyer: Food Wise (founder family). Still co-packs Nescafé RTD,https://yicaiglobal.com/news/nestle-sells-yinlu-peanut-milk-and-rice-porridge-businesses-back-to-founder-family,no
+764,730,Dairy Partners Americas Brazil (chilled dairy),2,Divested,Divested,Year: 2023. Buyer: Lactalis. BRL 700m; agreed Dec 2022,https://www.fonterra.com/sea/en/our-stories/media/fonterra-and-nestle-agree-sale-of-dpa-brazil-joint-venture.html,no
+765,764,Chamyto,3,Divested,Divested,,https://www.fonterra.com/sea/en/our-stories/media/fonterra-and-nestle-agree-sale-of-dpa-brazil-joint-venture.html,no
+766,764,Chambinho,3,Divested,Divested,,https://www.fonterra.com/sea/en/our-stories/media/fonterra-and-nestle-agree-sale-of-dpa-brazil-joint-venture.html,no
+767,764,Chandelle,3,Divested,Divested,,https://www.fonterra.com/sea/en/our-stories/media/fonterra-and-nestle-agree-sale-of-dpa-brazil-joint-venture.html,no
+768,764,Sollys,3,Divested,Divested,,https://www.fonterra.com/sea/en/our-stories/media/fonterra-and-nestle-agree-sale-of-dpa-brazil-joint-venture.html,no
+769,730,Mousline,2,Divested,Divested,Year: 2022. Buyer: FnB Private Equity.,https://www.just-food.com/news/nestle-completes-sale-of-french-brand-mousline,no
+770,730,La Cocinera (Spain frozen),2,Divested,Divested,Year: pre-2018. Buyer: Findus Spain.,https://refrigeratedfrozenfood.com/articles/88882-nestl-spain-sell-la-cocinera-frozen-business-to-findus-spain,no
+771,730,Hemglass,2,Divested,Divested,Year: 2013. Buyer: Varsego.,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+772,730,Branston and Sarson's,2,Divested,Divested,Year: n/a. Buyer: Now owned by Mizkan. Now Mizkan,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+773,730,"Philippine dairy (Goya/Kean's; Magnolia; Alpine, Krem Top, Liberty)",2,Divested,Divested,Year: 2004-2007. Buyer: Delfi; San Miguel; Alaska Milk. Goya/Kean's to Delfi 2006; Magnolia to San Miguel 2004; Alpine/Krem Top/Liberty to Alaska Milk 2007,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+774,730,Gerber Life Insurance,2,Divested,Divested,Year: 2018/19. Buyer: Western & Southern Financial Group. US$1.55bn; closed about Jan 2019,https://www.nestleusa.com/media/pressreleases/nestle-agrees-to-sell-gerber-life-insurance-co-to-western-and-southern-financial-group,no
+775,730,"Nestlé Skin Health (Galderma, Cetaphil, Proactiv, Restylane)",2,Divested,Divested,Year: 2019. Buyer: EQT/ADIA-led consortium. CHF 10.2bn,https://www.galderma.com/news/nestle-enters-exclusive-negotiations-sell-nestle-skin-health-consortium-led-eqt-and-adia,no
+776,730,Palforzia (Aimmune peanut-allergy drug),2,Divested,Divested,Year: 2023. Buyer: Stallergenes Greer. Nestlé keeps milestones/royalties,https://www.pharmaceutical-technology.com/news/nestle-divests-peanut-allergy-treatment-palforzia-to-stallergenes-greer/,no
+777,730,Alcon,2,Divested,Divested,Year: 2002-2010. Buyer: Novartis. Final 52% in 2010,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+778,730,Meow Mix and Alley Cat,2,Divested,Divested,Year: 2001. Buyer: J.W. Childs Equity Partners. FTC condition of the Ralston Purina merger,https://en.wikipedia.org/wiki/Nestl%C3%A9_Purina_PetCare,no
+779,730,PurinaCare pet insurance,2,Divested,Divested,Year: 2013. Buyer: Pethealth Inc..,https://en.wikipedia.org/wiki/Nestl%C3%A9_Purina_PetCare,no
+780,730,European small-pet food business,2,Divested,Divested,Year: 2016. Buyer: Not named.,https://www.alimarket.es/alimentacion/noticia_amp/212898/nestle-purina-vende-su-negocio-de-accesorios-y-pequenas-mascotas,no
+781,730,Nestlé South Africa pet food,2,Divested,Divested,Year: 2016. Buyer: Not named.,https://www.nestle-esar.com/media/pressreleases/nestl%C3%A9-south-africa-to-sell-its-pet-foodpurina-business-,no
+782,730,Discontinued (not sold),2,Divested,Group,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
+783,782,Beyond (US),3,Divested,Discontinued,US only; still sold in Europe,https://www.purina.com/beyond,yes
+784,782,Fantales (Allen's),3,Divested,Discontinued,June 2023,https://en.wikipedia.org/wiki/Allen%27s,no

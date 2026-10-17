@@ -13,6 +13,7 @@
   --line-strong: #c9b49c;
   --accent: #a0522d;
   --root: #5a3a28;
+  --logo-dark: #2a1f18;
   --shadow: 0 1px 2px rgba(70, 45, 25, 0.06), 0 8px 28px rgba(70, 45, 25, 0.10);
   --radius: 16px;
   --panel-w: 380px;
@@ -57,52 +58,60 @@ button { font: inherit; color: inherit; }
   user-select: none;
   -webkit-user-select: none;
   cursor: grab;
+  --k: 1;
 }
 #graph.is-panning { cursor: grabbing; }
+#viewport { animation: fade-in 0.8s ease; }
+@keyframes fade-in { from { opacity: 0; } }
+
+/* Everything on the map fades rather than pops when it hides or shows. */
+.link,
+.node,
+.product {
+  transition: opacity 0.35s ease, visibility 0s;
+}
+.is-away,
+.is-filtered {
+  opacity: 0 !important;
+  visibility: hidden;
+  pointer-events: none !important;
+  transition: opacity 0.35s ease, visibility 0s linear 0.35s;
+}
 
 /* Links ------------------------------------------------------------------- */
 
 .link {
   stroke: var(--line);
-  stroke-width: 1.4;
-  transition: opacity 0.2s ease, stroke 0.2s ease;
+  stroke-width: 1.2;
 }
-.link.tier-1 {
+.link.to-category {
   stroke: var(--c);
-  stroke-opacity: 0.35;
+  stroke-opacity: 0.3;
   stroke-width: 3;
 }
-.link.to-partial { stroke-dasharray: 6 4; }
-.link.to-former  { stroke-dasharray: 2 5; stroke-linecap: round; }
-.link.related {
-  stroke: var(--accent);
-  stroke-opacity: 0.55;
-  stroke-width: 1.8;
-  stroke-dasharray: 1 6;
-  stroke-linecap: round;
+.link.to-group {
+  stroke: var(--c);
+  stroke-opacity: 0.4;
+  stroke-width: 1.6;
 }
+.link.status-licensed   { stroke-dasharray: 0.01 4; stroke-linecap: round; }
+.link.status-transition { stroke-dasharray: 6 4; }
+.link.status-former     { stroke-dasharray: 2 5; stroke-linecap: round; }
+#graph.lod-far .link.to-brand { opacity: 0.45; }
+.link.is-lit { stroke: var(--c); stroke-opacity: 0.9; opacity: 1 !important; }
 
-/* Nodes ------------------------------------------------------------------- */
+/* Nodes: shared ------------------------------------------------------------ */
 
-.node {
-  cursor: pointer;
-  outline: none;
-  transition: opacity 0.2s ease;
-}
+.node { cursor: pointer; outline: none; }
 .node-inner {
   transform-box: fill-box;
   transform-origin: center;
   transition: transform 0.2s cubic-bezier(0.3, 0.7, 0.4, 1.3);
 }
 .node:hover .node-inner,
-.node.is-selected .node-inner { transform: scale(1.12); }
+.node.is-selected .node-inner { transform: scale(1.1); }
 
-.node .body {
-  fill: var(--c);
-  stroke: var(--card);
-  stroke-width: 2.5;
-}
-.node .halo {
+.halo {
   fill: none;
   stroke: var(--c);
   stroke-width: 2;
@@ -111,82 +120,141 @@ button { font: inherit; color: inherit; }
 }
 .node:hover .halo,
 .node:focus-visible .halo { opacity: 0.45; }
-.node.is-selected .halo { opacity: 0.9; }
+.node.is-selected .halo,
+.node.is-open .halo { opacity: 0.9; }
 
-.node.kind-root .body { fill: var(--root); stroke-width: 5; }
-.node.kind-root .halo { stroke: var(--root); }
-.node.kind-category .body { stroke-width: 4; }
-
-.node.status-partial .body {
-  fill: var(--card);
-  stroke: var(--c);
-  stroke-width: 2;
-}
-.node.status-partial .stake { fill: var(--c); }
-
-.node.status-former .body {
-  fill: var(--card);
-  stroke: var(--c);
-  stroke-opacity: 0.75;
-  stroke-width: 1.8;
-  stroke-dasharray: 3 3;
-}
-
-/* Intro: circles pop in ring by ring */
-.node-inner { animation: pop-in 0.6s cubic-bezier(0.3, 0.7, 0.4, 1.25) backwards; animation-delay: var(--delay, 0ms); }
-.node .label { animation: fade-in 0.5s ease backwards; animation-delay: calc(var(--delay, 0ms) + 200ms); }
-.link { animation: fade-in 0.9s ease 0.15s backwards; }
-@keyframes pop-in { from { transform: scale(0); opacity: 0; } }
-@keyframes fade-in { from { opacity: 0; } }
-
-/* Labels */
 .label {
   fill: var(--ink);
-  font-size: 12px;
+  /* Grows slightly as you zoom out (down to --k 0.8) so names stay legible. */
+  font-size: calc(10.5px / clamp(0.8, var(--k), 1));
   font-weight: 500;
   text-anchor: middle;
+  dominant-baseline: hanging;
   pointer-events: none;
   paint-order: stroke;
   stroke: var(--bg);
-  stroke-width: 4px;
+  stroke-width: 3.5px;
   stroke-linejoin: round;
-  transition: opacity 0.25s ease;
+}
+.logo,
+.initials,
+.count { pointer-events: none; }
+
+/* Nestlé ------------------------------------------------------------------- */
+
+.kind-root .body { fill: var(--root); stroke: var(--card); stroke-width: 5; }
+.kind-root .halo { stroke: var(--root); }
+/* Like category names, Nestlé's name stays the same size on screen at any zoom. */
+.kind-root .label {
+  fill: var(--root);
+  font-family: var(--font-serif);
+  font-size: calc(20px / min(var(--k), 1));
+  font-weight: 600;
+  stroke-width: calc(5px / min(var(--k), 1));
+}
+.kind-root.has-logo .body { fill: var(--card); stroke: var(--root); stroke-width: 4; }
+
+/* Categories: coloured hubs with their brand count; names stay readable at any zoom */
+
+.kind-category .body { fill: var(--c); stroke: var(--card); stroke-width: 4; }
+.kind-category .ring { fill: none; stroke: var(--c); stroke-width: 2.5; }
+.kind-category.status-transition .ring { stroke-dasharray: 7 4; }
+.kind-category.status-former .ring { stroke-dasharray: 2 4; stroke-linecap: round; }
+.count {
+  fill: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: central;
 }
 .kind-category .label {
   fill: var(--c);
-  font-size: 13.5px;
+  font-size: calc(15px / min(var(--k), 1));
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
+  stroke-width: calc(5px / min(var(--k), 1));
 }
-.kind-root .label {
-  fill: #fff;
-  stroke: none;
+.node.is-satellite { opacity: 0.6; }
+.node.is-satellite:hover { opacity: 1; }
+
+/* Groups: small hollow hubs inside a category */
+
+.kind-group .body { fill: var(--card); stroke: var(--c); stroke-width: 2.5; }
+.kind-group .ring { display: none; }
+.kind-group .label { fill: var(--c); font-style: italic; font-weight: 600; }
+
+/* Brands: white badges with the logo; the ring says how Nestlé owns it */
+
+.kind-brand .body { fill: var(--card); transition: fill 0.3s ease; }
+.kind-brand.logo-dark .body { fill: var(--logo-dark); }
+.ring { fill: none; stroke: var(--c); stroke-width: 2.4; }
+.stake { fill: none; stroke: var(--c); stroke-width: 2.4; stroke-linecap: round; }
+.status-partial .ring    { stroke-opacity: 0.25; }
+.status-licensed .ring   { stroke-dasharray: 0.01 4.4; stroke-linecap: round; stroke-width: 3; }
+.status-transition .ring { stroke-dasharray: 6 3.5; }
+.status-former .ring     { stroke-dasharray: 2.5 3; stroke-width: 1.6; }
+.status-uncertain .ring  { stroke: var(--ink-faint); stroke-width: 1.6; }
+.kind-brand.status-former :is(.logo, .initials) { opacity: 0.45; }
+.initials {
+  fill: var(--c);
   font-family: var(--font-serif);
-  font-size: 21px;
   font-weight: 600;
+  text-anchor: middle;
   dominant-baseline: central;
 }
-.status-former .label {
-  fill: var(--ink-soft);
-  font-style: italic;
+.status-former .label,
+.status-uncertain .label { fill: var(--ink-soft); font-style: italic; }
+
+/* Level of detail ----------------------------------------------------------
+   Far: brands are plain coloured dots. Mid: logos. Near: names too. */
+
+#graph.lod-far .kind-brand .body { fill: var(--c); }
+#graph.lod-far .kind-brand.status-former .body { fill-opacity: 0.35; }
+#graph.lod-far .kind-brand.status-uncertain .body { fill-opacity: 0.55; }
+#graph.lod-far .kind-brand :is(.logo, .initials, .ring, .stake) { display: none; }
+#graph.lod-far .product:not(.is-open) { display: none; }
+
+.kind-brand .label,
+.kind-group .label { display: none; }
+#graph.lod-near :is(.kind-brand, .kind-group) .label,
+:is(.kind-brand, .kind-group):is(.is-selected, .is-open, .is-hot) .label { display: inline; }
+/* The hovered brand's name stays readable even when zoomed far out. */
+#graph:not(.lod-near) :is(.kind-brand, .kind-group).is-hot .label {
+  font-size: calc(12px / var(--k));
+  stroke-width: calc(4px / var(--k));
 }
 
-/* Far zoom: hide brand labels unless they're the focus */
-#graph.zoom-far .kind-brand .label { opacity: 0; }
-#graph.zoom-far .kind-brand.is-lit .label,
-#graph.zoom-far .kind-brand.is-selected .label { opacity: 1; }
+/* Products: tiny dots hugging their brand; they fan out with names when it opens */
 
-/* Hover focus: dim everything that isn't connected */
-#graph.has-focus .node:not(.is-lit) { opacity: 0.22; }
-#graph.has-focus .link:not(.is-lit) { opacity: 0.12; }
-.link.is-lit:not(.related) { stroke: var(--c); stroke-opacity: 0.9; }
-
-/* Filtered out by the legend */
-.node.is-filtered,
-.link.is-filtered {
-  opacity: 0 !important;
+.product { pointer-events: none; }
+.product .dot { fill: var(--c); stroke: var(--card); stroke-width: 0.8; }
+.product.status-former .dot { fill: var(--card); stroke: var(--c); stroke-dasharray: 1.5 1.2; }
+.product.status-uncertain .dot { fill: var(--ink-faint); }
+.plabel {
+  fill: var(--ink);
+  font-size: 9.5px;
+  opacity: 0;
   pointer-events: none;
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  transition: opacity 0.2s ease;
 }
+.product.status-former .plabel { fill: var(--ink-soft); font-style: italic; }
+.product.is-open { pointer-events: auto; cursor: pointer; }
+.product.is-open .plabel { opacity: 1; transition-delay: 0.15s; }
+.product.is-open:hover .plabel,
+.product.is-selected .plabel { fill: var(--c); font-weight: 700; }
+.product.is-open:hover .dot,
+.product.is-selected .dot { stroke: var(--ink); stroke-width: 1.4; }
+
+/* Spotlight: hovering dims everything that isn't connected */
+#graph.has-lit :is(.node, .product):not(.is-lit) { opacity: 0.22; }
+#graph.has-lit .link:not(.is-lit) { opacity: 0.12; }
+/* An open brand gets the stage; its neighbours step back a little */
+#graph.has-open:not(.has-lit) :is(.kind-brand, .kind-group):not(.is-open) { opacity: 0.4; }
+#graph.has-open:not(.has-lit) .link { opacity: 0.35; }
 
 /* --------------------------------------------------------------------------
    Floating UI (shared card look)
@@ -306,10 +374,37 @@ button { font: inherit; color: inherit; }
   border-radius: 50%;
   background: var(--c);
 }
-#search-results .dot.former { background: transparent; border: 1.5px dashed var(--c); }
-#search-results .dot.partial { background: linear-gradient(90deg, var(--c) 50%, transparent 50%); border: 1.5px solid var(--c); }
+#search-results .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#search-results .meta { flex: none; max-width: 45%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 #search-results .meta { margin-left: auto; color: var(--ink-faint); font-size: 12px; }
 #search-results .empty { color: var(--ink-faint); cursor: default; }
+
+/* Breadcrumbs */
+.crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  margin: 12px -6px 0;
+  font-size: 13px;
+}
+.crumbs[hidden] { display: none; }
+.crumbs button {
+  max-width: 100%;
+  padding: 4px 6px;
+  border: 0;
+  border-radius: 6px;
+  background: none;
+  color: var(--ink-soft);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.crumbs button:hover { background: var(--bg); color: var(--ink); }
+.crumbs button[aria-current] { color: var(--ink); font-weight: 600; }
+.crumbs .crumb-home::before { content: "← "; }
+.crumbs .sep { color: var(--ink-faint); }
 
 /* Legend ------------------------------------------------------------------ */
 
@@ -325,13 +420,27 @@ button { font: inherit; color: inherit; }
   gap: 2px;
 }
 .legend-title {
-  margin: 0 8px 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 4px;
+  padding: 2px 8px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  white-space: nowrap;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-faint);
 }
+.legend-title:hover { color: var(--ink-soft); }
+.legend-title .chev { font-size: 10px; transition: transform 0.2s ease; }
+.legend.is-collapsed .legend-title .chev { transform: rotate(-90deg); }
+.legend.is-collapsed .legend-items { display: none; }
+.legend.is-collapsed .legend-title { margin: 0; }
+.legend-items { display: flex; flex-direction: column; gap: 2px; }
 .legend-item {
   display: flex;
   align-items: center;
@@ -346,20 +455,24 @@ button { font: inherit; color: inherit; }
   transition: background 0.15s ease, opacity 0.15s ease;
 }
 .legend-item:hover { background: var(--bg); }
+/* While a category is in focus the legend tucks away to its title; hover to expand. */
+body.is-focused .legend:not(:hover, :focus-within) .legend-items { display: none; }
+body.is-focused .legend:not(:hover, :focus-within) .legend-title { margin: 0; }
 .legend-item[aria-pressed="false"] { opacity: 0.4; }
-.legend-item[aria-pressed="false"] span:not(.swatch) { text-decoration: line-through; }
+.legend-item[aria-pressed="false"] span { text-decoration: line-through; }
+.legend-item[hidden] { display: none; }
 .legend-item .count { margin-left: auto; padding-left: 12px; color: var(--ink-faint); font-size: 12px; }
 
+/* Same ring styles as the brand circles on the map. */
 .swatch {
   flex: none;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  --s: var(--ink-soft);
+  width: 18px;
+  height: 18px;
+  overflow: visible;
+  --c: var(--ink-soft);
 }
-.swatch-owned   { background: var(--s); }
-.swatch-partial { border: 1.5px solid var(--s); background: conic-gradient(var(--s) 0 65%, transparent 65% 100%); }
-.swatch-former  { border: 1.5px dashed var(--s); }
+.swatch .ring,
+.swatch .stake { stroke-width: 2.2; }
 
 /* Controls ---------------------------------------------------------------- */
 
@@ -522,6 +635,7 @@ body.panel-open .panel { transform: none; }
   transition: opacity 0.3s ease;
 }
 .panel-media.has-image .monogram { opacity: 0; }
+.panel-media.is-dark { background: var(--logo-dark); }
 .panel-media.is-former .monogram {
   background: var(--card);
   color: var(--c);
@@ -542,7 +656,7 @@ body.panel-open .panel { transform: none; }
 }
 .tag:empty { display: none; }
 .tag-status { background: color-mix(in srgb, var(--c) 14%, transparent); color: color-mix(in srgb, var(--c) 80%, var(--ink)); }
-.tag-status.former { background: var(--bg); color: var(--ink-soft); border: 1px dashed var(--line-strong); }
+.panel:is([data-status="former"], [data-status="uncertain"]) .tag-status { background: var(--bg); color: var(--ink-soft); border: 1px dashed var(--line-strong); }
 .tag-category { background: var(--bg); color: var(--ink-soft); }
 
 .panel h2 {
@@ -553,6 +667,12 @@ body.panel-open .panel { transform: none; }
   line-height: 1.1;
   letter-spacing: -0.01em;
 }
+.panel-qualifier {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--ink-faint);
+}
+.panel-qualifier:empty { display: none; }
 .panel-desc {
   margin: 8px 0 0;
   font-size: 17px;
@@ -615,17 +735,21 @@ body.panel-open .panel { transform: none; }
 }
 .chip:hover { border-color: var(--c); background: color-mix(in srgb, var(--c) 6%, var(--card)); }
 .chip .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
-.chip .dot.former { background: transparent; border: 1.5px dashed var(--c); }
-.chip .dot.partial { background: linear-gradient(90deg, var(--c) 50%, transparent 50%); border: 1.5px solid var(--c); }
+.chip.status-former .dot { background: transparent; border: 1.5px dashed var(--c); }
+.chip.status-partial .dot { background: linear-gradient(90deg, var(--c) 50%, transparent 50%); border: 1.5px solid var(--c); }
+.chip.status-former,
+.chip.status-uncertain { color: var(--ink-soft); font-style: italic; }
+.chip.kind-group { border-style: dashed; }
+.chip-logo {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+.chip-logo.is-dark { background: var(--logo-dark); }
 .conn-note { margin: 6px 0 0; font-size: 12.5px; color: var(--ink-soft); line-height: 1.4; }
 
-.panel-credit {
-  margin: 22px 0 0;
-  font-size: 11px;
-  color: var(--ink-faint);
-}
-.panel-credit:empty { display: none; }
-.panel-credit a { color: inherit; }
+
 
 /* --------------------------------------------------------------------------
    Small screens: panel becomes a bottom sheet
@@ -640,7 +764,6 @@ body.panel-open .panel { transform: none; }
   .search-kbd { display: none; }
   .hint { display: none; }
   .legend { bottom: calc(var(--gutter) + 18px); padding: 8px 6px 6px; }
-  .legend-title { display: none; }
   .legend-item { font-size: 13px; padding: 5px 6px; }
   .controls { bottom: calc(var(--gutter) + 18px); }
   .footnote-extra { display: none; }
@@ -651,11 +774,12 @@ body.panel-open .panel { transform: none; }
     right: 0;
     bottom: 0;
     width: auto;
-    max-height: 72vh;
+    max-height: 52vh;
     border-radius: 22px 22px 0 0;
     transform: translateY(105%);
   }
-  .panel-media { height: 170px; }
+  .panel-media { height: 120px; }
+  .panel-media .monogram { width: 76px; height: 76px; font-size: 28px; }
   body.panel-open .controls { right: var(--gutter); }
 }
 

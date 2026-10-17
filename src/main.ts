@@ -1,15 +1,15 @@
 import "./styles.css";
 import { Camera, MAX_ZOOM, MIN_ZOOM, type Area, type Transform } from "./camera";
-import { DATA } from "./data";
-import { buildGraph, layout, type GraphLink, type GraphNode } from "./graph";
+import { ENTRIES } from "./data";
+import { buildGraph, focusPositions, overviewPositions, PEEK, within, type GraphLink, type GraphNode, type Positions } from "./graph";
 import { attachInput } from "./input";
 import { Panel } from "./panel";
+import { Physics } from "./physics";
+import { LOD, Renderer } from "./render";
 import { attachSearch } from "./search";
 import type { Status } from "./types";
 
-const SVG_NS = "http://www.w3.org/2000/svg";
 const GRID = 24; // background dot spacing at zoom 1
-const FAR_ZOOM = 0.6; // below this, brand labels hide until hovered
 const NARROW = 760; // matches the CSS breakpoint where the panel becomes a bottom sheet
 const CONTROLS_WIDTH = 80; // zoom buttons column plus its margin
 
@@ -18,106 +18,61 @@ const $ = <T extends Element = HTMLElement>(selector: string) => document.queryS
 const stage = $("#stage");
 const svg = $<SVGSVGElement>("#graph");
 const viewport = $<SVGGElement>("#viewport");
-const linkLayer = $<SVGGElement>("#links");
-const nodeLayer = $<SVGGElement>("#nodes");
 const panelEl = $("#panel");
 const masthead = $(".masthead");
+const crumbs = $("#crumbs");
 const hint = $("#hint");
 const helpButton = $("#help-toggle");
 
-const graph = buildGraph(DATA);
-const sim = layout(graph);
+const graph = buildGraph(ENTRIES);
+const renderer = new Renderer(svg, graph, {
+  links: $("#links"),
+  nodes: $("#nodes"),
+  products: $("#products"),
+  hubs: $("#hubs"),
+});
+const physics = new Physics(graph.placed, () => renderer.paint());
+graph.root.fx = graph.root.x;
+graph.root.fy = graph.root.y;
+renderer.paint();
 
-// ---------------------------------------------------------------------------
-// Drawing
-// ---------------------------------------------------------------------------
-
-const nodeEls = new Map<GraphNode, SVGGElement>();
-const linkEls = new Map<GraphLink, SVGLineElement>();
-const nodeOfEl = new WeakMap<Element, GraphNode>();
-
-function svgEl<K extends keyof SVGElementTagNameMap>(tag: K, attrs: Record<string, string | number>, parent: Element) {
-  const el = document.createElementNS(SVG_NS, tag);
-  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, String(v));
-  parent.append(el);
-  return el;
-}
-
-/** Pie slice of fraction `f`, starting at 12 o'clock, for partial stakes. */
-function pieSlice(r: number, f: number): string {
-  if (f >= 0.999) return `M0,${-r}A${r},${r} 0 1 1 0,${r}A${r},${r} 0 1 1 0,${-r}Z`;
-  const a = f * Math.PI * 2 - Math.PI / 2;
-  return `M0,0L0,${-r}A${r},${r} 0 ${f > 0.5 ? 1 : 0} 1 ${(r * Math.cos(a)).toFixed(2)},${(r * Math.sin(a)).toFixed(2)}Z`;
-}
-
+const linksOf = new Map<GraphNode, GraphLink[]>(graph.placed.map((n) => [n, []]));
 for (const l of graph.links) {
-  const classes = ["link", l.kind === "related" ? "related" : `tier-${l.target.depth}`];
-  if (l.kind === "tree" && l.target.status !== "owned") classes.push(`to-${l.target.status}`);
-  const line = svgEl("line", { class: classes.join(" ") }, linkLayer);
-  line.style.setProperty("--c", l.target.color);
-  linkEls.set(l, line);
+  linksOf.get(l.source)!.push(l);
+  linksOf.get(l.target)!.push(l);
 }
 
-// Deepest first, so Nestlé and the categories sit on top.
-for (const n of [...graph.nodes].sort((a, b) => b.depth - a.depth)) {
-  const g = svgEl("g", { class: `node kind-${n.kind} status-${n.status}`, tabindex: 0, role: "button", "aria-label": `${n.name}: ${n.description}` }, nodeLayer);
-  g.style.setProperty("--c", n.color);
-  g.style.setProperty("--delay", `${Math.round(n.depth * 110 + Math.random() * 140)}ms`);
+// ---------------------------------------------------------------------------
+// State
+// ---------------------------------------------------------------------------
 
-  const inner = svgEl("g", { class: "node-inner" }, g);
-  svgEl("circle", { class: "halo", r: n.r + 6 }, inner);
-  svgEl("circle", { class: "body", r: n.r }, inner);
-  if (n.status === "partial" && n.stake) svgEl("path", { class: "stake", d: pieSlice(n.r - 4, n.stake) }, inner);
+/** The category being looked at in focus mode, or null for the overview. */
+let focus: GraphNode | null = null;
+/** The brand whose products are fanned out. */
+let open: GraphNode | null = null;
+/** What the detail panel shows. */
+let selected: GraphNode | null = null;
+let hovered: GraphNode | null = null;
+let dragging: GraphNode | null = null;
+/** Once the user has moved the map, window resizes stop re-fitting it. */
+let userMoved = false;
 
-  const label = n.kind === "root" ? svgEl("text", { class: "label" }, inner) : svgEl("text", { class: "label", y: n.r + (n.kind === "category" ? 20 : 16) }, g);
-  label.textContent = n.name;
+const hiddenStatuses = new Set<Status>();
 
-  nodeEls.set(n, g);
-  nodeOfEl.set(g, n);
-}
+/** Filtered out by the legend. Products also hide when their brand does. */
+const isFiltered = (n: GraphNode) =>
+  (n.kind === "brand" || n.kind === "product") && (hiddenStatuses.has(n.status) || (n.kind === "product" && !!n.brand && hiddenStatuses.has(n.brand.status)));
 
-function paint() {
-  for (const [n, g] of nodeEls) g.setAttribute("transform", `translate(${n.x.toFixed(1)},${n.y.toFixed(1)})`);
-  for (const [l, line] of linkEls) {
-    line.setAttribute("x1", l.source.x.toFixed(1));
-    line.setAttribute("y1", l.source.y.toFixed(1));
-    line.setAttribute("x2", l.target.x.toFixed(1));
-    line.setAttribute("y2", l.target.y.toFixed(1));
-  }
-}
-sim.on("tick", paint);
-paint();
+/** Tucked away because another category is in focus. */
+const isAway = (n: GraphNode) => !!focus && n.kind !== "root" && n.kind !== "category" && !within(n, focus);
 
-// Where every circle rests. After a drag, everything springs back here.
-const home = new Map(graph.nodes.map((n) => [n, { x: n.x, y: n.y }]));
-const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-let settling = 0;
-
-function springHome() {
-  sim.stop();
-  const from = new Map(graph.nodes.map((n) => [n, { x: n.x, y: n.y }]));
-  const duration = reducedMotion.matches ? 0 : 650;
-  const start = performance.now();
-  const easeOutBack = (u: number) => 1 + 2.2 * (u - 1) ** 3 + 1.2 * (u - 1) ** 2; // slight overshoot
-  const step = (now: number) => {
-    const u = duration ? Math.min(1, (now - start) / duration) : 1;
-    const e = easeOutBack(u);
-    for (const n of graph.nodes) {
-      const a = from.get(n)!;
-      const b = home.get(n)!;
-      n.x = a.x + (b.x - a.x) * e;
-      n.y = a.y + (b.y - a.y) * e;
-      n.vx = n.vy = 0;
-    }
-    paint();
-    settling = u < 1 ? requestAnimationFrame(step) : 0;
-  };
-  settling = requestAnimationFrame(step);
-}
+const isShown = (n: GraphNode) => !isAway(n) && !isFiltered(n);
 
 // ---------------------------------------------------------------------------
 // Camera
 // ---------------------------------------------------------------------------
+
+let logoFrame = 0;
 
 const camera = new Camera((t: Transform) => {
   viewport.setAttribute("transform", `translate(${t.x},${t.y}) scale(${t.k})`);
@@ -127,187 +82,375 @@ const camera = new Camera((t: Transform) => {
   while (s > 30) s /= 2;
   stage.style.backgroundSize = `${s}px ${s}px`;
   stage.style.backgroundPosition = `${t.x}px ${t.y}px`;
-  svg.classList.toggle("zoom-far", t.k < FAR_ZOOM);
+  renderer.setZoom(t.k);
+  if (!logoFrame) logoFrame = requestAnimationFrame(loadVisibleLogos);
 });
+
+/** Logos download only once their circle is on screen and big enough to see. */
+function loadVisibleLogos() {
+  logoFrame = 0;
+  if (camera.t.k < LOD.logos) return;
+  const margin = 250;
+  const a = camera.toGraph(-margin, -margin);
+  const b = camera.toGraph(svg.clientWidth + margin, svg.clientHeight + margin);
+  renderer.loadLogos({ x0: a.x, y0: a.y, x1: b.x, y1: b.y }, isShown);
+}
 
 /** The part of the screen not covered by the detail panel. */
 function visibleArea(): Area {
   const w = svg.clientWidth;
   const h = svg.clientHeight;
+  if (w <= NARROW) {
+    // Phones: the title card sits on top and the panel is a bottom sheet.
+    const top = masthead.getBoundingClientRect().bottom;
+    const bottom = panel.isOpen ? panelEl.offsetHeight : 0;
+    return { x: 0, y: top, w, h: Math.max(160, h - top - bottom) };
+  }
   if (!panel.isOpen) return { x: 0, y: 0, w, h };
-  if (w <= NARROW) return { x: 0, y: 0, w, h: h - panelEl.offsetHeight };
   const gutter = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--gutter")) || 20;
   return { x: 0, y: 0, w: w - panelEl.offsetWidth - 2 * gutter, h };
 }
 
-function fitAll(animate = true) {
-  const shown = graph.nodes.filter(isVisible);
-  const pad = 60;
-  const x0 = Math.min(...shown.map((n) => n.x - n.r)) - pad;
-  const x1 = Math.max(...shown.map((n) => n.x + n.r)) + pad;
-  const y0 = Math.min(...shown.map((n) => n.y - n.r)) - pad;
-  const y1 = Math.max(...shown.map((n) => n.y + n.r)) + pad;
+/** Flies (or jumps) so the given nodes fill the visible area. `pos` overrides live positions (e.g. where a transition will end). */
+function fit(nodes: GraphNode[], opts: { pos?: Positions; maxK: number; pad?: number; margin?: number; animate?: boolean; clearMasthead?: boolean }) {
+  if (!nodes.length) return;
+  const at = (n: GraphNode) => opts.pos?.get(n) ?? n;
+  const pad = opts.pad ?? 40;
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  for (const n of nodes) {
+    const p = at(n);
+    const r = n.collideR;
+    x0 = Math.min(x0, p.x - r);
+    y0 = Math.min(y0, p.y - r);
+    x1 = Math.max(x1, p.x + r);
+    y1 = Math.max(y1, p.y + r);
+  }
+  x0 -= pad, y0 -= pad, x1 += pad, y1 += pad;
+
   const area = visibleArea();
-  const k = Math.max(MIN_ZOOM, Math.min(1.1, MAX_ZOOM, area.w / (x1 - x0), area.h / (y1 - y0)));
+  const margin = opts.margin ?? 24; // screen px kept clear around the fitted content
+  const k = Math.max(MIN_ZOOM, Math.min(opts.maxK, MAX_ZOOM, (area.w - 2 * margin) / (x1 - x0), (area.h - 2 * margin) / (y1 - y0)));
   const cx = (x0 + x1) / 2;
   const cy = (y0 + y1) / 2;
 
-  // On wide screens, slide the map right (if there's room) so the title card doesn't cover it.
-  if (area.w > NARROW) {
+  // On wide screens, slide right (if there's room) so the title card doesn't cover the map.
+  if (opts.clearMasthead && area.w > NARROW) {
     const half = ((x1 - x0) * k) / 2;
     const centre = area.x + area.w / 2;
     const clear = Math.min(masthead.getBoundingClientRect().right + 8 + half, area.x + area.w - CONTROLS_WIDTH - half);
     if (clear > centre) area.x += clear - centre;
   }
 
-  if (animate) camera.flyTo(cx, cy, k, area);
-  else camera.set({ k, x: area.x + area.w / 2 - cx * k, y: area.y + area.h / 2 - cy * k });
+  if (opts.animate === false) camera.set({ k, x: area.x + area.w / 2 - cx * k, y: area.y + area.h / 2 - cy * k });
+  else camera.flyTo(cx, cy, k, area);
+}
+
+function fitOverview(animate = true) {
+  // Wider margin: category names are drawn at a fixed screen size and stick out past their bubbles.
+  fit(graph.placed.filter((n) => !isFiltered(n)), { pos: overviewPositions(graph), maxK: 1, margin: 70, clearMasthead: true, animate });
 }
 
 // ---------------------------------------------------------------------------
-// Focus (hover), selection and filters
+// Product orbits: tucked in → peeking (hover) → fanned out with labels (open)
 // ---------------------------------------------------------------------------
 
-let userMoved = false;
-let hovered: GraphNode | null = null;
-let dragging: GraphNode | null = null;
-let selected: GraphNode | null = null;
-let lit: Element[] = [];
+const orbitTargets = new Map<GraphNode, number>();
+let orbitFrame = 0;
+let orbitLast = 0;
 
-/** Spotlights a node, its links and its neighbours; everything else dims. */
-function setFocus(n: GraphNode | null) {
-  for (const el of lit) el.classList.remove("is-lit");
-  lit = [];
-  svg.classList.toggle("has-focus", n !== null);
-  if (!n) return;
-  const light = (el: Element) => {
-    el.classList.add("is-lit");
-    lit.push(el);
-  };
-  light(nodeEls.get(n)!);
-  for (const l of graph.linksOf.get(n)!) {
-    light(linkEls.get(l)!);
-    light(nodeEls.get(l.source === n ? l.target : l.source)!);
+function setOrbit(brand: GraphNode, target: number) {
+  if (!brand.products.length) return;
+  orbitTargets.set(brand, target);
+  if (!orbitFrame) {
+    orbitLast = performance.now();
+    orbitFrame = requestAnimationFrame(stepOrbits);
   }
 }
 
-const panel = new Panel(graph, {
-  onNavigate: (n) => select(n, true),
-  onClose: deselect,
+function stepOrbits(now: number) {
+  const f = 1 - Math.exp(-(now - orbitLast) / 90);
+  orbitLast = now;
+  for (const [b, target] of orbitTargets) {
+    b.orbit += (target - b.orbit) * f;
+    if (Math.abs(target - b.orbit) < 0.002) {
+      b.orbit = target;
+      orbitTargets.delete(b);
+    }
+  }
+  renderer.paint();
+  orbitFrame = orbitTargets.size ? requestAnimationFrame(stepOrbits) : 0;
+}
+
+function openBrand(b: GraphNode) {
+  if (open === b) return;
+  closeBrand();
+  if (!b.products.length) return;
+  open = b;
+  b.collideR = b.openR;
+  b.fx = b.x;
+  b.fy = b.y;
+  renderer.mark(b, "is-open", true);
+  for (const p of b.products) renderer.mark(p, "is-open", true);
+  svg.classList.add("has-open");
+  setOrbit(b, 1);
+  physics.nudge(0.7); // neighbours shuffle aside to make room
+}
+
+function closeBrand() {
+  const b = open;
+  if (!b) return;
+  open = null;
+  b.collideR = b.footprint;
+  b.fx = b.fy = null;
+  renderer.mark(b, "is-open", false);
+  for (const p of b.products) renderer.mark(p, "is-open", false);
+  svg.classList.remove("has-open");
+  setOrbit(b, hovered === b ? PEEK : 0);
+  physics.nudge(0.4);
+}
+
+// ---------------------------------------------------------------------------
+// Focus mode
+// ---------------------------------------------------------------------------
+
+let modeToken = 0;
+let transition: Promise<void> = Promise.resolve();
+
+/**
+ * Switches between the overview (null) and focusing one category. Resolves to
+ * false if another navigation started in the meantime.
+ */
+function setFocus(c: GraphNode | null): Promise<boolean> {
+  const token = ++modeToken;
+  if (c !== focus) {
+    if (open && (!c || !within(open, c))) closeBrand();
+    focus = c;
+    const targets = c ? focusPositions(graph, c) : overviewPositions(graph);
+    // Physics anchors follow the new layout so drags in this mode feel the same.
+    for (const n of graph.placed) {
+      const t = targets.get(n)!;
+      const pt = n.parent ? targets.get(n.parent)! : { x: 0, y: 0 };
+      n.ax = t.x - pt.x;
+      n.ay = t.y - pt.y;
+    }
+    physics.setNodes(graph.placed.filter((n) => !isAway(n)));
+
+    svg.classList.toggle("focus-mode", !!c);
+    document.body.classList.toggle("is-focused", !!c);
+    renderer.classify("is-away", isAway);
+    renderer.classify("is-satellite", (n) => !!c && (n.kind === "root" || (n.kind === "category" && n !== c)));
+    renderer.setLinkClass((l) => isAway(l.target) || (!!c && l.target.kind === "category" && l.target !== c), "is-away");
+    transition = physics.animateTo(targets).then(loadVisibleLogos);
+  }
+  renderCrumbs();
+  return transition.then(() => token === modeToken);
+}
+
+// ---------------------------------------------------------------------------
+// Navigation: All brands → category → (group →) brand → product
+// ---------------------------------------------------------------------------
+
+function select(n: GraphNode | null) {
+  if (selected) renderer.mark(selected, "is-selected", false);
+  selected = n;
+  if (n) {
+    renderer.mark(n, "is-selected", true);
+    panel.show(n);
+  } else panel.hide();
+  renderCrumbs();
+}
+
+function goOverview(show: GraphNode | null = null) {
+  closeBrand();
+  select(show);
+  void setFocus(null);
+  fitOverview();
+}
+
+function goCategory(c: GraphNode, show: GraphNode = c) {
+  closeBrand();
+  select(show);
+  const members = graph.placed.filter((n) => within(n, c));
+  fit(members, { pos: focus === c ? undefined : focusPositions(graph, c), maxK: 1.15, clearMasthead: true });
+  void setFocus(c);
+}
+
+function goGroup(g: GraphNode) {
+  closeBrand();
+  select(g);
+  const pos = focus === g.category ? undefined : focusPositions(graph, g.category!);
+  fit(graph.placed.filter((n) => within(n, g)), { pos, maxK: 1.3, pad: 60 });
+  void setFocus(g.category);
+}
+
+async function goBrand(b: GraphNode, show: GraphNode = b) {
+  if (open && open !== b) closeBrand();
+  select(show);
+  const at = focus === b.category ? b : focusPositions(graph, b.category!).get(b)!;
+  const radius = b.products.length ? b.openR : b.footprint + 80;
+  const area = visibleArea();
+  const k = Math.max(0.8, Math.min(1.7, Math.min(area.w, area.h) / (2.2 * radius)));
+  camera.flyTo(at.x, at.y, k, area);
+  if (await setFocus(b.category)) openBrand(b);
+}
+
+function navigate(n: GraphNode) {
+  userMoved = true;
+  hideHintSoon();
+  switch (n.kind) {
+    case "root":
+      return goOverview(n);
+    case "category":
+      return goCategory(n);
+    case "group":
+      return goGroup(n);
+    case "brand":
+      return void goBrand(n);
+    case "product":
+      return void goBrand(n.brand!, n);
+  }
+}
+
+/** Esc / clicking empty space: one level up. */
+function goUp() {
+  const s = selected;
+  if (s) {
+    if (s.kind === "root" || s.kind === "category" || !s.parent || s.parent.kind === "root") return goOverview();
+    return navigate(s.parent);
+  }
+  if (open) return closeBrand();
+  if (focus) return goOverview();
+}
+
+function renderCrumbs() {
+  const tip = selected && selected.kind !== "root" ? selected : (open ?? focus);
+  const trail: GraphNode[] = [];
+  for (let p = tip; p && p.kind !== "root"; p = p.parent) trail.unshift(p);
+  crumbs.hidden = trail.length === 0;
+  if (!trail.length) return crumbs.replaceChildren();
+
+  const button = (text: string, onClick: () => void, current = false) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = text;
+    if (current) b.setAttribute("aria-current", "page");
+    b.addEventListener("click", onClick);
+    return b;
+  };
+  const sep = () => Object.assign(document.createElement("span"), { className: "sep", textContent: "›", ariaHidden: "true" });
+  const back = button("All brands", () => goOverview());
+  back.className = "crumb-home";
+  crumbs.replaceChildren(back, ...trail.flatMap((n, i) => [sep(), button(n.name, () => navigate(n), i === trail.length - 1)]));
+}
+
+const panel = new Panel({
+  onNavigate: navigate,
+  onClose: () => select(null),
 });
 
-function select(n: GraphNode, fly = false) {
-  if (selected) nodeEls.get(selected)!.classList.remove("is-selected");
-  selected = n;
-  userMoved = true;
-  nodeEls.get(n)!.classList.add("is-selected");
-  panel.show(n);
-
-  const area = visibleArea();
-  if (fly) return camera.flyTo(n.x, n.y, Math.max(camera.t.k, 1), area);
-  // Only move the map if the panel would cover the circle.
-  const p = camera.toScreen(n.x, n.y);
-  const m = 70;
-  if (p.x < area.x + m || p.x > area.x + area.w - m || p.y < area.y + m || p.y > area.y + area.h - m) {
-    camera.flyTo(n.x, n.y, camera.t.k, area);
-  }
-}
-
-function deselect() {
-  if (selected) nodeEls.get(selected)!.classList.remove("is-selected");
-  selected = null;
-  panel.hide();
-}
-
-const hiddenStatuses = new Set<Status>();
-const isVisible = (n: GraphNode) => n.kind !== "brand" || !hiddenStatuses.has(n.status);
-
-function applyFilter() {
-  for (const [n, g] of nodeEls) {
-    const hide = !isVisible(n);
-    g.classList.toggle("is-filtered", hide);
-    g.setAttribute("tabindex", hide ? "-1" : "0");
-  }
-  for (const [l, line] of linkEls) line.classList.toggle("is-filtered", !isVisible(l.source) || !isVisible(l.target));
-  if (selected && !isVisible(selected)) deselect();
-}
-
-for (const button of document.querySelectorAll<HTMLButtonElement>(".legend-item")) {
-  const status = button.dataset.status as Status;
-  const count = graph.nodes.filter((n) => n.kind === "brand" && n.status === status).length;
-  button.querySelector(".count")!.textContent = String(count);
-  button.addEventListener("click", () => {
-    const show = hiddenStatuses.has(status);
-    if (show) hiddenStatuses.delete(status);
-    else hiddenStatuses.add(status);
-    button.setAttribute("aria-pressed", String(show));
-    applyFilter();
-  });
-}
-
 // ---------------------------------------------------------------------------
-// Input
+// Hover spotlight
 // ---------------------------------------------------------------------------
 
-for (const [n, g] of nodeEls) {
-  g.addEventListener("pointerenter", (e) => {
+let lit: GraphNode[] = [];
+let litLinks: GraphLink[] = [];
+
+let hot: GraphNode | null = null;
+
+function light(n: GraphNode | null) {
+  if (hot) renderer.mark(hot, "is-hot", false);
+  hot = n;
+  if (n) renderer.mark(n, "is-hot", true);
+  for (const m of lit) renderer.mark(m, "is-lit", false);
+  for (const l of litLinks) renderer.linkEl.get(l)!.classList.remove("is-lit");
+  lit = [];
+  litLinks = [];
+  svg.classList.toggle("has-lit", n !== null);
+  if (!n) return;
+
+  const add = (m: GraphNode) => {
+    renderer.mark(m, "is-lit", true);
+    lit.push(m);
+  };
+  add(n);
+  if (n.kind === "product") {
+    if (n.brand) add(n.brand);
+    return;
+  }
+  for (const l of linksOf.get(n) ?? []) {
+    renderer.linkEl.get(l)!.classList.add("is-lit");
+    litLinks.push(l);
+    add(l.source === n ? l.target : l.source);
+  }
+  n.products.forEach(add);
+}
+
+for (const n of graph.nodes) {
+  const el = renderer.elementOf(n)!;
+  el.addEventListener("pointerenter", (e) => {
     if (e.pointerType === "touch") return;
     hovered = n;
-    if (!dragging && !svg.classList.contains("is-panning")) setFocus(n);
+    if (dragging || svg.classList.contains("is-panning")) return;
+    light(n);
+    if (n.kind === "brand" && n !== open) setOrbit(n, PEEK);
   });
-  g.addEventListener("pointerleave", () => {
+  el.addEventListener("pointerleave", () => {
     if (hovered === n) hovered = null;
-    if (!dragging) setFocus(null);
+    if (dragging) return;
+    light(null);
+    if (n.kind === "brand" && n !== open) setOrbit(n, 0);
   });
-  g.addEventListener("focus", () => setFocus(n));
-  g.addEventListener("blur", () => !hovered && !dragging && setFocus(null));
-  g.addEventListener("keydown", (e) => {
+  el.addEventListener("keydown", (e) => {
     if (e.key !== "Enter" && e.key !== " ") return;
     e.preventDefault();
-    select(n, true);
+    navigate(n);
   });
 }
 
+// ---------------------------------------------------------------------------
+// Pointer input: pan, zoom, drag, click
+// ---------------------------------------------------------------------------
+
 attachInput<GraphNode>(svg, camera, {
-  nodeAt: (target) => {
-    const g = target instanceof Element ? target.closest(".node") : null;
-    return g ? (nodeOfEl.get(g) ?? null) : null;
+  nodeAt: (target) => renderer.nodeAt(target),
+  onNodeClick: navigate,
+  onNodeDragStart: (n, gx, gy) => {
+    // Grabbing a product moves its brand.
+    const target = n.kind === "product" ? n.brand! : n;
+    dragging = target;
+    light(target);
+    physics.dragStart(target, gx, gy);
   },
-  onNodeClick: (n) => select(n),
-  onNodeDragStart: (n) => {
-    cancelAnimationFrame(settling);
-    dragging = n;
-    setFocus(n);
-    n.fx = n.x;
-    n.fy = n.y;
-    sim.alphaTarget(0.25).restart();
+  onNodeDrag: (_n, gx, gy) => {
+    if (dragging) physics.drag(dragging, gx, gy);
   },
-  onNodeDrag: (n, x, y) => {
-    n.fx = x;
-    n.fy = y;
-  },
-  onNodeDragEnd: (n) => {
+  onNodeDragEnd: () => {
+    const t = dragging;
     dragging = null;
-    sim.alphaTarget(0);
-    // Nestlé stays pinned at the centre; everything else is free again.
-    n.fx = n.kind === "root" ? home.get(n)!.x : null;
-    n.fy = n.kind === "root" ? home.get(n)!.y : null;
-    springHome();
-    setFocus(hovered);
+    if (!t) return;
+    // Nestlé and an open brand stay pinned where they're dropped; everything else floats.
+    const { ax, ay } = physics.dragEnd(t, t.kind === "root" || t === open);
+    // In the overview the new spot sticks; focus mode is a temporary arrangement.
+    if (!focus) {
+      t.ox = ax;
+      t.oy = ay;
+    }
+    userMoved = true;
+    light(hovered);
   },
-  onBackgroundClick: deselect,
+  onBackgroundClick: goUp,
   onNavigate: noteNavigation,
   ignoreWheel: (target) => target instanceof Element && target.closest(".panel, #search-results") !== null,
 });
 
 $("#zoom-in").addEventListener("click", () => camera.zoomBy(1.5, visibleArea()));
 $("#zoom-out").addEventListener("click", () => camera.zoomBy(1 / 1.5, visibleArea()));
-$("#zoom-fit").addEventListener("click", () => fitAll());
+$("#zoom-fit").addEventListener("click", () => goOverview());
 
 const searchInput = $<HTMLInputElement>("#search-input");
 attachSearch(searchInput, $<HTMLUListElement>("#search-results"), graph.nodes, {
-  isVisible,
-  onPick: (n) => select(n, true),
+  isVisible: (n) => !isFiltered(n),
+  onPick: navigate,
 });
 
 const PAN_STEP = 90;
@@ -319,7 +462,7 @@ window.addEventListener("keydown", (e) => {
       searchInput.focus();
       break;
     case "Escape":
-      deselect();
+      goUp();
       break;
     case "+":
     case "=":
@@ -330,7 +473,7 @@ window.addEventListener("keydown", (e) => {
       camera.zoomBy(1 / 1.5, area);
       break;
     case "0":
-      fitAll();
+      goOverview();
       break;
     case "ArrowLeft":
       camera.panBy(PAN_STEP, 0);
@@ -350,6 +493,40 @@ window.addEventListener("keydown", (e) => {
   e.preventDefault();
   noteNavigation();
 });
+
+// ---------------------------------------------------------------------------
+// Legend filter
+// ---------------------------------------------------------------------------
+
+function applyFilter() {
+  renderer.classify("is-filtered", isFiltered);
+  renderer.setLinkClass((l) => isFiltered(l.target), "is-filtered");
+  if (selected && isFiltered(selected)) goUp();
+  loadVisibleLogos();
+}
+
+for (const button of document.querySelectorAll<HTMLButtonElement>(".legend-item")) {
+  const status = button.dataset.status as Status;
+  const count = graph.nodes.filter((n) => (n.kind === "brand" || n.kind === "product") && n.status === status).length;
+  button.querySelector(".count")!.textContent = String(count);
+  if (!count) button.hidden = true;
+  button.addEventListener("click", () => {
+    const show = hiddenStatuses.has(status);
+    if (show) hiddenStatuses.delete(status);
+    else hiddenStatuses.add(status);
+    button.setAttribute("aria-pressed", String(show));
+    applyFilter();
+  });
+}
+
+const legend = $(".legend");
+const legendToggle = $("#legend-toggle");
+function setLegendOpen(open: boolean) {
+  legend.classList.toggle("is-collapsed", !open);
+  legendToggle.setAttribute("aria-expanded", String(open));
+}
+legendToggle.addEventListener("click", () => setLegendOpen(legend.classList.contains("is-collapsed")));
+setLegendOpen(window.innerWidth > NARROW);
 
 // ---------------------------------------------------------------------------
 // Controls hint
@@ -379,13 +556,13 @@ function noteNavigation() {
 
 // ---------------------------------------------------------------------------
 
-fitAll(false);
+fitOverview(false);
 
 // On resize: re-fit until the user has moved the map, then just keep the centre in the centre.
 let size = { w: svg.clientWidth, h: svg.clientHeight };
 window.addEventListener("resize", () => {
   const next = { w: svg.clientWidth, h: svg.clientHeight };
   if (userMoved) camera.panBy((next.w - size.w) / 2, (next.h - size.h) / 2);
-  else fitAll(false);
+  else fitOverview(false);
   size = next;
 });

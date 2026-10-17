@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>The Nestlé Empire</title>
-  <meta name="description" content="An interactive map of the brands Nestlé owns, partly owns, and used to own.">
+  <meta name="description" content="An interactive map of the brands Nestlé owns, partly owns, licenses, and used to own.">
   <meta property="og:title" content="The Nestlé Empire">
   <meta property="og:description" content="An interactive map of the brands Nestlé owns, partly owns, and used to own.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg stroke='%23C9B49C' stroke-width='3'%3E%3Cline x1='32' y1='32' x2='12' y2='14'/%3E%3Cline x1='32' y1='32' x2='54' y2='20'/%3E%3Cline x1='32' y1='32' x2='22' y2='54'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='13' fill='%235A3A28'/%3E%3Ccircle cx='12' cy='14' r='7' fill='%23D1913C'/%3E%3Ccircle cx='54' cy='20' r='7' fill='%23B4443C'/%3E%3Ccircle cx='22' cy='54' r='7' fill='%236F8F4E'/%3E%3C/svg%3E">
@@ -19,6 +19,8 @@
       <g id="viewport">
         <g id="links"></g>
         <g id="nodes"></g>
+        <g id="products"></g>
+        <g id="hubs"></g>
       </g>
     </svg>
   </main>
@@ -33,22 +35,37 @@
       <kbd class="search-kbd" aria-hidden="true">/</kbd>
       <ul id="search-results" role="listbox" hidden></ul>
     </div>
+    <nav class="crumbs" id="crumbs" aria-label="Where you are" hidden></nav>
   </header>
 
   <section class="legend" aria-label="Ownership filter">
-    <p class="legend-title">Ownership</p>
-    <button class="legend-item" data-status="owned" aria-pressed="true">
-      <span class="swatch swatch-owned" aria-hidden="true"></span>
-      <span>Owned</span><span class="count" data-count="owned"></span>
+    <button class="legend-title" id="legend-toggle" aria-expanded="true" aria-controls="legend-items">Ownership <span class="chev" aria-hidden="true">▾</span></button>
+    <div class="legend-items" id="legend-items">
+    <button class="legend-item" title="Click to show or hide these" data-status="owned" aria-pressed="true">
+      <svg class="swatch status-owned" viewBox="-12 -12 24 24" aria-hidden="true"><circle class="ring" r="8"/></svg>
+      <span>Owned</span><span class="count"></span>
     </button>
-    <button class="legend-item" data-status="partial" aria-pressed="true">
-      <span class="swatch swatch-partial" aria-hidden="true"></span>
-      <span>Partly owned</span><span class="count" data-count="partial"></span>
+    <button class="legend-item" title="Click to show or hide these" data-status="partial" aria-pressed="true">
+      <svg class="swatch status-partial" viewBox="-12 -12 24 24" aria-hidden="true"><circle class="ring" r="8"/><path class="stake" d="M0,-8A8,8 0 0 1 0,8"/></svg>
+      <span>Partly owned / JV</span><span class="count"></span>
     </button>
-    <button class="legend-item" data-status="former" aria-pressed="true">
-      <span class="swatch swatch-former" aria-hidden="true"></span>
-      <span>Formerly owned</span><span class="count" data-count="former"></span>
+    <button class="legend-item" title="Click to show or hide these" data-status="licensed" aria-pressed="true">
+      <svg class="swatch status-licensed" viewBox="-12 -12 24 24" aria-hidden="true"><circle class="ring" r="8"/></svg>
+      <span>Licensed</span><span class="count"></span>
     </button>
+    <button class="legend-item" title="Click to show or hide these" data-status="transition" aria-pressed="true">
+      <svg class="swatch status-transition" viewBox="-12 -12 24 24" aria-hidden="true"><circle class="ring" r="8"/></svg>
+      <span>In transition</span><span class="count"></span>
+    </button>
+    <button class="legend-item" title="Click to show or hide these" data-status="former" aria-pressed="true">
+      <svg class="swatch status-former" viewBox="-12 -12 24 24" aria-hidden="true"><circle class="ring" r="8"/></svg>
+      <span>Formerly owned</span><span class="count"></span>
+    </button>
+    <button class="legend-item" title="Click to show or hide these" data-status="uncertain" aria-pressed="true">
+      <svg class="swatch status-uncertain" viewBox="-12 -12 24 24" aria-hidden="true"><circle class="ring" r="8"/></svg>
+      <span>Unconfirmed</span><span class="count"></span>
+    </button>
+    </div>
   </section>
 
   <nav class="controls" aria-label="Map controls">
@@ -67,7 +84,9 @@
   <div class="hint" id="hint" role="note">
     <span><b>Scroll</b> or <b>right-click &amp; drag</b> to move</span>
     <span><b>Pinch</b> or <b>⌘/Ctrl + scroll</b> to zoom</span>
-    <span><b>Click</b> a circle for details</span>
+    <span><b>Click</b> a category or brand to dive in</span>
+    <span><b>Drag</b> circles to rearrange</span>
+    <span><b>Esc</b> or click empty space to go back</span>
   </div>
 
   <aside class="panel" id="panel" aria-live="polite" aria-hidden="true">
@@ -84,6 +103,7 @@
         <span class="tag tag-category" id="panel-category"></span>
       </div>
       <h2 id="panel-name"></h2>
+      <p class="panel-qualifier" id="panel-qualifier"></p>
       <p class="panel-desc" id="panel-desc"></p>
       <p class="panel-note" id="panel-note"></p>
       <a class="panel-link" id="panel-link" target="_blank" rel="noopener noreferrer">
@@ -91,7 +111,6 @@
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5"/></svg>
       </a>
       <div class="panel-connections" id="panel-connections"></div>
-      <p class="panel-credit" id="panel-credit"></p>
     </div>
   </aside>
 

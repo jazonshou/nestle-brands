@@ -15,7 +15,7 @@ export interface Area {
   h: number;
 }
 
-export const MIN_ZOOM = 0.15;
+export const MIN_ZOOM = 0.05;
 export const MAX_ZOOM = 4;
 
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));

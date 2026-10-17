@@ -1,0 +1,1605 @@
+[
+  {
+    "id": "1",
+    "name": "Nestlé S.A.",
+    "file": "logos/1.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Nestl%C3%A9"
+  },
+  {
+    "id": "2",
+    "name": "Coffee & Beverages",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Generic category with no logo of its own"
+  },
+  {
+    "id": "3",
+    "name": "Nescafé",
+    "file": "logos/3.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Nescaf%C3%A9"
+  },
+  {
+    "id": "23",
+    "name": "Nescafé Dolce Gusto",
+    "file": "logos/23.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Dolce_Gusto"
+  },
+  {
+    "id": "26",
+    "name": "Nespresso",
+    "file": "logos/26.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Nespresso"
+  },
+  {
+    "id": "31",
+    "name": "Starbucks Coffee At Home",
+    "file": "logos/31.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Starbucks"
+  },
+  {
+    "id": "47",
+    "name": "Seattle's Best Coffee",
+    "file": "logos/47.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Seattle%27s_Best_Coffee"
+  },
+  {
+    "id": "49",
+    "name": "Coffee mate",
+    "file": "logos/49.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Coffee-Mate"
+  },
+  {
+    "id": "59",
+    "name": "Brite (Japan creamer)",
+    "file": "logos/59.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.co.jp/brands/brite"
+  },
+  {
+    "id": "60",
+    "name": "Nesquik",
+    "file": "logos/60.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Nesquik"
+  },
+  {
+    "id": "61",
+    "name": "Milo",
+    "file": "logos/61.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Milo_%28drink%29"
+  },
+  {
+    "id": "67",
+    "name": "Nestea",
+    "file": "logos/67.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://it.wikipedia.org/wiki/Nestea"
+  },
+  {
+    "id": "72",
+    "name": "Abuelita (Mexican-style chocolate)",
+    "file": "logos/72.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Abuelita"
+  },
+  {
+    "id": "73",
+    "name": "Carlos V (chocolate)",
+    "file": "logos/73.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Carlos_V_%28chocolate_bar%29"
+  },
+  {
+    "id": "74",
+    "name": "GoodHost (Canada iced tea)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Official logo URL redirects to madewithnestle.ca, which returns HTTP 403; no Wikipedia/Commons logo"
+  },
+  {
+    "id": "75",
+    "name": "Nesfruta (Canada)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "76",
+    "name": "yfood (meal-replacement drinks)",
+    "file": "logos/76.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Yfood.png"
+  },
+  {
+    "id": "77",
+    "name": "Special.T (tea capsules)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Official special-t.com logo returns HTTP 403; no Wikipedia/Commons logo"
+  },
+  {
+    "id": "78",
+    "name": "Ovaltine (US only)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "English Wikipedia has no Ovaltine logo, and the global Ovomaltine marks belong to ABF/Wander, not Nestlé's US licence"
+  },
+  {
+    "id": "80",
+    "name": "Ricoré (France, chicory-coffee)",
+    "file": "logos/80.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://fr.wikipedia.org/wiki/Ricor%C3%A9"
+  },
+  {
+    "id": "81",
+    "name": "Sical (Portugal)",
+    "file": "logos/81.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://cafestorrados.nestle.pt/"
+  },
+  {
+    "id": "82",
+    "name": "Zoégas (Sweden)",
+    "file": "logos/82.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.zoegas.se"
+  },
+  {
+    "id": "83",
+    "name": "Bonka (Spain)",
+    "file": "logos/83.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.bonka.es"
+  },
+  {
+    "id": "84",
+    "name": "Santa Cristina (Spain)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "85",
+    "name": "Buondi (Portugal)",
+    "file": "logos/85.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://cafestorrados.nestle.pt/"
+  },
+  {
+    "id": "86",
+    "name": "Christina (Portugal)",
+    "file": "logos/86.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://cafestorrados.nestle.pt/"
+  },
+  {
+    "id": "87",
+    "name": "Loumidis (Greece)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Official loumidis.gr logo returns HTTP 403; en/el Wikipedia articles have no logo"
+  },
+  {
+    "id": "88",
+    "name": "Ecco (Chile/Peru)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "89",
+    "name": "Kirma (Peru)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Spanish Wikipedia redirects Kirma to Nescafé; no Kirma logo found"
+  },
+  {
+    "id": "90",
+    "name": "Aguila (Uruguay)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "91",
+    "name": "El Chaná (Uruguay)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Spanish Wikipedia article has no logo; official site returns HTTP 403"
+  },
+  {
+    "id": "92",
+    "name": "International Roast",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "93",
+    "name": "Mountain Blend",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "94",
+    "name": "Partner's Blend",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "95",
+    "name": "Ristretto",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "96",
+    "name": "Tofa",
+    "file": "logos/96.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://cafestorrados.nestle.pt/"
+  },
+  {
+    "id": "98",
+    "name": "Nescau (Brazil)",
+    "file": "logos/98.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://pt.wikipedia.org/wiki/Nescau"
+  },
+  {
+    "id": "99",
+    "name": "Ricacao (Ecuador)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "100",
+    "name": "Dancow (Indonesia)",
+    "file": "logos/100.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://id.wikipedia.org/wiki/Dancow"
+  },
+  {
+    "id": "101",
+    "name": "Chuckie (Philippines)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No Wikipedia article; Nestlé Philippines site blocks scripts (HTTP 403)"
+  },
+  {
+    "id": "102",
+    "name": "Nesvita (Pakistan/Thailand)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "103",
+    "name": "Supligen (Jamaica)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "104",
+    "name": "Romanette (Switzerland)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "105",
+    "name": "Caro / Pero (cereal coffee)",
+    "file": "logos/105.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://de.wikipedia.org/wiki/Caro-Kaffee"
+  },
+  {
+    "id": "106",
+    "name": "Waters & Premium Beverages",
+    "file": "logos/106.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Peranel"
+  },
+  {
+    "id": "107",
+    "name": "Perrier (Source Perrier S.A.)",
+    "file": "logos/107.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Perrier"
+  },
+  {
+    "id": "113",
+    "name": "S.Pellegrino (Sanpellegrino S.p.A.)",
+    "file": "logos/113.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/S.Pellegrino"
+  },
+  {
+    "id": "122",
+    "name": "Vittel",
+    "file": "logos/122.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Vittel_%28water%29"
+  },
+  {
+    "id": "125",
+    "name": "Nestlé Pure Life (outside US/Canada)",
+    "file": "logos/125.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Nestl%C3%A9_Pure_Life"
+  },
+  {
+    "id": "127",
+    "name": "Essentia (US alkaline water)",
+    "file": "logos/127.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.essentiawater.com"
+  },
+  {
+    "id": "128",
+    "name": "Middle East (JV with Al Muhaidib)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Regional joint venture covering several water brands (Al Manhal, Ghadeer, Baraka...), not a single brand with its own logo"
+  },
+  {
+    "id": "135",
+    "name": "Buxton",
+    "file": "logos/135.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.buxtonwater.co.uk"
+  },
+  {
+    "id": "136",
+    "name": "Princes Gate",
+    "file": "logos/136.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Princes_Gate_Spring_Water"
+  },
+  {
+    "id": "138",
+    "name": "Henniez",
+    "file": "logos/138.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://de.wikipedia.org/wiki/Henniez_%28Mineralwasser%29"
+  },
+  {
+    "id": "139",
+    "name": "Cristalp",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "141",
+    "name": "Erikli",
+    "file": "logos/141.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.erikli.com.tr"
+  },
+  {
+    "id": "142",
+    "name": "Alaçam",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "144",
+    "name": "Nałęczowianka",
+    "file": "logos/144.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.naleczowianka.pl"
+  },
+  {
+    "id": "145",
+    "name": "Aqua Mineral",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "146",
+    "name": "Arctic",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "147",
+    "name": "Dar Natury",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "149",
+    "name": "Neuselters",
+    "file": "logos/149.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Neuselters_logo.png"
+  },
+  {
+    "id": "150",
+    "name": "Frische Brise",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "151",
+    "name": "Blaue Quellen",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "153",
+    "name": "Valvert",
+    "file": "logos/153.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.valvert.be"
+  },
+  {
+    "id": "154",
+    "name": "Charmoise",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "156",
+    "name": "Aquarel",
+    "file": "logos/156.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://fr.wikipedia.org/wiki/Aquarel"
+  },
+  {
+    "id": "157",
+    "name": "Viladrau",
+    "file": "logos/157.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.viladrau.com"
+  },
+  {
+    "id": "159",
+    "name": "Nestlé Selda",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "161",
+    "name": "Korpi",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Official korpi.gr logo returns HTTP 404/403; no Wikipedia/Commons logo"
+  },
+  {
+    "id": "162",
+    "name": "Aqua Spring",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "164",
+    "name": "Pejo",
+    "file": "logos/164.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.pejo.it"
+  },
+  {
+    "id": "166",
+    "name": "São Lourenço",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "167",
+    "name": "Petrópolis",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "168",
+    "name": "Santa Bárbara (Águas de Santa Bárbara)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "169",
+    "name": "Vale do Sol",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "171",
+    "name": "Eco de los Andes",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Official ecodelosandes.com.ar returns HTTP 403 (its icon is the generic Nestlé logo); no Wikipedia logo"
+  },
+  {
+    "id": "172",
+    "name": "Glaciar",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "174",
+    "name": "Santa María",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "176",
+    "name": "Porvenir",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "178",
+    "name": "Ciego Montero",
+    "file": "logos/178.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.ciegomontero.com"
+  },
+  {
+    "id": "179",
+    "name": "Los Portales",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "181",
+    "name": "La Vie (Vietnam)",
+    "file": "logos/181.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.lavie.com.vn"
+  },
+  {
+    "id": "182",
+    "name": "Hidden Spring (Philippines)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "183",
+    "name": "Water Line (South Korea)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "184",
+    "name": "Dashan Yunnan Spring (China)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "185",
+    "name": "Waterman (China)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "186",
+    "name": "Minéré (Thailand)",
+    "file": "logos/186.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.minere.co.th"
+  },
+  {
+    "id": "187",
+    "name": "Confectionery & Baking",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Generic category with no logo of its own"
+  },
+  {
+    "id": "188",
+    "name": "KitKat",
+    "file": "logos/188.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/KitKat"
+  },
+  {
+    "id": "193",
+    "name": "Aero",
+    "file": "logos/193.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Aero_%28chocolate_bar%29"
+  },
+  {
+    "id": "194",
+    "name": "After Eight",
+    "file": "logos/194.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/After_Eight"
+  },
+  {
+    "id": "195",
+    "name": "Black Magic (UK)",
+    "file": "logos/195.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Black_Magic_%28chocolates%29"
+  },
+  {
+    "id": "196",
+    "name": "Blue Riband (UK)",
+    "file": "logos/196.webp",
+    "bg": "light",
+    "kind": "photo",
+    "source": "https://www.nestle-confectionery.co.uk/brands"
+  },
+  {
+    "id": "197",
+    "name": "Crunch (outside US)",
+    "file": "logos/197.webp",
+    "bg": "light",
+    "kind": "photo",
+    "source": "https://www.nestle-confectionery.co.uk/brands"
+  },
+  {
+    "id": "198",
+    "name": "Dairy Box (UK)",
+    "file": "logos/198.webp",
+    "bg": "light",
+    "kind": "photo",
+    "source": "https://www.nestle-confectionery.co.uk/brands"
+  },
+  {
+    "id": "199",
+    "name": "Lion",
+    "file": "logos/199.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Lion_%28chocolate_bar%29"
+  },
+  {
+    "id": "200",
+    "name": "Milkybar",
+    "file": "logos/200.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Milkybar"
+  },
+  {
+    "id": "201",
+    "name": "Galak (white chocolate, continental Europe/Latin America)",
+    "file": "logos/201.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://it.wikipedia.org/wiki/Galak"
+  },
+  {
+    "id": "202",
+    "name": "Munchies",
+    "file": "logos/202.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Munchies_%28confectionery%29"
+  },
+  {
+    "id": "203",
+    "name": "Polo",
+    "file": "logos/203.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Polo_%28confectionery%29"
+  },
+  {
+    "id": "204",
+    "name": "Quality Street",
+    "file": "logos/204.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Quality_Street_%28confectionery%29"
+  },
+  {
+    "id": "205",
+    "name": "Rolo (outside US)",
+    "file": "logos/205.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Rolo"
+  },
+  {
+    "id": "206",
+    "name": "Rowntree's",
+    "file": "logos/206.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Rowntree%27s"
+  },
+  {
+    "id": "210",
+    "name": "Smarties (outside US)",
+    "file": "logos/210.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Smarties"
+  },
+  {
+    "id": "211",
+    "name": "Toffee Crisp",
+    "file": "logos/211.webp",
+    "bg": "light",
+    "kind": "photo",
+    "source": "https://www.nestle-confectionery.co.uk/brands"
+  },
+  {
+    "id": "212",
+    "name": "Walnut Whip",
+    "file": "logos/212.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Walnut_Whip"
+  },
+  {
+    "id": "213",
+    "name": "Yorkie",
+    "file": "logos/213.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Yorkie_%28chocolate_bar%29"
+  },
+  {
+    "id": "214",
+    "name": "Coffee Crisp (Canada)",
+    "file": "logos/214.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Coffee_Crisp"
+  },
+  {
+    "id": "215",
+    "name": "Turtles (Canada)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Wikipedia's Turtles logo is DeMet's (US Turtles, different owner since 2013); Nestlé Canada site blocks scripts"
+  },
+  {
+    "id": "216",
+    "name": "Mackintosh Toffee (Canada)",
+    "file": "logos/216.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Mackintosh%27s_Toffee"
+  },
+  {
+    "id": "217",
+    "name": "Big Turk (Canada)",
+    "file": "logos/217.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Big_Turk"
+  },
+  {
+    "id": "218",
+    "name": "Mirage (Canada)",
+    "file": "logos/218.webp",
+    "bg": "light",
+    "kind": "photo",
+    "source": "https://en.wikipedia.org/wiki/Mirage_%28chocolate_bar%29"
+  },
+  {
+    "id": "219",
+    "name": "Nestlé Snack-Size (Canada)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Sold under the Nestlé master brand; no distinct sub-brand logo found (official Nestlé site blocks scripts with HTTP 403)"
+  },
+  {
+    "id": "220",
+    "name": "Drumstick Bites (Canada)",
+    "file": "logos/220.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Drumstick_%28frozen_dairy_dessert%29"
+  },
+  {
+    "id": "221",
+    "name": "Bar-One (India, South Africa)",
+    "file": "logos/221.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Bar_One"
+  },
+  {
+    "id": "222",
+    "name": "Munch (India)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No Wikipedia article; Nestlé India site blocks scripts (HTTP 403)"
+  },
+  {
+    "id": "223",
+    "name": "Nestlé Classic (Brazil, Latin America, India)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Sold under the Nestlé master brand; no distinct sub-brand logo found (official Nestlé site blocks scripts with HTTP 403)"
+  },
+  {
+    "id": "224",
+    "name": "Cailler (Switzerland)",
+    "file": "logos/224.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Cailler"
+  },
+  {
+    "id": "226",
+    "name": "Perugina (Italy)",
+    "file": "logos/226.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://it.wikipedia.org/wiki/Perugina"
+  },
+  {
+    "id": "228",
+    "name": "Garoto (Brazil)",
+    "file": "logos/228.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Garoto"
+  },
+  {
+    "id": "233",
+    "name": "Kopenhagen group (Brazil)",
+    "file": "logos/233.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://pt.wikipedia.org/wiki/Kopenhagen"
+  },
+  {
+    "id": "237",
+    "name": "Hsu Fu Chi (China)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo on en/zh Wikipedia or Commons (only shop photos); official site has none"
+  },
+  {
+    "id": "238",
+    "name": "Allen's (Australia lollies)",
+    "file": "logos/238.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Allen%27s"
+  },
+  {
+    "id": "245",
+    "name": "Soothers (Australia)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No Wikipedia article; Nestlé Australia site blocks scripts (HTTP 403)"
+  },
+  {
+    "id": "246",
+    "name": "Butter Menthol (Australia)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No Wikipedia article; Nestlé Australia site blocks scripts (HTTP 403)"
+  },
+  {
+    "id": "247",
+    "name": "Nestlé Toll House (US baking)",
+    "file": "logos/247.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.verybestbaking.com/toll-house/"
+  },
+  {
+    "id": "250",
+    "name": "Libby's (100% Pure Pumpkin)",
+    "file": "logos/250.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Libby%27s"
+  },
+  {
+    "id": "252",
+    "name": "Ice Cream (via Froneri)",
+    "file": "logos/252.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://de.wikipedia.org/wiki/Froneri"
+  },
+  {
+    "id": "253",
+    "name": "Froneri International",
+    "file": "logos/253.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://de.wikipedia.org/wiki/Froneri"
+  },
+  {
+    "id": "276",
+    "name": "Nestlé in-house ice cream",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Generic grouping (Nestlé in-house ice cream), no distinct logo"
+  },
+  {
+    "id": "292",
+    "name": "Frozen & Prepared Foods",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Generic category with no logo of its own"
+  },
+  {
+    "id": "293",
+    "name": "Stouffer's",
+    "file": "logos/293.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Stouffer%27s"
+  },
+  {
+    "id": "295",
+    "name": "Lean Cuisine",
+    "file": "logos/295.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Lean_Cuisine"
+  },
+  {
+    "id": "296",
+    "name": "Hot Pockets",
+    "file": "logos/296.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Hot_Pockets"
+  },
+  {
+    "id": "298",
+    "name": "Vital Pursuit",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Official logo on goodnes.com returns HTTP 403; no Wikipedia article"
+  },
+  {
+    "id": "299",
+    "name": "DiGiorno",
+    "file": "logos/299.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/DiGiorno"
+  },
+  {
+    "id": "300",
+    "name": "Tombstone",
+    "file": "logos/300.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Tombstone_%28pizza%29"
+  },
+  {
+    "id": "301",
+    "name": "Jack's",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Official logo on goodnes.com returns HTTP 403; no Wikipedia article"
+  },
+  {
+    "id": "302",
+    "name": "California Pizza Kitchen frozen",
+    "file": "logos/302.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/California_Pizza_Kitchen"
+  },
+  {
+    "id": "303",
+    "name": "Sweet Earth",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "sweetearthfoods.com now only shows the GoodNes logo; no Wikipedia/Commons logo"
+  },
+  {
+    "id": "304",
+    "name": "European Pizza Group (JV with PAI Partners)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Joint-venture holding (European Pizza Group); no logo found"
+  },
+  {
+    "id": "308",
+    "name": "Garden Gourmet (plant-based)",
+    "file": "logos/308.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.gardengourmet.com"
+  },
+  {
+    "id": "310",
+    "name": "Nature's Heart (plant-based, Brazil/Mexico)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No Wikipedia article; Nestlé Brazil site blocks scripts (HTTP 403)"
+  },
+  {
+    "id": "311",
+    "name": "Hälsans Kök (Nordics plant-based)",
+    "file": "logos/311.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.halsanskok.se"
+  },
+  {
+    "id": "312",
+    "name": "Culinary & Dairy",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Generic category with no logo of its own"
+  },
+  {
+    "id": "313",
+    "name": "Maggi",
+    "file": "logos/313.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Maggi"
+  },
+  {
+    "id": "328",
+    "name": "Thomy (Germany/Switzerland)",
+    "file": "logos/328.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Thomy"
+  },
+  {
+    "id": "329",
+    "name": "Winiary (Poland)",
+    "file": "logos/329.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://pl.wikipedia.org/wiki/Winiary_%28przedsi%C4%99biorstwo%29"
+  },
+  {
+    "id": "330",
+    "name": "Buitoni (pasta/sauces outside US and frozen pizza JV)",
+    "file": "logos/330.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://it.wikipedia.org/wiki/Buitoni"
+  },
+  {
+    "id": "331",
+    "name": "Totole (China bouillon)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo on zh Wikipedia/Commons; official site shows none"
+  },
+  {
+    "id": "332",
+    "name": "Haoji (Sichuan seasonings)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "333",
+    "name": "Crosse & Blackwell (Mexico)",
+    "file": "logos/333.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Crosse_%26_Blackwell"
+  },
+  {
+    "id": "334",
+    "name": "Malher (Guatemala)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "335",
+    "name": "Carnation (evaporated milk)",
+    "file": "logos/335.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Carnation_%28brand%29"
+  },
+  {
+    "id": "338",
+    "name": "La Lechera (sweetened condensed milk)",
+    "file": "logos/338.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/La_Lechera"
+  },
+  {
+    "id": "341",
+    "name": "Media Crema (table cream)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No Wikipedia article; goodnes.com blocks scripts (HTTP 403)"
+  },
+  {
+    "id": "342",
+    "name": "Creme de Leite Nestlé (Brazil)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Sold under the Nestlé master brand; no distinct sub-brand logo found (official Nestlé site blocks scripts with HTTP 403)"
+  },
+  {
+    "id": "343",
+    "name": "Nestlé All Purpose Cream (Philippines)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Sold under the Nestlé master brand; no distinct sub-brand logo found (official Nestlé site blocks scripts with HTTP 403)"
+  },
+  {
+    "id": "344",
+    "name": "Molico (Brazil)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "molico.com.br only shows the Receitas Nestlé logo; no Wikipedia/Commons logo"
+  },
+  {
+    "id": "345",
+    "name": "Ideal Milk (Central & West Africa)",
+    "file": "logos/345.webp",
+    "bg": "light",
+    "kind": "photo",
+    "source": "https://commons.wikimedia.org/wiki/File:Ideal_milk.jpg"
+  },
+  {
+    "id": "346",
+    "name": "Gloria (Central & West Africa)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No Wikipedia article for the Nestlé CWA brand; nestle-cwa.com blocks scripts (HTTP 403)"
+  },
+  {
+    "id": "347",
+    "name": "Nestlé Everyday (India dairy whitener)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Sold under the Nestlé master brand; no distinct sub-brand logo found (official Nestlé site blocks scripts with HTTP 403)"
+  },
+  {
+    "id": "348",
+    "name": "Nestlé a+ (India dairy)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Sold under the Nestlé master brand; no distinct sub-brand logo found (official Nestlé site blocks scripts with HTTP 403)"
+  },
+  {
+    "id": "349",
+    "name": "Breakfast Cereals via Cereal Partners Worldwide",
+    "file": "logos/349.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Cereal_Partners_Worldwide"
+  },
+  {
+    "id": "350",
+    "name": "Cheerios",
+    "file": "logos/350.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Cheerios"
+  },
+  {
+    "id": "351",
+    "name": "Chocapic",
+    "file": "logos/351.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://fr.wikipedia.org/wiki/Chocapic"
+  },
+  {
+    "id": "352",
+    "name": "Cini Minis / Curiously Cinnamon",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Only the US 'Cinnamon Toast Crunch' logo exists on Wikipedia; no Cini Minis / Curiously Cinnamon logo found"
+  },
+  {
+    "id": "354",
+    "name": "Cookie Crisp",
+    "file": "logos/354.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Cookie_Crisp"
+  },
+  {
+    "id": "355",
+    "name": "Golden Grahams",
+    "file": "logos/355.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Golden_Grahams"
+  },
+  {
+    "id": "356",
+    "name": "Trix",
+    "file": "logos/356.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Trix_%28cereal%29"
+  },
+  {
+    "id": "357",
+    "name": "Shreddies",
+    "file": "logos/357.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Shreddies"
+  },
+  {
+    "id": "358",
+    "name": "Shredded Wheat",
+    "file": "logos/358.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Shredded_wheat"
+  },
+  {
+    "id": "359",
+    "name": "Nestlé Corn Flakes",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Sold under the Nestlé master brand; no distinct sub-brand logo found (official Nestlé site blocks scripts with HTTP 403)"
+  },
+  {
+    "id": "360",
+    "name": "Fitness",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "en/ru/tr Wikipedia articles have no logo; nestle-cereals.com blocks scripts (HTTP 403)"
+  },
+  {
+    "id": "361",
+    "name": "Golden Nuggets",
+    "file": "logos/361.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Golden_Nuggets"
+  },
+  {
+    "id": "362",
+    "name": "Go Free (gluten-free)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "363",
+    "name": "KitKat Cereal",
+    "file": "logos/363.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/KitKat"
+  },
+  {
+    "id": "364",
+    "name": "Lion Cereal",
+    "file": "logos/364.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Lion_%28chocolate_bar%29"
+  },
+  {
+    "id": "365",
+    "name": "Nesquik Cereal",
+    "file": "logos/365.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Nesquik_%28cereal%29"
+  },
+  {
+    "id": "366",
+    "name": "Crunch cereal",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Only the Crunch chocolate-bar pack artwork was available; nothing specific to the cereal and no clean Crunch wordmark"
+  },
+  {
+    "id": "367",
+    "name": "Chokella",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "368",
+    "name": "Koko Krunch (Asia)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Wikipedia redirects Koko Krunch to Chocapic (different logo); no Koko Krunch logo found"
+  },
+  {
+    "id": "369",
+    "name": "Nestlé GOLD Crunchy Corn & Oat Flakes (India)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Sold under the Nestlé master brand; no distinct sub-brand logo found (official Nestlé site blocks scripts with HTTP 403)"
+  },
+  {
+    "id": "370",
+    "name": "Munch cereal (India)",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No Wikipedia article; Nestlé India site blocks scripts (HTTP 403)"
+  },
+  {
+    "id": "371",
+    "name": "Clusters",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "372",
+    "name": "Honey Stars",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "No logo found on Wikipedia (en/local language), Wikidata, Commons or an accessible official site"
+  },
+  {
+    "id": "373",
+    "name": "Milo cereals",
+    "file": "logos/373.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Milo_%28drink%29"
+  },
+  {
+    "id": "374",
+    "name": "Brazil cereals",
+    "file": null,
+    "bg": "light",
+    "kind": "logo",
+    "source": null,
+    "reason": "Generic grouping of Brazilian cereals, no single logo"
+  },
+  {
+    "id": "382",
+    "name": "Uncle Tobys cereals (Australia/NZ)",
+    "file": "logos/382.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Uncle_Tobys"
+  }
+]
