@@ -104,7 +104,7 @@ id,parent_id,name,level,category,ownership,status_note,url,url_verified
 103,97,Supligen (Jamaica),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
 104,97,Romanette (Switzerland),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
 105,97,Caro / Pero (cereal coffee),3,Coffee & Beverages,Owned,,https://en.wikipedia.org/wiki/List_of_Nestl%C3%A9_brands,no
-106,1,Waters & Premium Beverages,1,Waters & Premium Beverages,Transitioning,"Nestlé Waters & Premium Beverages (Paris) is 100% Nestlé today; signed 23 Jul 2026 to become Peranel, a 50/50 JV with Platinum Equity (EV EUR 4.9bn, about EUR 3bn cash); closing expected H1 2027. All brands below move from Owned to 50% JV on closing",https://www.platinumequity.com/news/platinum-equity-and-nestle-to-create-peranel-a-5-6-billion-leader-in-water-and-premium-beverages/,yes
+106,1,Waters & Premium Beverages,1,Waters & Premium Beverages,Transitioning,"Fully owned by Nestlé today. Becoming a joint venture (Nestlé will own 50%) in mid-2027.",https://www.platinumequity.com/news/platinum-equity-and-nestle-to-create-peranel-a-5-6-billion-leader-in-water-and-premium-beverages/,yes
 107,106,Perrier (Source Perrier S.A.),2,Waters & Premium Beverages,Transitioning,Named in Peranel scope,https://www.perrier.com,no
 108,107,Perrier Original sparkling mineral water,3,Waters & Premium Beverages,Transitioning,,https://www.perrier.com,no
 109,107,Perrier flavored sparkling waters,3,Waters & Premium Beverages,Transitioning,Flavor list not confirmed from primary pages,https://www.perrier.com,no
