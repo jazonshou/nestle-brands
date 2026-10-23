@@ -787,6 +787,7 @@ function resize() {
     layout = arrange(pack, aspectOf(vp));
     scene.setLayout(layout);
     scene.islandDrop.clear();
+    scene.nestleDrop.x = scene.nestleDrop.y = 0;
   }
   strip.show(nav.state, vp.mode === "narrow", nav.origin);
   refreshChrome();
