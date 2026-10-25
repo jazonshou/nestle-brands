@@ -379,6 +379,10 @@ export class Card {
       head.append(t);
       frag.append(head);
       frag.append(el("p", "counts", `${countBrands(n)} brands`));
+      // A group that is a business of its own (e.g. a joint venture) says how Nestlé holds it.
+      if (n.e.ownership !== "Group") frag.append(this.statusChip(n));
+      const note = this.note(n);
+      if (note) frag.append(note);
       const link = this.link(n);
       if (link) frag.append(link);
       frag.append(this.chain(n));

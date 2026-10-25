@@ -1,0 +1,2252 @@
+[
+  {
+    "id": "57",
+    "name": "natural bliss",
+    "file": "logos/57.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.goodnes.com/natural-bliss/",
+    "image": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/gdn_brand/nav-logo_0.png"
+  },
+  {
+    "id": "74",
+    "name": "GoodHost (Canada)",
+    "file": "logos/74.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.madewithnestle.ca/goodhost.html",
+    "image": "https://www.madewithnestle.ca/content/dam/nestlecanadaincprogram/good-host/en/images/gh_2011_logo-01.png"
+  },
+  {
+    "id": "75",
+    "name": "Nesfruta (Canada)",
+    "file": "logos/75.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.madewithnestle.ca/nesfruta.html",
+    "image": "https://www.madewithnestle.ca/content/dam/nestlecanadaincprogram/nesfruta/en/images/nesfruta-logo-01_1_0.png"
+  },
+  {
+    "id": "77",
+    "name": "Special.T",
+    "file": "logos/77.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.special-t.com/prehome/",
+    "image": "https://www.special-t.com/prehome/images/logo-specialt.png"
+  },
+  {
+    "id": "84",
+    "name": "Santa Cristina (Spain)",
+    "file": "logos/84.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestleprofessional.es/marcas/santa-cristina",
+    "image": "https://www.nestleprofessional.es/sites/default/files/2022-05/santa-cristina-logo-verde-mod.png"
+  },
+  {
+    "id": "87",
+    "name": "Loumidis Papagalos (Greece)",
+    "file": "logos/87.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlenoiazomai.gr/loumidis",
+    "image": "https://www.nestlenoiazomai.gr/themes/custom/loumidis/assets/images/220930-logo-lm.jpg"
+  },
+  {
+    "id": "88",
+    "name": "Ecco (Peru)",
+    "file": "logos/88.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.nestle.com.pe/nuestros-productos/bebidas",
+    "image": "https://www.nestle.com.pe/sites/g/files/pydnoa276/files/400x400-ecco.png"
+  },
+  {
+    "id": "90",
+    "name": "Águila (Uruguay)",
+    "file": "logos/90.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.uy/marcas/aguila",
+    "image": "https://www.nestle.com.uy/sites/g/files/pydnoa261/files/aguila_4.png"
+  },
+  {
+    "id": "91",
+    "name": "El Chaná (Uruguay)",
+    "file": "logos/91.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.uy/brands/el-chana",
+    "image": "https://www.nestle.com.uy/sites/g/files/pydnoa261/files/2026-09/el%20chana_circ%20%282%29.png"
+  },
+  {
+    "id": "92",
+    "name": "International Roast (Australia/NZ)",
+    "file": "logos/92.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestleprofessional.com.au/brands/international-roast",
+    "image": "https://www.nestleprofessional.com.au/sites/default/files/2022-03/international_roast_0.png"
+  },
+  {
+    "id": "787",
+    "name": "Linde's (Germany)",
+    "file": "logos/787.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.de/marken/alle-marken/lindes",
+    "image": "https://www.nestle.de/sites/g/files/pydnoa391/files/NES_COF_Lindes_Logo%5B4%5D.png"
+  },
+  {
+    "id": "788",
+    "name": "Incarom (Switzerland)",
+    "file": "logos/788.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.ch/de/marken/kaffee-und-warme-getranke/incarom",
+    "image": "https://www.nestle.ch/sites/g/files/pydnoa506/files/2025-10/LogoINCAROM_ed.png"
+  },
+  {
+    "id": "789",
+    "name": "Eko (Spain)",
+    "file": "logos/789.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://empresa.nestle.es/es/marcas/cafe",
+    "image": "https://empresa.nestle.es/sites/g/files/pydnoa431/files/2026-09/logo-eko.png"
+  },
+  {
+    "id": "790",
+    "name": "Bracafé (Uruguay)",
+    "file": "logos/790.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.uy/marcas/cafes",
+    "image": "https://www.nestle.com.uy/sites/g/files/pydnoa261/files/LOGO%20BRACAFE%5B35%5D_page-0001-modified.png"
+  },
+  {
+    "id": "99",
+    "name": "Ricacao (Ecuador)",
+    "file": "logos/99.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ec/es/marcas/bebidas-instantaneas/nestle-ricacao",
+    "image": "https://www.nestle.com.ec/sites/g/files/pydnoa396/files/logo_ricacao_24.png"
+  },
+  {
+    "id": "101",
+    "name": "Chuckie (Philippines)",
+    "file": "logos/101.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ph/brands",
+    "image": "https://www.nestle.com.ph/sites/g/files/pydnoa366/files/chuckie.png"
+  },
+  {
+    "id": "104",
+    "name": "Romanette (Switzerland)",
+    "file": "logos/104.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.nestle.ch/de/marken/unsere-erfrischungsgetranke/romanette",
+    "image": "https://www.nestle.ch/sites/g/files/pydnoa506/files/2025-10/Logo-image-ed.png"
+  },
+  {
+    "id": "120",
+    "name": "Acqua Panna",
+    "file": "logos/120.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Acqua_Panna",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Acqua_Panna_logo.svg"
+  },
+  {
+    "id": "121",
+    "name": "Levissima",
+    "file": "logos/121.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://it.wikipedia.org/wiki/Levissima",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Levissima_Logo.svg"
+  },
+  {
+    "id": "123",
+    "name": "Contrex",
+    "file": "logos/123.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://fr.wikipedia.org/wiki/Contrex",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Logo_Contrex.svg"
+  },
+  {
+    "id": "124",
+    "name": "Hépar",
+    "file": "logos/124.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.hepar.fr/",
+    "image": "https://www.hepar.fr/themes/custom/hepar/images/logo.png"
+  },
+  {
+    "id": "129",
+    "name": "Al Manhal",
+    "file": "logos/129.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-mena.com/en/brands/water/al-manhal-water",
+    "image": "https://www.nestle-mena.com/sites/g/files/pydnoa581/files/2025-08/LOGO%20Circle.jpg"
+  },
+  {
+    "id": "133",
+    "name": "Sohat (Lebanon)",
+    "file": "logos/133.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Sohat",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/94/Sohat.jpg"
+  },
+  {
+    "id": "161",
+    "name": "Korpi",
+    "file": "logos/161.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlenoiazomai.gr/korpi",
+    "image": "https://www.nestlenoiazomai.gr/themes/custom/korpi/logo.png"
+  },
+  {
+    "id": "215",
+    "name": "Turtles (Canada)",
+    "file": "logos/215.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.madewithnestle.ca/turtles.html",
+    "image": "https://www.madewithnestle.ca/content/dam/nestlecanadaincprogram/turtles/en/images/turtles_banner_2012_logo-01_0.png"
+  },
+  {
+    "id": "222",
+    "name": "Munch (India)",
+    "file": "logos/222.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.in/brands/chocolate-and-confectionery/munch",
+    "image": "https://www.nestle.in/sites/g/files/pydnoa451/files/MUNCH-LOGO-%28224x224%29px.png"
+  },
+  {
+    "id": "223",
+    "name": "Nestlé Classic",
+    "file": "logos/223.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/chocolates/classic",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/classic.tmb-logo130.jpg"
+  },
+  {
+    "id": "235",
+    "name": "Brasil Cacau",
+    "file": "logos/235.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://pt.wikipedia.org/wiki/Chocolates_Brasil_Cacau",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Logotipo_da_Brasil_Cacau.svg"
+  },
+  {
+    "id": "237",
+    "name": "Hsu Fu Chi (China)",
+    "file": "logos/237.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.hsufuchifoods.com/",
+    "image": "https://www.hsufuchifoods.com/uploadfiles/2025/10/20251029145430111.png?MjAyNTEwMjkxNDU0MzAxMTEucG5n"
+  },
+  {
+    "id": "254",
+    "name": "Dreyer's / Edy's (US)",
+    "file": "logos/254.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.icecream.com/us/en/brands/edys-and-dreyers",
+    "image": "https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/icecream-com/brands/edys-dreyers-utility-nav-logo.webp"
+  },
+  {
+    "id": "255",
+    "name": "Drumstick",
+    "file": "logos/255.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.icecream.com/us/en/brands/drumstick",
+    "image": "https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/drumstick/2-0/universal/Drumstick-Logo-197x97.png"
+  },
+  {
+    "id": "256",
+    "name": "Outshine",
+    "file": "logos/256.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.icecream.com/us/en/brands/outshine",
+    "image": "https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/icecream-com/background-design/Logo-Outshine-200x200.png"
+  },
+  {
+    "id": "257",
+    "name": "Skinny Cow",
+    "file": "logos/257.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.icecream.com/us/en/brands/skinny-cow",
+    "image": "https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/skinny-cow/home/Skinny%20Cow%20Logo.svg"
+  },
+  {
+    "id": "258",
+    "name": "Häagen-Dazs (US)",
+    "file": "logos/258.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.icecream.com/us/en/brands/haagen-dazs",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/H%C3%A4agen-Dazs_Logo.svg"
+  },
+  {
+    "id": "259",
+    "name": "Extrême",
+    "file": "logos/259.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.extreme-icecream.com/fr/",
+    "image": "https://www.extreme-icecream.com/wp-content/uploads/2022/03/new-small-logo.png"
+  },
+  {
+    "id": "260",
+    "name": "Pirulo",
+    "file": "logos/260.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.froneri.com/de/marken/pirulo-de/",
+    "image": "https://www.froneri.com/de/static/c2e6cb48c472d84db99e00efe30d3d6b/1d5f4/Master_Pirulo_logo_2023_hi_res_3_efb62e4f51.webp"
+  },
+  {
+    "id": "261",
+    "name": "Maxibon",
+    "file": "logos/261.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Maxibon",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/b0/Maxibon_logo.png"
+  },
+  {
+    "id": "262",
+    "name": "Nuii",
+    "file": "logos/262.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.froneri.com/brands/nuii/",
+    "image": "https://www.froneri.com/static/1f293b967160b916d34778e431d5aa5d/6c7b6/Nuii_logo_3b69ac6b23.png"
+  },
+  {
+    "id": "263",
+    "name": "Mövenpick ice cream",
+    "file": "logos/263.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Moevenpick_logotype.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Moevenpick_logotype.jpg"
+  },
+  {
+    "id": "265",
+    "name": "Peters (Australia)",
+    "file": "logos/265.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.peters.com.au/",
+    "image": "https://www.peters.com.au/wp-content/themes/peters/static/media/peters-logo.7fba8d04.svg"
+  },
+  {
+    "id": "266",
+    "name": "Tip Top (New Zealand)",
+    "file": "logos/266.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Tip_Top_(ice_cream)",
+    "image": "https://upload.wikimedia.org/wikipedia/en/b/ba/Tip_Top_icecream_logo.svg"
+  },
+  {
+    "id": "267",
+    "name": "Kelly's of Cornwall",
+    "file": "logos/267.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.kellysofcornwall.co.uk/",
+    "image": "https://www.kellysofcornwall.co.uk/app/themes/kellys-cornwall/static/build/images/logo.b8e5af47.svg"
+  },
+  {
+    "id": "269",
+    "name": "Kāpiti",
+    "file": "logos/269.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://kapitiicecream.co.nz/",
+    "image": "https://cdn.prod.website-files.com/620aad58387394efe9951e58/620aad5838739446d6951e9e_kapiti-logo-gold.png"
+  },
+  {
+    "id": "270",
+    "name": "Connoisseur",
+    "file": "logos/270.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://connoisseuricecream.com.au/",
+    "image": "https://connoisseuricecream.com.au/wp-content/uploads/2021/05/Connoisseur_Logo_New_Gradient-1-1.png"
+  },
+  {
+    "id": "272",
+    "name": "Rowntree's ice lollies",
+    "file": "logos/272.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Rowntree%27s",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a8/Rowntree%27s_logo.png"
+  },
+  {
+    "id": "273",
+    "name": "Oreo ice cream",
+    "file": "logos/273.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Oreo_Logo_2014.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Oreo_Logo_2014.svg"
+  },
+  {
+    "id": "274",
+    "name": "Crufi (Uruguay)",
+    "file": "logos/274.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://crufi.com.uy/",
+    "image": "https://crufi.com.uy/files/logo.svg"
+  },
+  {
+    "id": "275",
+    "name": "Premia (Baltics)",
+    "file": "logos/275.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://premia.ee/",
+    "image": "https://premia.ee/wordpress/wp-content/themes/premia/img/logo-premia.png"
+  },
+  {
+    "id": "290",
+    "name": "LaFrutta",
+    "file": "logos/290.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.froneri.com/pt-BR/marcas/lafrutta/",
+    "image": "https://www.froneri.com/pt-BR/static/70f17a59da815707db00f2f4bbcee99b/840bc/LOGO_LAFRUTTA_f7a5e4803d.png"
+  },
+  {
+    "id": "291",
+    "name": "Mega",
+    "file": "logos/291.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.froneri.com/pt-BR/marcas/mega/",
+    "image": "https://www.froneri.com/pt-BR/static/f821cc9a07556741ab386cd930f870d2/af60f/LOGO_MEGA_f767216f55.png"
+  },
+  {
+    "id": "679",
+    "name": "Frigor (Argentina)",
+    "file": "logos/679.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.froneri.com.ar/",
+    "image": "https://www.froneri.com.ar/media/brand/frigor-thumb.jpg"
+  },
+  {
+    "id": "794",
+    "name": "Cadbury ice cream",
+    "file": "logos/794.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Cadbury",
+    "image": "https://upload.wikimedia.org/wikipedia/en/a/a4/Cadbury_%282020%29.svg"
+  },
+  {
+    "id": "795",
+    "name": "Milka ice cream",
+    "file": "logos/795.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Milka",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Milka_purple_logo18.svg"
+  },
+  {
+    "id": "796",
+    "name": "Lotus Biscoff ice cream",
+    "file": "logos/796.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.lotusbiscoff.com/",
+    "image": "https://www.lotusbiscoff.com/sites/default/files/dropsolid-markets/default-logo/lotusbiscoff_logo-v2_0.svg"
+  },
+  {
+    "id": "798",
+    "name": "Hjem-IS (Denmark)",
+    "file": "logos/798.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://hjem-is.dk/",
+    "image": "https://hjem-is.dk/cdn/shop/files/Favicon_v2.png"
+  },
+  {
+    "id": "803",
+    "name": "Nestlé Tradicional (Brazil)",
+    "file": "logos/803.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.froneri.com/pt-BR/marcas/nestle-tradicional/",
+    "image": "https://www.froneri.com/pt-BR/static/e3eece3535e14b40f24daf26f7a076f0/8dba7/Logo_Sorvetes_Nestle_Tradicional_1_c19b5cf445.png"
+  },
+  {
+    "id": "804",
+    "name": "Frosty Paws",
+    "file": "logos/804.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.icecream.com/us/en/brands/frosty-paws",
+    "image": "https://www.icecream.com/content/dam/dreyersgrandicecreaminc/us/en/licensed/logos/frosty-paws-logo-816x233.png"
+  },
+  {
+    "id": "278",
+    "name": "Drumstick (Canada)",
+    "file": "logos/278.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.madewithnestle.ca/drumstick.html",
+    "image": "https://www.madewithnestle.ca/content/dam/nestlecanadaincprogram/drumstick/en/images/drumstick_logo-v2.png"
+  },
+  {
+    "id": "279",
+    "name": "Parlour (Canada)",
+    "file": "logos/279.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.madewithnestle.ca/parlour.html",
+    "image": "https://www.madewithnestle.ca/content/dam/nestlecanadaincprogram/parlour/en/images/parlour_logo_v3-01_0.png"
+  },
+  {
+    "id": "280",
+    "name": "Real Dairy (Canada)",
+    "file": "logos/280.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.madewithnestle.ca/real-dairy.html",
+    "image": "https://www.madewithnestle.ca/content/dam/nestlecanadaincprogram/real-diary/en/images/realdairy_eng_reupload2.png"
+  },
+  {
+    "id": "281",
+    "name": "iÖGO frozen yogurt (Canada)",
+    "file": "logos/281.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.madewithnestle.ca/iogo-frozen-yogurt.html",
+    "image": "https://www.madewithnestle.ca/content/dam/nestlecanadaincprogram/iogo/en/images/iOGO-logo.png"
+  },
+  {
+    "id": "282",
+    "name": "Häagen-Dazs (Canada)",
+    "file": "logos/282.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/H%C3%A4agen-Dazs",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/H%C3%A4agen-Dazs_Logo.svg"
+  },
+  {
+    "id": "283",
+    "name": "Del Monte (Canada)",
+    "file": "logos/283.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Del_Monte_Foods",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Logo_Del_Monte.svg"
+  },
+  {
+    "id": "284",
+    "name": "Baskin Robbins at Home (Canada)",
+    "file": "logos/284.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Baskin-Robbins",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Baskin-Robbins_logo_2022.svg"
+  },
+  {
+    "id": "286",
+    "name": "Savory (Chile)",
+    "file": "logos/286.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.savory.cl/",
+    "image": "https://www.savory.cl/sites/default/files/savory-logo.png"
+  },
+  {
+    "id": "287",
+    "name": "D'Onofrio ice cream (Peru)",
+    "file": "logos/287.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:D%27Onofrio_2025.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/99/D%27Onofrio_2025.svg"
+  },
+  {
+    "id": "800",
+    "name": "Drumstick (Malaysia)",
+    "file": "logos/800.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://en.wikipedia.org/wiki/Drumstick_(frozen_dairy_dessert)",
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/d6/Nestle_Drumstick_logo.png"
+  },
+  {
+    "id": "298",
+    "name": "Vital Pursuit",
+    "file": "logos/298.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.goodnes.com/vital-pursuit/",
+    "image": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/gdn_brand/vital_vital_secondarylogo_assets_2024-1.png"
+  },
+  {
+    "id": "301",
+    "name": "Jack's",
+    "file": "logos/301.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.goodnes.com/jacks/",
+    "image": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/gdn_brand/logo-light.png"
+  },
+  {
+    "id": "305",
+    "name": "Wagner",
+    "file": "logos/305.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://de.wikipedia.org/wiki/Original_Wagner_Pizza",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_Wagner_2020.jpg"
+  },
+  {
+    "id": "306",
+    "name": "Buitoni frozen pizza (Europe)",
+    "file": "logos/306.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.buitoni-pizza.com/",
+    "image": "https://www.buitoni-pizza.com/themes/custom/buitoni_2026_th/logo.svg"
+  },
+  {
+    "id": "310",
+    "name": "Nature's Heart (Latin America)",
+    "file": "logos/310.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/origem-vegetal/natures-heart",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-natural-heart.jpg"
+  },
+  {
+    "id": "801",
+    "name": "Mings",
+    "file": "logos/801.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.goodnes.com/mings/",
+    "image": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/gdn_brand/layer_1.png"
+  },
+  {
+    "id": "331",
+    "name": "Totole (China)",
+    "file": "logos/331.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.totole.com.cn/",
+    "image": "https://www.totole.com.cn/images/pc/logo.svg"
+  },
+  {
+    "id": "332",
+    "name": "Haoji (China)",
+    "file": "logos/332.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.haoji.com.cn/",
+    "image": "https://www.haoji.com.cn/Uploadfiles/Picture/2016-6-14/2016614143024935.png"
+  },
+  {
+    "id": "341",
+    "name": "Media Crema",
+    "file": "logos/341.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.goodnes.com/media-crema/",
+    "image": "https://www.goodnes.com/sites/g/files/jgfbjl321/files/gdn_brand/VisualAsset_MDCRM_EMD_MediaCrema_Logo_4c_HiRes.jpg"
+  },
+  {
+    "id": "342",
+    "name": "Creme de Leite Nestlé (Brazil)",
+    "file": "logos/342.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/culinarios/nestle-creme-de-leite",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-creme-leite.jpg"
+  },
+  {
+    "id": "343",
+    "name": "Nestlé All Purpose Cream (Philippines)",
+    "file": "logos/343.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlegoodnes.com/ph/brands/nestle-all-purpose-cream",
+    "image": "https://www.nestlegoodnes.com/ph/sites/default/files/logos/Nestle%20Creams%20Logo%20Rev.png"
+  },
+  {
+    "id": "344",
+    "name": "Molico (Brazil)",
+    "file": "logos/344.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/lacteos/molico",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-molico.jpg"
+  },
+  {
+    "id": "347",
+    "name": "Nestlé Everyday (India)",
+    "file": "logos/347.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.in/brands/dairy/nestle-everyday",
+    "image": "https://www.nestle.in/sites/g/files/pydnoa451/files/EVD-Logo-132x74-Blue.png"
+  },
+  {
+    "id": "348",
+    "name": "Nestlé a+ (India)",
+    "file": "logos/348.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.in/brands/dairy/nestle-a-plus",
+    "image": "https://www.nestle.in/sites/g/files/pydnoa451/files/NESTL%C3%89%20a%2B-%20400x400.png"
+  },
+  {
+    "id": "352",
+    "name": "Cini Minis / Curiously Cinnamon",
+    "file": "logos/352.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-cereals.com/uk/brands/curiously-cinnamon",
+    "image": "https://www.nestle-cereals.com/uk/sites/g/files/qirczx836/files/2022-10/Curiously%20Cinnamon_0.png"
+  },
+  {
+    "id": "359",
+    "name": "Nestlé Corn Flakes",
+    "file": "logos/359.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/cereais/nestle-corn-flakes",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/corn-flakesv2.jpg"
+  },
+  {
+    "id": "360",
+    "name": "Fitness",
+    "file": "logos/360.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-cereals.com/fr/cereales/fitness",
+    "image": "https://www.nestle-cereals.com/fr/sites/g/files/qirczx866/files/2022-06/Fitness_Logo.png"
+  },
+  {
+    "id": "362",
+    "name": "Go Free",
+    "file": "logos/362.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-cereals.com/uk/brands/go-free",
+    "image": "https://www.nestle-cereals.com/uk/sites/g/files/qirczx836/files/2026-05/Go%20Free%20logo%202_0.jpg"
+  },
+  {
+    "id": "366",
+    "name": "Crunch cereal",
+    "file": "logos/366.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-cereals.com/fr/cereales/crunch",
+    "image": "https://www.nestle-cereals.com/fr/sites/g/files/qirczx866/files/2022-10/logo_crunch_fond_2.png"
+  },
+  {
+    "id": "367",
+    "name": "Chokella",
+    "file": "logos/367.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-cereals.com/fr/cereales/chokella",
+    "image": "https://www.nestle-cereals.com/fr/sites/g/files/qirczx866/files/2022-10/logo-chokella.png"
+  },
+  {
+    "id": "368",
+    "name": "Koko Krunch (Asia)",
+    "file": "logos/368.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.in/brands/breakfast-cereals/koko-krunch",
+    "image": "https://www.nestle.in/sites/g/files/pydnoa451/files/Koko-Krunch-Logo-224X224.png"
+  },
+  {
+    "id": "369",
+    "name": "Nestlé Gold",
+    "file": "logos/369.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.in/brands/breakfast-cereals/gold-crunchy-oats-and-corn-flakes",
+    "image": "https://www.nestle.in/sites/g/files/pydnoa451/files/Nestle-Gold-Flakes-Logo-224X224.png"
+  },
+  {
+    "id": "370",
+    "name": "Munch cereal (India)",
+    "file": "logos/370.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.in/brands/breakfast-cereals/munch-crunchilicious-cereal",
+    "image": "https://www.nestle.in/sites/g/files/pydnoa451/files/Munch-Cereal-Logoo-224X224.png"
+  },
+  {
+    "id": "371",
+    "name": "Clusters",
+    "file": "logos/371.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-cereals.com/de/cerealien/clusters",
+    "image": "https://www.nestle-cereals.com/de/sites/g/files/qirczx871/files/2022-11/clusters_logo_170512-01_neu.png"
+  },
+  {
+    "id": "372",
+    "name": "Honey Stars",
+    "file": "logos/372.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-cereals.com/sg/cereals/honey-stars",
+    "image": "https://www.nestle-cereals.com/sg/sites/g/files/qirczx1011/files/2023-03/honeystar_brand_logo_752x600pixfromhk_0.png"
+  },
+  {
+    "id": "375",
+    "name": "Nescau Cereal",
+    "file": "logos/375.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/cereais/nescau-cereal",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/2024-11/logo-nescau_0.jpg"
+  },
+  {
+    "id": "377",
+    "name": "Moça Flakes",
+    "file": "logos/377.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/cereais/moca-flakes",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/moca-flakes.jpg"
+  },
+  {
+    "id": "378",
+    "name": "Negresco Cereal",
+    "file": "logos/378.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/cereais/negresco-cereal",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/2024-11/logo-negresco_1_0.png"
+  },
+  {
+    "id": "379",
+    "name": "Nesfit",
+    "file": "logos/379.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/cereais/nesfit-cereais",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/nesfitv2.jpg"
+  },
+  {
+    "id": "380",
+    "name": "Snow Flakes",
+    "file": "logos/380.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/cereais/snow-flakes",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/2024-11/logo-snow-flakes.jpg"
+  },
+  {
+    "id": "714",
+    "name": "Estrelitas (Portugal)",
+    "file": "logos/714.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-cereals.com/pt/cereais/estrelitas/cereais-com-mel",
+    "image": "https://www.nestle-cereals.com/pt/sites/g/files/qirczx881/files/2024-10/231113_LOGO_Estrelitas_rgb.png"
+  },
+  {
+    "id": "418",
+    "name": "Purina Puppy Chow",
+    "file": "logos/418.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com/puppy-chow",
+    "image": "https://www.purina.com/sites/default/files/2023-03/pcc_hlthystrt_pms_398x360.png"
+  },
+  {
+    "id": "452",
+    "name": "Kit & Kaboodle",
+    "file": "logos/452.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com/kit-kaboodle",
+    "image": "https://www.purina.com/sites/default/files/2023-02/knk_logo_hub_white_300x200.png"
+  },
+  {
+    "id": "453",
+    "name": "Whisker Lickin's",
+    "file": "logos/453.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com/whisker-lickins",
+    "image": "https://www.purina.com/sites/default/files/2023-02/purinatreats_logo_whiskerlickins_500x300_1.png"
+  },
+  {
+    "id": "461",
+    "name": "Moist & Meaty",
+    "file": "logos/461.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com/brands",
+    "image": "https://www.purina.com/sites/default/files/2023-03/mm_cmyk_398x360.png"
+  },
+  {
+    "id": "462",
+    "name": "Busy Bone",
+    "file": "logos/462.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com/busy-bone",
+    "image": "https://www.purina.com/sites/default/files/2025-12/busy_logo.png"
+  },
+  {
+    "id": "487",
+    "name": "Tails.com (UK)",
+    "file": "logos/487.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://tails.com/gb/",
+    "image": "https://a.storyblok.com/f/291880536296772/2116x464/dfe53ec9a2/33a515583889e9868d27626494867f1d.svg"
+  },
+  {
+    "id": "489",
+    "name": "Purina Institute",
+    "file": "logos/489.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.purina.co.nz/about-us/purina-in-the-community/purina-institute",
+    "image": "https://www.purina.co.nz/sites/default/files/2025-05/Institute3%202.png"
+  },
+  {
+    "id": "507",
+    "name": "Monpetit (Japan)",
+    "file": "logos/507.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.co.jp/brands/petcare/monpetit",
+    "image": "https://www.nestle.co.jp/sites/g/files/pydnoa331/files/purina_monpetit-logo-square.jpg"
+  },
+  {
+    "id": "528",
+    "name": "Purina Bonzo",
+    "file": "logos/528.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/nutricao-animal/purina-bonzo",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-bonzo_0.png"
+  },
+  {
+    "id": "529",
+    "name": "Doguitos",
+    "file": "logos/529.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.purina.com.br/doguitos",
+    "image": "https://purina.com.br/sites/default/files/2026-10/doguitos-logo-barra.png"
+  },
+  {
+    "id": "530",
+    "name": "Gatsy",
+    "file": "logos/530.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/nutricao-animal/purina-gatsy",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-gatsy.jpg"
+  },
+  {
+    "id": "531",
+    "name": "Kanina",
+    "file": "logos/531.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/nutricao-animal/purina-kanina",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-kanina.jpg"
+  },
+  {
+    "id": "550",
+    "name": "Nancare",
+    "file": "logos/550.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlebebe.es/nuestras-marcas/nancare",
+    "image": "https://www.nestlebebe.es/sites/default/files/generic_image/logo_nan_0.png"
+  },
+  {
+    "id": "552",
+    "name": "BEBA",
+    "file": "logos/552.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.bebafamily.de/beba",
+    "image": "https://www.bebafamily.de/sites/default/files/2024-11/beba_family_logo.svg"
+  },
+  {
+    "id": "556",
+    "name": "Nestogen",
+    "file": "logos/556.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ph/brands/allbrands/nestogen%C2%AE-kid-3",
+    "image": "https://www.nestle.com.ph/sites/g/files/pydnoa366/files/download%402x.png"
+  },
+  {
+    "id": "557",
+    "name": "Neslac (Brazil)",
+    "file": "logos/557.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/alimentos-infantis/neslac",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/neslac.jpg"
+  },
+  {
+    "id": "562",
+    "name": "Mucilon (Brazil)",
+    "file": "logos/562.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/alimentos-infantis/mucilon",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-mucilon-atual.jpg"
+  },
+  {
+    "id": "563",
+    "name": "Nestonutri (Brazil)",
+    "file": "logos/563.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/alimentos-infantis/nestonutri",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-nestonutri.jpg"
+  },
+  {
+    "id": "564",
+    "name": "Farinha Láctea (Brazil)",
+    "file": "logos/564.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/cereais/farinha-lactea-nestle",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-farinha-lactea_0.jpg"
+  },
+  {
+    "id": "567",
+    "name": "Lactogrow",
+    "file": "logos/567.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.in/brands/nutrition/lactogrow",
+    "image": "https://www.nestle.in/sites/g/files/pydnoa451/files/Lactogrow%20Logo%20Blue.jpg"
+  },
+  {
+    "id": "570",
+    "name": "Illuma",
+    "file": "logos/570.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.mamaclub.wyethnutrition.hk/products/s-26",
+    "image": "https://www.mamaclub.wyethnutrition.hk/sites/default/files/generic_image/hk-illuma.png"
+  },
+  {
+    "id": "571",
+    "name": "S-26",
+    "file": "logos/571.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.mamaclub.wyethnutrition.hk/products/s-26",
+    "image": "https://www.mamaclub.wyethnutrition.hk/sites/default/files/generic_image/s-26_logo.jpg"
+  },
+  {
+    "id": "572",
+    "name": "Promil",
+    "file": "logos/572.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ph/brands/allbrands/promil",
+    "image": "https://www.nestle.com.ph/sites/g/files/pydnoa366/files/2025-01/Wyeth-Webpage_Promil%20%281%29.png"
+  },
+  {
+    "id": "574",
+    "name": "Bonina (Philippines)",
+    "file": "logos/574.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ph/brands/allbrands/bonina",
+    "image": "https://www.nestle.com.ph/sites/g/files/pydnoa366/files/2025-01/Wyeth-Webpage_Bonina.png"
+  },
+  {
+    "id": "575",
+    "name": "Ascenda",
+    "file": "logos/575.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ph/brands/allbrands/ascenda",
+    "image": "https://www.nestle.com.ph/sites/g/files/pydnoa366/files/2024-12/Profile%20Logo%20copy.jpg"
+  },
+  {
+    "id": "819",
+    "name": "Bonakid Pre-School (Philippines)",
+    "file": "logos/819.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ph/brands/allbrands/bonakidpreschool",
+    "image": "https://www.nestle.com.ph/sites/g/files/pydnoa366/files/2024-12/Profile%20Logo%20copy.png"
+  },
+  {
+    "id": "539",
+    "name": "Extensive HA",
+    "file": "logos/539.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlenutritionstore.com/shop-by-brands/extensive-ha.html",
+    "image": "https://www.nestlenutritionstore.com/media/catalog/category/Extensive-HA-logo.png"
+  },
+  {
+    "id": "817",
+    "name": "Ceregrow",
+    "file": "logos/817.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.in/brands/nutrition/ceregrow",
+    "image": "https://www.nestle.in/sites/g/files/pydnoa451/files/2024-09/Ceregrow%20Final%20logo.jpg"
+  },
+  {
+    "id": "818",
+    "name": "Nangrow",
+    "file": "logos/818.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.nestle.in/brands/nutrition/nangrow",
+    "image": "https://www.nestle.in/sites/g/files/pydnoa451/files/2024-11/Nangrow-Logo-Circle-400x400.png"
+  },
+  {
+    "id": "820",
+    "name": "Good Start (Mexico)",
+    "file": "logos/820.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlefamilynes.com.mx/marcas/good-care",
+    "image": "https://www.nestlefamilynes.com.mx/sites/default/files/generic_image/logo-good-care-large.png"
+  },
+  {
+    "id": "821",
+    "name": "Nidina",
+    "file": "logos/821.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlebebe.es/nuestras-marcas/nidina",
+    "image": "https://www.nestlebebe.es/sites/default/files/card_image/216x216_logo_nidina.jpg"
+  },
+  {
+    "id": "822",
+    "name": "Nativa (Spain)",
+    "file": "logos/822.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlebebe.es/nuestras-marcas/nativa",
+    "image": "https://www.nestlebebe.es/sites/default/files/generic_image/image_598.png"
+  },
+  {
+    "id": "823",
+    "name": "Nidal",
+    "file": "logos/823.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlegoodnest.com/fr/nidal",
+    "image": "https://www.nestlegoodnest.com/fr/sites/default/files/logos/LOGO_NIDAL-500-3.png"
+  },
+  {
+    "id": "824",
+    "name": "Nestlé MOM",
+    "file": "logos/824.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.familynes.sg/brand/mom-maternal-nutritional-supplement",
+    "image": "https://www.familynes.sg/sites/default/files/card_image/Nestle%20MOM%20Logo_300x300.png"
+  },
+  {
+    "id": "614",
+    "name": "VOWST",
+    "file": "logos/614.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.vowst.com/",
+    "image": "https://www.vowst.com/sites/g/files/lpfasj1266/themes/site/vowst/assets/img/logo-VOWST-Primary-Color.svg"
+  },
+  {
+    "id": "626",
+    "name": "Douglas Laboratories",
+    "file": "logos/626.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.douglaslabs.com/",
+    "image": "https://www.douglaslabs.com/media/logo/stores/12/logo.png"
+  },
+  {
+    "id": "627",
+    "name": "Genestra",
+    "file": "logos/627.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.genestra.ca/en",
+    "image": "https://www.genestra.ca/themes/custom/sitebuilder/logo.png"
+  },
+  {
+    "id": "629",
+    "name": "Sundown",
+    "file": "logos/629.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com.br/marcas",
+    "image": "https://www.nestlehealthscience.com.br/sites/default/files/2024-01/sundown-brand-logox260.jpg"
+  },
+  {
+    "id": "826",
+    "name": "Klean Athlete",
+    "file": "logos/826.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands/klean-athlete",
+    "image": "https://www.nestlehealthscience.com/sites/default/files/NHSc_Logos_KleanAthelete_0.jpg"
+  },
+  {
+    "id": "827",
+    "name": "Minami",
+    "file": "logos/827.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestlehealthscience.com/brands/minami",
+    "image": "https://www.nestlehealthscience.com/sites/default/files/NHSc_Logos_Minami_0.jpg"
+  },
+  {
+    "id": "632",
+    "name": "Nature's Bounty",
+    "file": "logos/632.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.naturesbounty.com/",
+    "image": "https://naturesbounty.com/cdn/shop/files/NB-logo-dark-green.svg"
+  },
+  {
+    "id": "633",
+    "name": "Puritan's Pride",
+    "file": "logos/633.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.puritan.com/",
+    "image": "https://www.puritan.com/vf/puritanspride/icons/header/puritans-pride-468x128.png"
+  },
+  {
+    "id": "634",
+    "name": "Osteo Bi-Flex",
+    "file": "logos/634.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.osteobiflex.com/",
+    "image": "https://www.osteobiflex.com/sites/g/files/lpfasj1286/themes/site/osteobiflex_us/assets/img/logo.jpg"
+  },
+  {
+    "id": "635",
+    "name": "Ester-C",
+    "file": "logos/635.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.esterc.com/",
+    "image": "https://www.esterc.com/sites/g/files/lpfasj876/themes/site/ester_c/assets/img/ec_logo.png"
+  },
+  {
+    "id": "636",
+    "name": "Gard",
+    "file": "logos/636.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.yourgard.com/",
+    "image": "https://www.yourgard.com/sites/g/files/lpfasj841/themes/site/gard/assets/img/gard-logo.svg"
+  },
+  {
+    "id": "638",
+    "name": "Nuun",
+    "file": "logos/638.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://nuunlife.com/",
+    "image": "https://nuunlife.com/cdn/shop/files/nuun-logo-2022_1200x1200.png"
+  },
+  {
+    "id": "641",
+    "name": "Minor's",
+    "file": "logos/641.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestleprofessional.com/brands/minors",
+    "image": "https://www.nestleprofessional.com/sites/default/files/2023-04/Minors%20logo.jpg"
+  },
+  {
+    "id": "642",
+    "name": "Chef-mate",
+    "file": "logos/642.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.webstaurantstore.com/vendor/chef-mate.html",
+    "image": "https://www.webstaurantstore.com/images/vendor/medium/20231207/chefmate_logo_hr.jpg"
+  },
+  {
+    "id": "643",
+    "name": "Trio",
+    "file": "logos/643.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestleprofessional.ca/brands",
+    "image": "https://www.nestleprofessional.ca/sites/default/files/2022-08/trio-logo-nestle-professional-fo.png"
+  },
+  {
+    "id": "644",
+    "name": "Nestlé Vitality",
+    "file": "logos/644.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestleprofessional.ca/brands/nestle-vitality",
+    "image": "https://www.nestleprofessional.ca/sites/default/files/2022-08/nestle-vitality-logo-nestle-prof.png"
+  },
+  {
+    "id": "650",
+    "name": "Chef",
+    "file": "logos/650.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestleprofessional.com.mx/marcas/chef",
+    "image": "https://www.nestleprofessional.com.mx/sites/default/files/2022-12/CHEF_circulo.png"
+  },
+  {
+    "id": "829",
+    "name": "Sunsational",
+    "file": "logos/829.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestleprofessional.ca/brands/sunsational",
+    "image": "https://www.nestleprofessional.ca/sites/default/files/2026-03/Sunsational_Logo-Colour-RGB_0.PNG"
+  },
+  {
+    "id": "376",
+    "name": "Neston",
+    "file": "logos/376.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/cereais/neston",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/neston_1.jpg"
+  },
+  {
+    "id": "381",
+    "name": "Nestlé Aveia",
+    "file": "logos/381.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/cereais/nestle-aveia",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-nestle-aveia.jpg"
+  },
+  {
+    "id": "653",
+    "name": "Alpino",
+    "file": "logos/653.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/chocolates/alpino",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/alpino.tmb-logo130.jpg"
+  },
+  {
+    "id": "654",
+    "name": "ChocoTrio",
+    "file": "logos/654.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/chocolates/chocotrio",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-choco-trio.png"
+  },
+  {
+    "id": "655",
+    "name": "Dois Frades",
+    "file": "logos/655.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/chocolates/dois-frades",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/choco-frades_0.png"
+  },
+  {
+    "id": "656",
+    "name": "Prestígio",
+    "file": "logos/656.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/chocolates/prestigio",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/prestigio_0.jpg"
+  },
+  {
+    "id": "659",
+    "name": "Bono",
+    "file": "logos/659.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/biscoitos/bono",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/logo-bono-atualizado.jpg"
+  },
+  {
+    "id": "660",
+    "name": "Calipso",
+    "file": "logos/660.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/biscoitos/calipso",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/calipso_0.jpg"
+  },
+  {
+    "id": "663",
+    "name": "Tostines",
+    "file": "logos/663.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.br/marcas/biscoitos/tostines",
+    "image": "https://www.nestle.com.br/sites/g/files/pydnoa436/files/tostineslogo.jpg"
+  },
+  {
+    "id": "665",
+    "name": "Super 8",
+    "file": "logos/665.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.cl/marcas/chocolates",
+    "image": "https://www.nestle.cl/sites/g/files/pydnoa376/files/Marca_Super8_0.jpg"
+  },
+  {
+    "id": "672",
+    "name": "Sublime",
+    "file": "logos/672.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.pe/nuestros-productos/chocolates/sublime",
+    "image": "https://www.nestle.com.pe/sites/g/files/pydnoa276/files/Logo_Sublime-dic22%20%281%29.png"
+  },
+  {
+    "id": "673",
+    "name": "Triángulo",
+    "file": "logos/673.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.pe/nuestros-productos/chocolates/triangulo",
+    "image": "https://www.nestle.com.pe/sites/g/files/pydnoa276/files/Logo_Triangulo-dic22_0.png"
+  },
+  {
+    "id": "674",
+    "name": "Besos de Moza",
+    "file": "logos/674.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.pe/nuestros-productos/chocolates/besos-de-moza",
+    "image": "https://www.nestle.com.pe/sites/g/files/pydnoa276/files/Logo_Besos_moza-dic22_0.png"
+  },
+  {
+    "id": "676",
+    "name": "Amor",
+    "file": "logos/676.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ec/es/marcas/galletas/amor",
+    "image": "https://www.nestle.com.ec/sites/g/files/pydnoa396/files/2025-02/NUEVO-LOGO-AMOR.png"
+  },
+  {
+    "id": "677",
+    "name": "Tango",
+    "file": "logos/677.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ec/es/marcas/galletas/tango",
+    "image": "https://www.nestle.com.ec/sites/g/files/pydnoa396/files/2025-04/tango-logo.png"
+  },
+  {
+    "id": "681",
+    "name": "Mabel's",
+    "file": "logos/681.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.bo/es/brands/brandlistinggalletas",
+    "image": "https://www.nestle.com.bo/sites/g/files/pydnoa271/files/03-Logo-Mabels-Wafer.jpg"
+  },
+  {
+    "id": "683",
+    "name": "Savoy",
+    "file": "logos/683.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ve/brands/savoy-nestle",
+    "image": "https://www.nestle.com.ve/sites/g/files/pydnoa526/files/2025-12/Savoy%20logo%20M.png"
+  },
+  {
+    "id": "685",
+    "name": "Bamba",
+    "file": "logos/685.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.osem-nestleusa.com/bamba-brand-page",
+    "image": "https://www.osem-nestleusa.com/sites/default/files/2022-11/Bamba_Brands_CIRC.png"
+  },
+  {
+    "id": "686",
+    "name": "Bissli",
+    "file": "logos/686.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.osem-nestle.co.il/brands",
+    "image": "https://www.osem-nestle.co.il/sites/site.prod.osem-nestle.co.il/files/2020-09/5_32_LOGO_BISSLI.jpg"
+  },
+  {
+    "id": "687",
+    "name": "Tivall",
+    "file": "logos/687.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.osem-nestleusa.com/tivall",
+    "image": "https://www.osem-nestleusa.com/sites/default/files/2022-11/Tivall_logo_CIRC.png"
+  },
+  {
+    "id": "688",
+    "name": "Gratify",
+    "file": "logos/688.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.osem-nestleusa.com/gratify-gluten-free",
+    "image": "https://www.osem-nestleusa.com/sites/default/files/2022-11/Gratify_Brands_CIRC.png"
+  },
+  {
+    "id": "693",
+    "name": "Materna (Israel)",
+    "file": "logos/693.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.osem-nestle.co.il/brands",
+    "image": "https://www.osem-nestle.co.il/sites/site.prod.osem-nestle.co.il/files/2020-09/5_32_LOGO_MATERNA_0.jpg"
+  },
+  {
+    "id": "694",
+    "name": "Tzabar (Israel)",
+    "file": "logos/694.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.osem-nestle.co.il/brands",
+    "image": "https://www.osem-nestle.co.il/sites/site.prod.osem-nestle.co.il/files/2020-09/5_32_LOGO_TZABAR.jpg"
+  },
+  {
+    "id": "699",
+    "name": "Nespray",
+    "file": "logos/699.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-esar.com/dairy",
+    "image": "https://www.nestle-esar.com/sites/g/files/pydnoa441/files/Nespray_0.png"
+  },
+  {
+    "id": "701",
+    "name": "Tex",
+    "file": "logos/701.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-esar.com/chocolate",
+    "image": "https://www.nestle-esar.com/sites/g/files/pydnoa441/files/tex-logo-round_3.png"
+  },
+  {
+    "id": "705",
+    "name": "Choco Crossies (Germany)",
+    "file": "logos/705.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.de/marken/alle-marken/choco-crossies",
+    "image": "https://www.nestle.de/sites/g/files/pydnoa391/files/2026-09/Logo-Choco-crossies.png"
+  },
+  {
+    "id": "706",
+    "name": "Bon Pari (Czech Republic)",
+    "file": "logos/706.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.cz/cs/znacky/bon-pari",
+    "image": "https://www.nestle.cz/sites/g/files/pydnoa546/files/2025-10/BonPari_Logo.jpg"
+  },
+  {
+    "id": "707",
+    "name": "Princessa (Poland)",
+    "file": "logos/707.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.pl/brands/slodycze",
+    "image": "https://www.nestle.pl/sites/g/files/pydnoa386/files/princessa-logo-round_1.png"
+  },
+  {
+    "id": "709",
+    "name": "JOJO (Czech Republic/Slovakia)",
+    "file": "logos/709.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.cz/cs/znacky/jojo",
+    "image": "https://www.nestle.cz/sites/g/files/pydnoa546/files/2026-10/JOJO_Logo.jpg"
+  },
+  {
+    "id": "710",
+    "name": "Szerencsi (Hungary)",
+    "file": "logos/710.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://szerencsibonbon.hu/",
+    "image": "https://szerencsibonbon.hu/wp-content/uploads/ujlogo.png"
+  },
+  {
+    "id": "720",
+    "name": "Plaistowe",
+    "file": "logos/720.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.recipes.com.au/products?field_product_categories_target_id=45",
+    "image": "https://www.recipes.com.au/sites/default/files/2019-08/prodcat-plaistowe.png"
+  },
+  {
+    "id": "721",
+    "name": "Bakers' Choice",
+    "file": "logos/721.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.recipes.com.au/products?field_product_categories_target_id=44",
+    "image": "https://www.recipes.com.au/sites/default/files/2019-08/prodcat-bakers.png"
+  },
+  {
+    "id": "725",
+    "name": "La Laitière",
+    "file": "logos/725.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.lalaitiere.fr/",
+    "image": "https://www.lalaitiere.fr/wp-content/uploads/2026/05/LL-BRANDING1.png"
+  },
+  {
+    "id": "726",
+    "name": "Sveltesse",
+    "file": "logos/726.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.enviedebienmanger.fr/des-marques-pour-moi/sveltesse",
+    "image": "https://www.enviedebienmanger.fr/sites/default/files/2023-07/SVELTESSE_LOGO_ACTUEL.png"
+  },
+  {
+    "id": "166",
+    "name": "São Lourenço",
+    "file": "logos/166.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://minalbabrasil.com.br/marca/sao-lourenco/",
+    "image": "https://minalbabrasil.com.br/wp-content/uploads/2019/03/logo-saolourenco-completo.svg"
+  },
+  {
+    "id": "167",
+    "name": "Petrópolis",
+    "file": "logos/167.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://minalbabrasil.com.br/marca/petropolis/",
+    "image": "https://minalbabrasil.com.br/wp-content/uploads/2019/03/logo-petro.png"
+  },
+  {
+    "id": "176",
+    "name": "Porvenir",
+    "file": "logos/176.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.ccu.cl/marcas-productos/porvenir/",
+    "image": "https://www.ccu.cl/wp-content/uploads/2022/03/porvenir.jpg"
+  },
+  {
+    "id": "491",
+    "name": "Waggin' Train",
+    "file": "logos/491.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://waggintrainpet.com/",
+    "image": "https://waggintrainpet.com/cdn/shop/files/WT_Logo_d4be48fa-40e7-453c-985a-edf3752863d9.png?v=1786105225"
+  },
+  {
+    "id": "535",
+    "name": "Good Start (US and Canada)",
+    "file": "logos/535.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.goodstartbaby.com/",
+    "image": "https://www.goodstartbaby.com/cdn/shop/files/Good_Start_Dr_Browns_Logo-Lockup_2024_RGB.png?v=1725383276"
+  },
+  {
+    "id": "689",
+    "name": "Of Tov",
+    "file": "logos/689.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://oftov.co.il/",
+    "image": "https://oftov.co.il/wp-content/uploads/2025/07/logo1.png"
+  },
+  {
+    "id": "690",
+    "name": "Beit Hashita",
+    "file": "logos/690.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://beithashita.co.il/",
+    "image": "https://beithashita.co.il/wp-content/uploads/2020/04/LogoText.png"
+  },
+  {
+    "id": "692",
+    "name": "Tribe (US)",
+    "file": "logos/692.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.fooddive.com/news/lakeview-farms-snacks-on-hummus-and-salsa-with-latest-acquisition-spree/544472/",
+    "image": "https://web.archive.org/web/20180421075240im_/https://www.tribehummus.com/assets/img/svg/logo.svg"
+  },
+  {
+    "id": "734",
+    "name": "Butterfinger",
+    "file": "logos/734.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.butterfinger.com/",
+    "image": "https://www.butterfinger.com/themes/custom/themekit/logo.svg"
+  },
+  {
+    "id": "735",
+    "name": "Baby Ruth",
+    "file": "logos/735.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.babyruth.com/",
+    "image": "https://www.babyruth.com/themes/custom/themekit/logo.svg"
+  },
+  {
+    "id": "736",
+    "name": "100 Grand",
+    "file": "logos/736.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.ferrero.com/us/en/all-brands-united-states",
+    "image": "https://www.ferrero.com/us/sites/ferrero_us/files/2026-02/100_grand.png"
+  },
+  {
+    "id": "737",
+    "name": "Raisinets",
+    "file": "logos/737.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.ferrero.com/us/en/all-brands-united-states",
+    "image": "https://www.ferrero.com/us/sites/ferrero_us/files/2023-06/raisinets.jpg"
+  },
+  {
+    "id": "738",
+    "name": "Wonka",
+    "file": "logos/738.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.wonka.com/us/en/",
+    "image": "https://www.wonka.com/us/themes/custom/sling/logo.svg"
+  },
+  {
+    "id": "739",
+    "name": "Crunch (US)",
+    "file": "logos/739.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.crunchbar.com/",
+    "image": "https://www.crunchbar.com/themes/custom/themekit/logo.svg"
+  },
+  {
+    "id": "830",
+    "name": "Nerds",
+    "file": "logos/830.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.ferrara.com/us/en/nerds",
+    "image": "https://www.ferrara.com/sites/default/files/2024-10/nerds-logo.png"
+  },
+  {
+    "id": "831",
+    "name": "SweeTARTS",
+    "file": "logos/831.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.ferrara.com/us/en/sweetarts",
+    "image": "https://www.ferrara.com/sites/default/files/2024-10/sweetarts-logo.png"
+  },
+  {
+    "id": "832",
+    "name": "Laffy Taffy",
+    "file": "logos/832.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.ferrara.com/us/en/laffy-taffy",
+    "image": "https://www.ferrara.com/sites/default/files/2024-10/laffy-taffy-logo.png"
+  },
+  {
+    "id": "833",
+    "name": "Gobstopper",
+    "file": "logos/833.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.ferrara.com/us/en/brands",
+    "image": "https://www.ferrara.com/sites/default/files/2024-10/gobstopper-logo.png"
+  },
+  {
+    "id": "743",
+    "name": "Arrowhead",
+    "file": "logos/743.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.primobrands.com/brands/",
+    "image": "https://www.primobrands.com/wp-content/uploads/2024/10/4c0ee3622be814d49af00d4f79358bdd.png"
+  },
+  {
+    "id": "744",
+    "name": "Poland Spring",
+    "file": "logos/744.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.primobrands.com/brands/",
+    "image": "https://www.primobrands.com/wp-content/uploads/2024/10/PS_Green_2022-Logo-344px.png"
+  },
+  {
+    "id": "745",
+    "name": "Deer Park",
+    "file": "logos/745.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.primobrands.com/brands/",
+    "image": "https://www.primobrands.com/wp-content/uploads/2024/10/DeerPark_Blue_Logo-422px.png"
+  },
+  {
+    "id": "746",
+    "name": "Ozarka",
+    "file": "logos/746.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Ozarka_Logo_Post-2022.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Ozarka_Logo_Post-2022.png"
+  },
+  {
+    "id": "747",
+    "name": "Zephyrhills",
+    "file": "logos/747.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.primobrands.com/brands/",
+    "image": "https://www.primobrands.com/wp-content/uploads/2024/10/ZephirH_Logo-1-1-2b.png"
+  },
+  {
+    "id": "748",
+    "name": "Ice Mountain",
+    "file": "logos/748.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.primobrands.com/brands/",
+    "image": "https://www.primobrands.com/wp-content/uploads/2024/10/IceMountain_FullColor_Logo-1-c2.png"
+  },
+  {
+    "id": "749",
+    "name": "Calistoga",
+    "file": "logos/749.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/20140713235221/http://www.calistogawater.com/",
+    "image": "https://web.archive.org/web/20140713235221im_/http://www.calistogawater.com/Content/Images/logo.png"
+  },
+  {
+    "id": "750",
+    "name": "Pure Life (US and Canada)",
+    "file": "logos/750.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.primobrands.com/brands/",
+    "image": "https://www.primobrands.com/wp-content/uploads/2024/10/pure-life-water-444px.png"
+  },
+  {
+    "id": "751",
+    "name": "Montclair (Canada)",
+    "file": "logos/751.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/2012/http://www.nestle.ca/",
+    "image": "https://web.archive.org/web/20120127131614im_/http://www.nestle.ca/images/home/logos/montclair.jpg"
+  },
+  {
+    "id": "753",
+    "name": "Splash Refresher",
+    "file": "logos/753.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.primobrands.com/brands/",
+    "image": "https://www.primobrands.com/wp-content/uploads/2024/10/Splash_Refresher_Logotype_Blue-1cc.png"
+  },
+  {
+    "id": "755",
+    "name": "ReadyRefresh",
+    "file": "logos/755.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/20181227092336/https://www.readyrefresh.com/",
+    "image": "https://web.archive.org/web/20190120190641im_/https://www.readyrefresh.com/images/readyrefresh_main_logo.png"
+  },
+  {
+    "id": "759",
+    "name": "Quézac",
+    "file": "logos/759.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.quezac.com/",
+    "image": "https://quezac.com/wp-content/uploads/2025/11/LOGO-QUEZAC-BLEU.png"
+  },
+  {
+    "id": "765",
+    "name": "Chamyto",
+    "file": "logos/765.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.chamyto.com.br/",
+    "image": "https://www.chamyto.com.br/wp-content/themes/chamyto/assets/images/logo-chamyto-footer.png"
+  },
+  {
+    "id": "766",
+    "name": "Chambinho",
+    "file": "logos/766.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/2019/https://www.nestle.com.br/",
+    "image": "https://web.archive.org/web/20190210160442im_/https://www.nestle.com.br/images/default-source/logo-marca/chambinho.tmb-logo260.jpg?sfvrsn=ee4c5636_2"
+  },
+  {
+    "id": "767",
+    "name": "Chandelle",
+    "file": "logos/767.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/2019/https://www.nestle.com.br/",
+    "image": "https://web.archive.org/web/20190210160523im_/https://www.nestle.com.br/images/default-source/logo-marca/chandelle.tmb-logo260.jpg?sfvrsn=98e5b351_2"
+  },
+  {
+    "id": "773",
+    "name": "Alpine (Philippines)",
+    "file": "logos/773.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://logos.fandom.com/wiki/Alpine_(milk)",
+    "image": "https://static.wikia.nocookie.net/logopedia/images/e/eb/Alpine_milk_logo.png/revision/latest?cb=20251119131748"
+  },
+  {
+    "id": "840",
+    "name": "Cetaphil",
+    "file": "logos/840.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.cetaphil.com/",
+    "image": "https://www.cetaphil.com/on/demandware.static/Sites-Galderma-US-Site/-/default/dwca12e8f9/images/Cetaphil_Logo_285.png"
+  },
+  {
+    "id": "841",
+    "name": "Restylane",
+    "file": "logos/841.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.restylane.com/",
+    "image": "https://galdermaaesthetics.com/sites/default/files/2026-05/new_restylane_short_logo_white_sept_2022_1_2.svg"
+  },
+  {
+    "id": "776",
+    "name": "Palforzia",
+    "file": "logos/776.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/20230121163219/https://www.palforzia.com/",
+    "image": "https://web.archive.org/web/20230115185718im_/https://www.palforzia.com/themes/custom/palforzia_us/assets/img/palforzia-logo-a189ed772d9559403f569c3a12d0c102.png"
+  },
+  {
+    "id": "779",
+    "name": "PurinaCare",
+    "file": "logos/779.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/2010/http://www.purinacare.com/",
+    "image": "https://web.archive.org/web/20101114203459im_/http://www.purinacare.com/Images/purina_logo.png"
+  },
+  {
+    "id": "139",
+    "name": "Cristalp (Switzerland)",
+    "file": "logos/139.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/2007/http://www.henniez.ch/",
+    "image": "https://web.archive.org/web/20071019123213im_/http://www.henniez.ch/data/dataimages/Upload/01_cristalp_couleurs_fr.jpg"
+  },
+  {
+    "id": "249",
+    "name": "Nestlé Toll House Café by Chip",
+    "file": "logos/249.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/2020/https://www.nestlecafe.com/",
+    "image": "https://web.archive.org/web/20201125130605im_/https://www.nestlecafe.com/wp-content/uploads/2020/08/correct_logo.png"
+  },
+  {
+    "id": "297",
+    "name": "Lean Pockets",
+    "file": "logos/297.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/2011/http://www.leanpockets.com/",
+    "image": "https://web.archive.org/web/20111117174429im_/http://www.leanpockets.com/lp_logo.gif"
+  },
+  {
+    "id": "303",
+    "name": "Sweet Earth",
+    "file": "logos/303.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/20201214061424/https://www.sweetearthfoods.com/",
+    "image": "https://web.archive.org/web/20200716130734im_/https://www.sweetearthfoods.com/themes/custom/sweetearth/assets/grilling/files/se_logo.svg"
+  },
+  {
+    "id": "307",
+    "name": "Garden Gourmet frozen pizza",
+    "file": "logos/307.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://logos.fandom.com/wiki/Garden_Gourmet",
+    "image": "https://static.wikia.nocookie.net/logopedia/images/5/5e/Garden_Gourmet.png/revision/latest?cb=20220713183222"
+  },
+  {
+    "id": "457",
+    "name": "Yesterday's News",
+    "file": "logos/457.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/2010/http://www.yesterdaysnews.com/",
+    "image": "https://web.archive.org/web/20101110015100im_/http://www.yesterdaysnews.com/Lib/Images/ynLogo.jpg"
+  },
+  {
+    "id": "473",
+    "name": "Castor & Pollux",
+    "file": "logos/473.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/20231231004722/https://www.castorpolluxpet.com/",
+    "image": "https://web.archive.org/web/20231228153333im_/https://www.castorpolluxpet.com/wp-content/themes/cptheme/images/new-logo_265dd825538ddce5b73e8531e214b191.png"
+  },
+  {
+    "id": "474",
+    "name": "Whole Earth Farms",
+    "file": "logos/474.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.merrickpetcare.com/",
+    "image": "https://web.archive.org/web/20240503052626im_/https://www.merrickpetcare.com/sites/default/files/2024-04/logo-wef_0.svg"
+  },
+  {
+    "id": "493",
+    "name": "Mighty Dog",
+    "file": "logos/493.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/20160110151059/http://mightydog.com/",
+    "image": "https://web.archive.org/web/20160117014706im_/http://www.mightydog.com/Images/mainlogo.png"
+  },
+  {
+    "id": "494",
+    "name": "Purina Muse",
+    "file": "logos/494.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/20200508131302/https://www.purina.com/muse",
+    "image": "https://web.archive.org/web/20200513063511im_/https://www.purina.com/sites/g/files/auxxlc196/files/Muse_Logo.png"
+  },
+  {
+    "id": "768",
+    "name": "Sollys (Brazil)",
+    "file": "logos/768.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/2011/http://www.nestle.com.br/",
+    "image": "https://web.archive.org/web/20110815185913im_/http://www.nestle.com.br/sollysvolei/App_Themes/home/img/logo_sollys.gif"
+  },
+  {
+    "id": "813",
+    "name": "Bella",
+    "file": "logos/813.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://logos.fandom.com/wiki/Bella_(dog_food)",
+    "image": "https://static.wikia.nocookie.net/logopedia/images/6/65/Purina_Bella.png/revision/latest?cb=20171010143007"
+  },
+  {
+    "id": "793",
+    "name": "Fürst Bismarck",
+    "file": "logos/793.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://commons.wikimedia.org/wiki/File:Logo_F%C3%BCrst_Bismarck_(Mineralwasser-Marke).png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/71/Logo_F%C3%BCrst_Bismarck_%28Mineralwasser-Marke%29.png"
+  },
+  {
+    "id": "834",
+    "name": "Plancoët",
+    "file": "logos/834.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://web.archive.org/web/2023/http://www.eau-plancoet.com/",
+    "image": "https://web.archive.org/web/20231012232313im_/http://www.eau-plancoet.com/theme/plancoet/images/logo.svg"
+  },
+  {
+    "id": "837",
+    "name": "Sarson's",
+    "file": "logos/837.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.sarsons.co.uk/",
+    "image": "https://www.sarsons.co.uk/wp-content/themes/sarsons-2025/dist/images/logo.svg"
+  },
+  {
+    "id": "838",
+    "name": "Krem-Top",
+    "file": "logos/838.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://logos.fandom.com/wiki/Krem-Top",
+    "image": "https://static.wikia.nocookie.net/logopedia/images/7/7d/Krem-Top_logo_2018.png/revision/latest?cb=20251119133353"
+  },
+  {
+    "id": "839",
+    "name": "Liberty (Philippines)",
+    "file": "logos/839.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://logos.fandom.com/wiki/Liberty_(Philippines)",
+    "image": "https://static.wikia.nocookie.net/logopedia/images/c/cc/Liberty_Condensada_logo.png/revision/latest?cb=20251119132707"
+  },
+  {
+    "id": "102",
+    "name": "Nesvita (Thailand)",
+    "file": "logos/102.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.co.th/th/brands/cereal_beverage",
+    "image": "https://www.nestle.co.th/sites/g/files/pydnoa486/files/Nesvita_Logo_Background.png"
+  },
+  {
+    "id": "171",
+    "name": "Eco de los Andes",
+    "file": "logos/171.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ar/marcas/aguas",
+    "image": "https://www.nestle.com.ar/sites/g/files/pydnoa481/files/ECO.png"
+  },
+  {
+    "id": "172",
+    "name": "Glaciar",
+    "file": "logos/172.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.ar/marcas/aguas",
+    "image": "https://www.nestle.com.ar/sites/g/files/pydnoa481/files/GLACIAR_0.png"
+  },
+  {
+    "id": "174",
+    "name": "Santa María",
+    "file": "logos/174.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.nestle.com.mx/brands/agua-santa-maria",
+    "image": "https://www.nestle.com.mx/sites/g/files/pydnoa511/files/Botones_Agua_Sta.Maria-03.png"
+  },
+  {
+    "id": "245",
+    "name": "Soothers (Australia)",
+    "file": "logos/245.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.nestle.com.au/en/brands",
+    "image": "https://www.nestle.com.au/sites/g/files/pydnoa356/files/soother-logo.png"
+  },
+  {
+    "id": "246",
+    "name": "Butter Menthol (Australia)",
+    "file": "logos/246.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.au/en/brands",
+    "image": "https://www.nestle.com.au/sites/g/files/pydnoa356/files/butter-menthol-logo-round.png"
+  },
+  {
+    "id": "346",
+    "name": "Gloria (Central & West Africa)",
+    "file": "logos/346.webp",
+    "bg": "dark",
+    "kind": "logo",
+    "source": "https://www.nestle-cwa.com/en/gloria",
+    "image": "https://www.nestle-cwa.com/sites/g/files/pydnoa346/files/gloria_11.png"
+  },
+  {
+    "id": "568",
+    "name": "Materna",
+    "file": "logos/568.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.com.mx/brands/materna",
+    "image": "https://www.nestle.com.mx/sites/g/files/pydnoa511/files/2026-08/Logo%20Materna_2.png"
+  },
+  {
+    "id": "666",
+    "name": "Trencito",
+    "file": "logos/666.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.cl/marcas/chocolates",
+    "image": "https://www.nestle.cl/sites/g/files/pydnoa376/files/2025-11/Trencito.png"
+  },
+  {
+    "id": "667",
+    "name": "Sahne-Nuss",
+    "file": "logos/667.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle.cl/marcas/chocolates",
+    "image": "https://www.nestle.cl/sites/g/files/pydnoa376/files/sahne%20nuss.png"
+  },
+  {
+    "id": "696",
+    "name": "Golden Morn",
+    "file": "logos/696.webp",
+    "bg": "light",
+    "kind": "logo",
+    "source": "https://www.nestle-cwa.com/en/golden-morn",
+    "image": "https://www.nestle-cwa.com/sites/g/files/pydnoa346/files/golden-morn_4.png"
+  }
+]

@@ -20,7 +20,6 @@ export interface LabelContext {
   chrome: Rect[];
   narrow: boolean;
   /** Counts shown on pills ("32 of 50" when filtered). */
-  pillCount: (c: MNode) => string;
   /** Only pills and forced labels (during programmatic flights). */
   minimal: boolean;
 }
@@ -30,13 +29,6 @@ const brandFont = (narrow: boolean, selected: boolean) => `${selected ? 600 : 50
 const brandFontFormer = (narrow: boolean) => `italic 500 ${narrow ? 11.5 : 12.5}px ${FONT.sans}`;
 const groupFont = `700 11px ${FONT.sans}`;
 const nestleFont = `600 18px ${FONT.serif}`;
-
-/** Width of everything after the pill's name: count and tag. */
-export function pillExtra(measure: (t: string, f: string) => number, count: string, tag: string | undefined, narrow: boolean): number {
-  let w = measure(count, `400 ${narrow ? 11.5 : 13}px ${FONT.sans}`) + 6;
-  if (tag && !narrow) w += measure(`· ${tag}`, `400 12px ${FONT.sans}`) + 6;
-  return w;
-}
 
 export function buildLabels(ctx: LabelContext, measure: (t: string, f: string) => number): { specs: LabelSpec[]; obstacles: Rect[]; hard: Rect[]; arcs: ArcLabel[] } {
   const { scene, model } = ctx;
@@ -109,7 +101,7 @@ export function buildLabels(ctx: LabelContext, measure: (t: string, f: string) =
     const R = F.islandR[j];
     if (x + R < 0 || x - R > W || y + R < 0 || y - R > H) return;
     const others = islands.flatMap((_, o) => (o !== j && F.islandA[o] > 0.3 ? [{ x: F.islandX[o], y: F.islandY[o], r: F.islandR[o] }] : []));
-    const arc = arcLabel({ x, y, R, name: cat.short, count: ctx.pillCount(cat), tag: narrow ? undefined : cat.meta?.tag, narrow, badges: islandBadges[j], others, avoid: hard, W, H, measure });
+    const arc = arcLabel({ x, y, R, name: cat.short, tag: narrow ? undefined : cat.meta?.tag, narrow, badges: islandBadges[j], others, avoid: hard, W, H, measure });
     if (!arc) return;
     arcs.push({ node: cat, alpha: a, hover: ctx.hoverIsland === cat, ...arc });
     // Other labels keep clear of the name.
@@ -117,7 +109,6 @@ export function buildLabels(ctx: LabelContext, measure: (t: string, f: string) =
   });
   for (const chip of F.chips) {
     const cat = chip.island.node;
-    const count = ctx.pillCount(cat);
     const rect = { x0: chip.x, y0: chip.y - SIZE.chipH / 2, x1: chip.x + chip.w, y1: chip.y + SIZE.chipH / 2 };
     // A chip over a brand badge (after panning) steps back: faint, and clicks go to the brand. It eases
     // between the two, with a few px of hysteresis so a slow pan doesn't make it flicker.
@@ -136,7 +127,7 @@ export function buildLabels(ctx: LabelContext, measure: (t: string, f: string) =
       // Always placed while shown (clicks are only taken once it's at least half visible).
       forced: true,
       candidates: () => [rect],
-      data: { type: "chip", node: cat, count, small: true, alpha: chip.alpha * cover } satisfies LabelData,
+      data: { type: "chip", node: cat, small: true, alpha: chip.alpha * cover } satisfies LabelData,
     });
   }
 
@@ -191,6 +182,8 @@ export function buildLabels(ctx: LabelContext, measure: (t: string, f: string) =
   for (const b of model.brands) {
     const forced = ctx.forced.has(b);
     if (!forced && (ctx.minimal || !scene.brandLabelEligible(b))) continue;
+    // Logos speak for themselves: their names show only while hovered, dragged or open.
+    if (!forced && b.e.logo) continue;
     if (!F.vis[b.i] || F.alpha[b.i] < 0.05) continue;
     if (scene.open === b && scene.lens.x > 0.2) continue;
     const x = F.sx[b.i];
@@ -295,8 +288,8 @@ function advances(text: string, font: string, measure: (t: string, f: string) =>
 const ARC_MIDS = [-90, -72, -108, -55, -125, 90, 72, 108, 55, 125].map((d) => (d * Math.PI) / 180);
 
 /**
- * Lays a category name (and its brand count) along a circle: inside the rim when it fits, trying the top
- * first and then other angles, at a smaller size or without the count if needed; otherwise just outside.
+ * Lays a category name (and its tag, e.g. "half-owned") along a circle: inside the rim when it fits, trying the top
+ * first and then other angles, at a smaller size or without the tag if needed; otherwise just outside.
  * Each placement is scored by the logos it covers, glyphs off screen or under chrome and, outside, the
  * neighbouring islands it touches. Runs every frame, so sizes snap to half pixels (fonts and their
  * measurements repeat) and candidates are scored without building anything until one wins.
@@ -306,7 +299,6 @@ function arcLabel(o: {
   y: number;
   R: number;
   name: string;
-  count: string;
   tag?: string;
   narrow: boolean;
   badges: Rect[];
@@ -320,7 +312,7 @@ function arcLabel(o: {
   const half = (v: number) => Math.round(v * 2) / 2;
   const base = half(Math.min(o.narrow ? 12.5 : 15, Math.max(o.narrow ? 10.5 : 13, R * 0.12)));
   const sizes = [...new Set([base, half(Math.max(o.narrow ? 9.5 : 10.5, base - 1.5))])];
-  const extras = [...new Set([o.tag ? `${o.count} · ${o.tag}` : o.count, o.count, ""])];
+  const extras = [...new Set([o.tag ?? "", ""])];
 
   type Plan = { size: number; outside: boolean; r: number; span: number; glyphs: { ch: string; at: number; font: string; soft: boolean }[] };
   const plan = (extra: string, size: number, outside: boolean): Plan | null => {

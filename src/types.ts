@@ -1,6 +1,6 @@
 /**
- * Where a row sits in the tree. Derived from the spreadsheet's parent_id column:
- * root → category → (group →) brand → product (→ product …).
+ * Where a row sits in the tree: root → category → (group →) brand → product (→ product …).
+ * From the spreadsheet's type column when it has one, otherwise worked out from parent_id.
  */
 export type Kind = "root" | "category" | "group" | "brand" | "product";
 

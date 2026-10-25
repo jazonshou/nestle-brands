@@ -38,6 +38,8 @@ export const LAYOUT = {
   aspectClasses: [0.5, 0.75, 1.0, 1.4, 1.8],
   /** Brand labels on the map are cut (at a word, if possible) to about this width. */
   labelW: 126,
+  /** Brands with a logo are drawn this much larger (and without a name beside them). */
+  logoScale: 1.2,
 };
 
 /** Brand radius in world units: 16–28 depending on product count. */

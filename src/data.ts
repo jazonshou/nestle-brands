@@ -59,6 +59,8 @@ const OWNERSHIP: Record<string, { status: Status; label: string; stake?: number 
   Uncertain: { status: "uncertain", label: "Status unconfirmed" },
 };
 
+const TYPED = new Set(["group", "brand", "product"]);
+
 function splitName(full: string, kind: Kind): { name: string; qualifier: string } {
   const paren = full.match(/^(.+?)\s*\(([^()]+)\)\s*$/);
   if (paren) return { name: paren[1], qualifier: paren[2] };
@@ -82,6 +84,8 @@ function load(): Entry[] {
   for (const [key, index] of Object.entries(c)) {
     if (index < 0) console.warn(`[data] The CSV has no "${key}" column.`);
   }
+  // Optional: "category", "group", "brand" or "product". Without it, the kind is worked out from the tree.
+  const typeCol = col("type");
   const cell = (r: string[], i: number) => (i >= 0 ? (r[i] ?? "").trim() : "");
 
   const raw = body.map((r) => ({
@@ -92,6 +96,7 @@ function load(): Entry[] {
     note: cell(r, c.note),
     url: cell(r, c.url),
     urlVerified: cell(r, c.verified).toLowerCase() === "yes",
+    type: cell(r, typeCol).toLowerCase(),
   }));
   const byId = new Map(raw.map((r) => [r.id, r]));
   const rootId = raw.find((r) => !r.parentId)?.id;
@@ -111,11 +116,22 @@ function load(): Entry[] {
     } else {
       seen.add(id);
       const parent = kindOf(r.parentId, seen);
-      kind =
+      const inferred: Kind =
         parent === "root" ? "category"
         : r.ownership === "Group" ? "group"
         : parent === "category" || parent === "group" ? "brand"
         : "product";
+      kind = parent === "root" ? "category" : TYPED.has(r.type) ? (r.type as Kind) : inferred;
+      // The map draws one level of groups, brands inside a category or group, and products under brands.
+      const fits =
+        kind === "category" ||
+        (kind === "group" && parent === "category") ||
+        (kind === "brand" && (parent === "category" || parent === "group")) ||
+        (kind === "product" && (parent === "brand" || parent === "product"));
+      if (!fits) {
+        console.warn(`[data] Row ${id} "${r.fullName}" is a ${kind} under a ${parent} — shown as a ${inferred}.`);
+        kind = inferred;
+      }
     }
     kinds.set(id, kind);
     return kind;

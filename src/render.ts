@@ -582,8 +582,12 @@ export class Renderer {
       ctx.beginPath();
       seg(hx, hy, hubR, gateX, gateY, 0);
       ctx.lineWidth = 1.5;
-      ctx.strokeStyle = cat.color;
+      ctx.strokeStyle = g.status === "former" ? COLORS.former : cat.color;
+      // A group that is itself partly owned (e.g. a joint venture) gets the partly-owned dashes.
+      this.lineStyle(g);
       ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.lineCap = "butt";
       ctx.beginPath();
       ctx.arc(gateX, gateY, 3, 0, Math.PI * 2);
       ctx.fillStyle = cat.color;

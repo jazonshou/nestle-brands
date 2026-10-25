@@ -255,9 +255,10 @@ export function buildModel(entries: Entry[], meta: Record<string, CategoryMeta>)
 
   for (const n of nodes) {
     if (n.kind === "brand") {
-      n.r = brandRadius(n.products.length);
+      n.r = brandRadius(n.products.length) * (n.e.logo ? LAYOUT.logoScale : 1);
       n.label = truncateWidth(n.name, LAYOUT.labelW);
-      n.f = Math.max(n.r, 0.375 * (estimateWidth(n.label) + 8)) + 5;
+      // A logo badge shows no name on the map (only while hovered or open), so it needs no room for one.
+      n.f = (n.e.logo ? n.r : Math.max(n.r, 0.375 * (estimateWidth(n.label) + 8))) + 5;
       const heroes = n.category?.meta?.heroes ?? [];
       const rank = heroes.indexOf(n.id);
       n.hero = rank >= 0 ? rank : 999;

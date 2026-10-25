@@ -10,7 +10,7 @@ import { Camera } from "./camera";
 import categoriesJson from "../data/categories.json";
 import { ENTRIES } from "./data";
 import { freeArea, layoutMode, pickSignposts, type Viewport } from "./geometry";
-import { buildLabels, pillExtra } from "./labeling";
+import { buildLabels } from "./labeling";
 import { LabelPlacer } from "./labels";
 import { arrange, layoutReport, packIslands, snapAspect, type Rect } from "./layout";
 import { invalidate, frameStats, loopRunning, pump, setFrame } from "./loop";
@@ -212,7 +212,7 @@ const nav = new Nav(model, scene, camera, {
     if (state.level === "category" && !(state as { group?: MNode }).group) coachFocus();
     window.setTimeout(explainEmpty, 0);
   },
-  chipWidth: (c) => placer.measure(c.short, `600 12.5px "DM Sans", sans-serif`) + 24 + 10 + pillExtra((t, f) => placer.measure(t, f), pillCount(c), undefined, true),
+  chipWidth: (c) => placer.measure(c.short, `600 12.5px "DM Sans", sans-serif`) + 24 + 10,
   avoid: () => {
     const open = card.root.classList.contains("is-open");
     const cardBottom = open ? card.root.getBoundingClientRect().bottom : 72;
@@ -272,13 +272,6 @@ window.addEventListener("popstate", () => {
 // ---------------------------------------------------------------------------
 // Filters and pills
 // ---------------------------------------------------------------------------
-
-function pillCount(c: MNode): string {
-  const all = brandsIn(c);
-  if (!scene.hiddenStatuses.size) return String(all.length);
-  const shown = all.filter((b) => !scene.isFiltered(b)).length;
-  return `${shown} of ${all.length}`;
-}
 
 function applyFilters() {
   for (const [n, a] of scene.filterA) a.tween(scene.isFiltered(n) ? 0 : 1, MOTION.filterMs);
@@ -737,7 +730,7 @@ setFrame(
     if (nav.state.level === "brand" && !scene.lens.x) forced.add(nav.state.brand);
     const minimal = camera.flying;
     const { specs, obstacles, hard, arcs } = buildLabels(
-      { model, scene, forced, hoverIsland, chrome, narrow: vp.mode === "narrow", pillCount, minimal },
+      { model, scene, forced, hoverIsland, chrome, narrow: vp.mode === "narrow", minimal },
       (t, f) => placer.measure(t, f),
     );
     const doPlace = !camera.userMoving || frameNo - lastLabelPass >= 2;

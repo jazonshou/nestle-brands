@@ -102,7 +102,7 @@ export class Strip {
       const b = el("button", "strip-pill");
       b.type = "button";
       b.style.setProperty("--c", c.color);
-      b.append(el("span", "dot"), el("span", "", c.short), el("span", "count", String(countBrands(c))));
+      b.append(el("span", "dot"), el("span", "", c.short));
       b.addEventListener("click", () => this.onPick(c));
       this.pills.set(c, b);
       root.append(b);
