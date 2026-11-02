@@ -75,7 +75,8 @@ export const SIZE = {
   signpostNarrow: 14,
   focusMinBadge: 14,
   focusMinBadgeNarrow: 12,
-  badgeMax: 30,
+  /** Largest radius a badge reaches when zoomed in. */
+  badgeZoomMax: 170,
   openBadge: 36,
   openBadgeNarrow: 30,
   nestleMin: 28,

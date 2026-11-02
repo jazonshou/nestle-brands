@@ -14,6 +14,19 @@ import { statusTag, type MNode, type Model } from "./model";
 import type { Scene } from "./scene";
 import { COLORS, FONT, LOD, MOTION } from "./tokens";
 
+interface ArcSprite {
+  id: string;
+  size: number;
+  outside: boolean;
+  r: number;
+  canvas: HTMLCanvasElement;
+  /** Its box, relative to the island's centre. */
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+}
+
 export type HitKind = "fanRow" | "more" | "open" | "chip" | "label" | "brand" | "group" | "hub" | "nestle" | "island";
 
 export interface Hit {
@@ -43,6 +56,8 @@ export interface RenderState {
   dip: number;
   /** Category names along the island rims (overview). */
   arcs: ArcLabel[];
+  /** The view is moving (category names may be scaled rather than redrawn). */
+  moving: boolean;
 }
 
 const mixCache = new Map<string, string>();
@@ -71,6 +86,10 @@ export class Renderer {
   readonly ctx: CanvasRenderingContext2D;
   hits: Hit[] = [];
   private dpr = 1;
+  private arcSprites = new Map<MNode, ArcSprite>();
+  private arcBudget = 0;
+  /** A category name is on screen as a scaled sprite: it needs a frame at rest to be redrawn exactly. */
+  arcsStale = false;
   private w = 0;
   private h = 0;
   private shadow: HTMLCanvasElement;
@@ -84,6 +103,7 @@ export class Renderer {
   resize(w: number, h: number, dpr: number) {
     this.w = w;
     this.h = h;
+    if (dpr !== this.dpr) this.arcSprites.clear();
     this.dpr = dpr;
     this.canvas.width = Math.round(w * dpr);
     this.canvas.height = Math.round(h * dpr);
@@ -321,7 +341,9 @@ export class Renderer {
       ctx.globalAlpha = F.alpha[root.i];
       this.drawShadow(x, y, r, 0.22);
       const cell = atlas.cell(root);
-      if (cell) ctx.drawImage(atlas.canvas, cell.x, cell.y, cell.size, cell.size, x - r, y - r, 2 * r, 2 * r);
+      const crisp = cell && atlas.crisp(root, 2 * r * this.dpr);
+      if (crisp) ctx.drawImage(crisp, x - r, y - r, 2 * r, 2 * r);
+      else if (cell) ctx.drawImage(atlas.canvas, cell.x, cell.y, cell.size, cell.size, x - r, y - r, 2 * r, 2 * r);
       else {
         ctx.beginPath();
         ctx.arc(x, y, r, 0, Math.PI * 2);
@@ -338,7 +360,9 @@ export class Renderer {
     }
 
     // 10b. Category names along the island rims (overview).
-    for (const arc of st.arcs) this.drawArc(arc);
+    this.arcBudget = 1;
+    this.arcsStale = false;
+    for (const arc of st.arcs) this.drawArc(arc, st.moving);
 
     // 11. Lens with the open brand's product fan.
     if (st.open && scene.lens.x > 0.01 && scene.fan && F.vis[st.open.i]) this.drawLens(st.open, scene, atlas, scene.fan, st);
@@ -457,7 +481,9 @@ export class Renderer {
     ctx.fill();
     if (cell) {
       ctx.globalAlpha = alpha * logoA;
-      ctx.drawImage(atlas.canvas, cell.x, cell.y, cell.size, cell.size, x - s, y - s, 2 * s, 2 * s);
+      const crisp = atlas.crisp(b, 2 * s * this.dpr);
+      if (crisp) ctx.drawImage(crisp, x - s, y - s, 2 * s, 2 * s);
+      else ctx.drawImage(atlas.canvas, cell.x, cell.y, cell.size, cell.size, x - s, y - s, 2 * s, 2 * s);
       ctx.globalAlpha = alpha;
     }
     this.drawRing(b, x, y, s);
@@ -501,12 +527,14 @@ export class Renderer {
     const tag = statusTag(b);
     if (!tag) return;
     const ctx = this.ctx;
-    ctx.font = `700 9px ${FONT.sans}`;
-    const w = Math.max(14, ctx.measureText(tag).width + 8);
+    // Grows with a zoomed-in badge.
+    const t = Math.min(2.2, Math.max(1, s / 36));
+    ctx.font = `700 ${9 * t}px ${FONT.sans}`;
+    const w = Math.max(14 * t, ctx.measureText(tag).width + 8 * t);
     const cx = x + s * Math.SQRT1_2;
     const cy = y + s * Math.SQRT1_2;
     const amber = b.status === "transition";
-    roundRect(ctx, cx - w / 2, cy - 7, w, 14, 7);
+    roundRect(ctx, cx - w / 2, cy - 7 * t, w, 14 * t, 7 * t);
     ctx.fillStyle = amber ? COLORS.amber : COLORS.card;
     ctx.fill();
     ctx.lineWidth = 1;
@@ -800,9 +828,56 @@ export class Renderer {
   }
 
   /** A category name set along its island's rim: each glyph rotated to the curve, with a soft halo. */
-  private drawArc(arc: ArcLabel) {
+  /**
+   * Rotated glyphs are by far the slowest thing on the map (none of them can come from the browser's glyph
+   * cache), so each name is drawn once into a sprite. While the view moves the sprite is scaled, and only
+   * redrawn (a few per frame) once it has drifted too far; at rest it's redrawn exactly.
+   */
+  private drawArc(arc: ArcLabel, moving: boolean) {
     const ctx = this.ctx;
+    if (!arc.glyphs.length) return;
+    const id = `${arc.outside}|${arc.hover}|${arc.mid.toFixed(2)}|${arc.glyphs.map((g) => g.ch).join("")}`;
+    const size = arc.glyphs[0].size;
+    let sprite = this.arcSprites.get(arc.node);
+    const drift = sprite ? arc.r / sprite.r : 1;
+    const exact = sprite?.id === id && sprite.size === size && Math.abs(drift - 1) < 0.004;
+    // Moving: keep it where it is on the rim; the best spot is chosen again at rest.
+    const usable = !!sprite && moving && sprite.outside === arc.outside && ((drift < 1.3 && drift > 1 / 1.3) || this.arcBudget <= 0);
+    if (!exact && !usable) {
+      this.arcBudget--;
+      sprite = this.arcSprite(arc, id);
+      this.arcSprites.set(arc.node, sprite);
+    }
+    const s = arc.r / sprite!.r;
     ctx.globalAlpha = arc.alpha;
+    ctx.drawImage(sprite!.canvas, arc.cx + sprite!.x * s, arc.cy + sprite!.y * s, sprite!.w * s, sprite!.h * s);
+    ctx.globalAlpha = 1;
+    if (sprite!.id !== id || sprite!.size !== size || Math.abs(s - 1) >= 0.004) this.arcsStale = true;
+    // A name outside the rim is still part of the island.
+    if (arc.outside) for (const g of arc.glyphs) this.hit("island", arc.node, g.x, g.y, g.size * 0.7);
+  }
+
+  private arcSprite(arc: ArcLabel, id: string): ArcSprite {
+    const size = arc.glyphs[0].size;
+    const pad = size + 4;
+    let x0 = Infinity;
+    let y0 = Infinity;
+    let x1 = -Infinity;
+    let y1 = -Infinity;
+    for (const g of arc.glyphs) {
+      x0 = Math.min(x0, g.x - arc.cx - pad);
+      y0 = Math.min(y0, g.y - arc.cy - pad);
+      x1 = Math.max(x1, g.x - arc.cx + pad);
+      y1 = Math.max(y1, g.y - arc.cy + pad);
+    }
+    const w = x1 - x0;
+    const h = y1 - y0;
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.ceil(w * this.dpr);
+    canvas.height = Math.ceil(h * this.dpr);
+    const ctx = canvas.getContext("2d")!;
+    ctx.scale(this.dpr, this.dpr);
+    ctx.translate(-x0, -y0);
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.lineJoin = "round";
@@ -810,7 +885,7 @@ export class Renderer {
     const halo = arc.outside ? COLORS.bg : mix(arc.node.color, 0.09);
     for (const g of arc.glyphs) {
       ctx.save();
-      ctx.translate(g.x, g.y);
+      ctx.translate(g.x - arc.cx, g.y - arc.cy);
       ctx.rotate(g.rot);
       ctx.font = g.font;
       ctx.strokeStyle = halo;
@@ -818,10 +893,8 @@ export class Renderer {
       ctx.fillStyle = g.soft ? COLORS.inkSoft : arc.hover ? arc.node.color : COLORS.ink;
       ctx.fillText(g.ch, 0, 0);
       ctx.restore();
-      // A name outside the rim is still part of the island.
-      if (arc.outside) this.hit("island", arc.node, g.x, g.y, g.size * 0.7);
     }
-    ctx.globalAlpha = 1;
+    return { id, size, outside: arc.outside, r: arc.r, canvas, x: x0, y: y0, w: canvas.width / this.dpr, h: canvas.height / this.dpr };
   }
 
   /** Shortens text with an ellipsis to fit maxW in the current font. */

@@ -193,6 +193,8 @@ const atlas = new Atlas(model, atlasCell(), (n) => {
   invalidate();
 });
 
+atlas.onSharpDone = invalidate;
+
 /** The open brand gets a logo bitmap decoded at its on-screen size. */
 function sharpen(b: MNode) {
   const px = 2 * (vp.mode === "wide" ? SIZE.openBadge : SIZE.openBadgeNarrow) * Math.min(2, window.devicePixelRatio || 1);
@@ -711,6 +713,8 @@ function updateSignposts(): boolean {
 
 let frameNo = 0;
 let lastLabelPass = 0;
+let lastK = 0;
+let lastZoomAt = 0;
 setFrame(
   (dt, now) => {
     frameNo++;
@@ -720,7 +724,18 @@ setFrame(
     busy = physics.step(dt) || busy;
     busy = stepAll(dt, now) || busy;
     busy = nav.stepDip(dt) || busy;
+    // Nodes grow with the zoom past the view's fit. Eased, so changing views doesn't make them jump.
+    const fitK = camera.bounds?.fitK ?? camera.view.k;
+    const zoomTo = Math.max(1, (camera.programmatic ? camera.targetK : camera.view.k) / fitK);
+    scene.zoom += (zoomTo - scene.zoom) * (1 - Math.exp(-dt / 0.06));
+    if (Math.abs(zoomTo - scene.zoom) < 0.002) scene.zoom = zoomTo;
+    else busy = true;
     scene.resolve(camera.view, now);
+    // Wheel zooming comes in ticks, with idle frames between them: "zooming" lasts a moment past each change.
+    if (camera.view.k !== lastK) lastZoomAt = now;
+    lastK = camera.view.k;
+    const zooming = camera.moving || now - lastZoomAt < 100;
+    atlas.sharpHold = zooming;
 
     // Labels: full passes at rest, every other frame while the user moves, minimal during flights.
     const forced = new Set<MNode>();
@@ -742,7 +757,7 @@ setFrame(
     // Label building may start small fades (chips over badges): keep the loop going for them.
     busy = anyAnimating() || busy;
 
-    renderer.draw(scene, model, atlas, placer.visible(), { focused: scene.focused, open: scene.open, selectedProduct: scene.selectedProduct, hoverIsland, coarse: vp.coarse, dip: nav.dip, arcs }, now);
+    renderer.draw(scene, model, atlas, placer.visible(), { focused: scene.focused, open: scene.open, selectedProduct: scene.selectedProduct, hoverIsland, coarse: vp.coarse, dip: nav.dip, arcs, moving: zooming }, now);
     if (tooltip.current && (camera.moving || physics.active)) placeTooltip(tooltip.current);
     return busy || !!scene.pulse || input.busy;
   },
@@ -750,7 +765,8 @@ setFrame(
     // Settled: signposts and a fresh hover test. Only redraw if something actually changed,
     // otherwise the loop would never go idle.
     camera.userMoving = false;
-    let changed = updateSignposts();
+    // (Also one more frame if the last one held back sharper logos.)
+    let changed = updateSignposts() || atlas.sharpHold || renderer.arcsStale;
     if (!input.busy && lastPointer.x > 0 && !vp.coarse) {
       const before = hoverNode;
       setHover(pick(renderer.hits, lastPointer.x, lastPointer.y, vp.coarse), lastPointer.x, lastPointer.y);

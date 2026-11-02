@@ -50,7 +50,7 @@ export function freeArea(level: Level, vp: Viewport): Area {
 }
 
 /** Screen radius of a world radius r at zoom k: linear when zoomed out, √k when zoomed in so gaps open up. */
-export const screenRadius = (r: number, k: number) => Math.min(SIZE.badgeMax, k <= 1 ? r * k : r * Math.sqrt(k));
+export const screenRadius = (r: number, k: number) => r * k;
 
 export function fitRect(b: Rect, free: Area, maxK = 4): Fit {
   const k = Math.min(maxK, free.w / (b.x1 - b.x0), free.h / (b.y1 - b.y0));

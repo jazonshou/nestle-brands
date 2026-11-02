@@ -118,6 +118,8 @@ export class Scene {
   readonly filterA = new Map<MNode, AnimValue>();
   readonly signpost = new Map<MNode, AnimValue>();
   readonly logoA = new Map<MNode, AnimValue>();
+  /** How far past the view's fit the user has zoomed (1 at the fit): minimum node sizes grow by this much. */
+  zoom = 1;
 
   // Brand open
   open: MNode | null = null;
@@ -272,7 +274,7 @@ export class Scene {
     const ny = this.nestleDrop.y * k + view.y;
     F.sx[root.i] = nx;
     F.sy[root.i] = ny;
-    F.s[root.i] = Math.max(SIZE.nestleMin * (narrow ? 24 / 28 : 1), 64 * Math.min(k, 1.2)) * this.lift.get(root)!.x;
+    F.s[root.i] = Math.max(SIZE.nestleMin * (narrow ? 24 / 28 : 1) * this.zoom, 64 * k) * this.lift.get(root)!.x;
     F.alpha[root.i] = this.nestleFade.x * (lineage && !lineage.has(root) ? lerp(1, 0.25, dim) : 1);
     F.vis[root.i] = F.alpha[root.i] > 0.01 ? 1 : 0;
 
@@ -303,12 +305,12 @@ export class Scene {
       // Category hub
       F.sx[cat.i] = px;
       F.sy[cat.i] = py;
-      F.s[cat.i] = (f > 0.01 ? lerp(Math.max(3.5, 10 * k), 10, f) : Math.max(3.5, 10 * k) * Math.min(1, pr / Math.max(liveR, 1))) * this.lift.get(cat)!.x;
+      F.s[cat.i] = (f > 0.01 ? lerp(Math.max(3.5, 10 * k), 10 * this.zoom, f) : Math.max(3.5, 10 * k) * Math.min(1, pr / Math.max(liveR, 1))) * this.lift.get(cat)!.x;
       F.alpha[cat.i] = contentA;
       // Culling uses the island's stretched extent (a focused island reaches well past its disc), and never
       // skips the focused island or the open brand's, whose contents must stay current.
       const St = this.stretchOf(is);
-      const reach = pr * Math.max(St.sx, St.sy) + SIZE.badgeMax;
+      const reach = pr * Math.max(St.sx, St.sy) + 32;
       const keep = cat === this.focused || cat === this.open?.category;
       const onScreen = keep || (px + reach > -margin && px - reach < W + margin && py + reach > -margin && py - reach < H + margin);
       F.vis[cat.i] = onScreen && contentA > 0.01 ? 1 : 0;
@@ -355,6 +357,8 @@ export class Scene {
       const fan = this.fanFor(b);
       const s = F.s[bi];
       const isOpen = this.open === b;
+      // Tucked moons grow with a zoomed-in badge (they settle to their usual size as they fan out).
+      const zoomed = clamp(s / 22, 1, 3);
       for (let j = 0; j < b.products.length; j++) {
         const p = b.products[j];
         const o = this.orbit.get(p)!.x;
@@ -362,7 +366,7 @@ export class Scene {
         const slot = fan.slots[Math.min(j, fan.slots.length - 1)];
         const hasSlot = j < fan.slots.length && !(fan.more > 0 && j >= fan.slots.length - 1);
         const theta = slot ? (hasSlot ? slot.theta : slot.theta) : 0;
-        const tucked = s + 4.5;
+        const tucked = s + 4.5 * zoomed;
         const peek = s + 14;
         let x: number;
         let y: number;
@@ -377,7 +381,7 @@ export class Scene {
         }
         F.sx[p.i] = F.sx[bi] + x;
         F.sy[p.i] = F.sy[bi] + y;
-        F.s[p.i] = o <= 1 ? lerp(j < 24 ? 2.2 : 0, 3.5, Math.min(1, o)) : lerp(3.5, 4.5, o - 1);
+        F.s[p.i] = o <= 1 ? lerp((j < 24 ? 2.2 : 0) * zoomed, 3.5, Math.min(1, o)) : lerp(3.5, 4.5, o - 1);
         const showTucked = F.mu[bi];
         const a = o > 0.02 ? 1 : showTucked * (j < 24 ? 1 : 0);
         F.alpha[p.i] = a * F.alpha[bi] * fa * (isOpen || o > 1 ? 1 : 1);
@@ -398,11 +402,12 @@ export class Scene {
     F.sx[i] = x;
     F.sy[i] = y;
     let s = screenRadius(b.r, k);
-    if (f > 0) s = Math.max(s, sMin * smoothstep(0.5, 1, f));
+    if (f > 0) s = Math.max(s, sMin * this.zoom * smoothstep(0.5, 1, f));
     // Moons follow the brand's natural size, not its signpost enlargement.
     const natural = s * scale;
     const sign = this.signpost.get(b)!.x;
-    if (sign > 0) s = lerp(s, Math.max(s, S_sign), sign);
+    if (sign > 0) s = lerp(s, Math.max(s, S_sign * this.zoom), sign);
+    s = Math.min(s, SIZE.badgeZoomMax);
     if (this.open === b) s = lerp(s, sOpen, this.lens.x);
     s *= scale * this.lift.get(b)!.x;
     F.s[i] = s;

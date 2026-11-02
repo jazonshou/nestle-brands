@@ -261,6 +261,11 @@ export interface ArcLabel {
   hover: boolean;
   /** Set just outside the rim (the island is too small to hold the name inside). */
   outside: boolean;
+  /** The circle the name runs along, and where on it. */
+  cx: number;
+  cy: number;
+  r: number;
+  mid: number;
   glyphs: { ch: string; x: number; y: number; rot: number; font: string; size: number; soft: boolean }[];
 }
 
@@ -358,6 +363,10 @@ function arcLabel(o: {
     const top = Math.sin(mid) <= 0;
     return {
       outside: p.outside,
+      cx: x,
+      cy: y,
+      r: p.r,
+      mid,
       glyphs: p.glyphs.map((g) => {
         const th = angle(p, mid, g.at);
         return { ch: g.ch, x: x + p.r * Math.cos(th), y: y + p.r * Math.sin(th), rot: top ? th + Math.PI / 2 : th - Math.PI / 2, font: g.font, size: p.size, soft: g.soft };

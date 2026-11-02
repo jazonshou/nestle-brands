@@ -23,6 +23,8 @@ export interface Bounds {
   free: Area;
   minK: number;
   maxK: number;
+  /** The zoom this view fits at: going past it enlarges the nodes along with the map. */
+  fitK: number;
   /** Zooming out past minK is allowed (with resistance) and can trigger an exit. */
   exitable: boolean;
 }

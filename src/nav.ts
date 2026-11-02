@@ -386,7 +386,7 @@ export class Nav {
     let b: Bounds;
     if (s.level === "overview") {
       const o = this.overviewFit();
-      b = { rect: this.liveBounds(), free: o.area, minK: o.fit.k * 0.8, maxK: 4, exitable: false };
+      b = { rect: this.liveBounds(), free: o.area, minK: o.fit.k * 0.8, maxK: 4, fitK: o.fit.k, exitable: false };
     } else {
       const is = this.islandOf(s.cat);
       const c = this.scene.islandCentre(is);
@@ -400,6 +400,7 @@ export class Nav {
         free,
         minK: f.k * 0.75,
         maxK: 4,
+        fitK: f.k,
         exitable: true,
       };
     }
@@ -509,12 +510,13 @@ export class Nav {
         if (cam.view.k > fit.k * 1.15 || outside > 0.25 * brands.length) cam.springTo(fit.cx, fit.cy, fit.k, area);
       }
     } else if (next.level === "overview" && prev.level !== "overview" && this.savedOverview) {
-      // Back to where the user was at the overview, as long as that view shows the category being left.
+      // Back to where the user was at the overview, as long as that view shows the category being left. A view
+      // they had zoomed into isn't restored: going back out shows the whole map (and never zooms in).
       const o = this.overviewFit();
       const v = this.savedOverview;
       const k = o.fit.k * v.kRel;
-      let ok = true;
-      if (prevCat) {
+      let ok = v.kRel <= 1.05;
+      if (ok && prevCat) {
         const c = sc.islandCentre(this.islandOf(prevCat));
         const x = o.area.x + o.area.w / 2 + (c.x - v.cx) * k;
         const y = o.area.y + o.area.h / 2 + (c.y - v.cy) * k;
